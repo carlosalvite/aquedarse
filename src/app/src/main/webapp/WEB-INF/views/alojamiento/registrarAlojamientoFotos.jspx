@@ -1,0 +1,185 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');</script>
+    <div id="_title_div">
+        <spring:message code="label.alojamiento" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+        <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+        <c:if test="${not empty alojamiento}">
+            <h3>Registrar Fotos - ${alojamiento.nombre}</h3>            
+            <br/>
+            
+            <!-- Carga de imagenes -->
+            <spring:url value="/imagen/uploadImagen" var="cargar_imagen_url"/>
+            <div>
+            <div id="divImagen1">
+                <form id="imagenForm1" class="imagenForm" enctype="multipart/form-data">
+                    <label>Imagen principal:</label>                    
+                    <input id="imagenInput1" name="file" type="file" onchange="subirImagen('imagenForm1','linkId1','borrarLinkId1')"/><c:out value=" "/><a id="linkId1" class="fancybox fancybox.image" hidden="true">Visualizar</a><c:out value=" "/><a id="borrarLinkId1" name="borrarLink" hidden="true" href="javascript: borrarImagen('borrarLinkId1','linkId1','imagenInput1','borrarLinkId1')">Borrar</a>
+                    <input name="esPrincipal" value="true" hidden="true"></input>
+                    <input name="idAlojamiento" value="${alojamiento.id}" hidden="true"></input>
+                </form>
+                <button type="button" id="botonAgregarImagen1" onclick="agregarImagen('divImagen2','botonAgregarImagen1','borrarLinkId1');" style="margin-left: 420px;"> Agregar otra imagen</button>
+            </div>
+            <div id="divImagen2" hidden="true">
+                <form id="imagenForm2" class="imagenForm" enctype="multipart/form-data">
+                    <label>Imagen 2:</label>
+                    <input id="imagenInput2" name="file" type="file" onchange="subirImagen('imagenForm2','linkId2','borrarLinkId2')"/><c:out value=" "/><a id="linkId2" class="fancybox fancybox.image" hidden="true">Visualizar</a><c:out value=" "/><a id="borrarLinkId2" name="borrarLink" hidden="true" href="javascript: borrarImagen('borrarLinkId2','linkId2','imagenInput2','borrarLinkId2')">Borrar</a>
+                    <input name="idAlojamiento" value="${alojamiento.id}" hidden="true"></input>
+                </form>
+                <button id="botonAgregarImagen2" onclick="agregarImagen('divImagen3','botonAgregarImagen2');" style="margin-left: 420px;"> Agregar otra imagen</button>
+            </div>
+            <div id="divImagen3" hidden="true">
+                <form id="imagenForm3" class="imagenForm" enctype="multipart/form-data">
+                    <label>Imagen 3:</label>
+                    <input id="imagenInput3" name="file" type="file" onchange="subirImagen('imagenForm3','linkId3','borrarLinkId3')"/><c:out value=" "/><a id="linkId3" class="fancybox fancybox.image" hidden="true">Visualizar</a><c:out value=" "/><a id="borrarLinkId3" name="borrarLink" hidden="true" href="javascript: borrarImagen('borrarLinkId3','linkId3','imagenInput3','borrarLinkId3')">Borrar</a>
+                    <input name="idAlojamiento" value="${alojamiento.id}" hidden="true"></input>
+                </form>
+                <button id="botonAgregarImagen3" onclick="agregarImagen('divImagen4','botonAgregarImagen3');" style="margin-left: 420px;"> Agregar otra imagen</button>
+            </div>
+            <div id="divImagen4" hidden="true">
+                <form id="imagenForm4" class="imagenForm" enctype="multipart/form-data">
+                    <label>Imagen 4:</label>
+                    <input id="imagenInput4" name="file" type="file" onchange="subirImagen('imagenForm4','linkId4','borrarLinkId4')"/><c:out value=" "/><a id="linkId4" class="fancybox fancybox.image" hidden="true">Visualizar</a><c:out value=" "/><a id="borrarLinkId4" name="borrarLink" hidden="true" href="javascript: borrarImagen('borrarLinkId4','linkId4','imagenInput4','borrarLinkId4')">Borrar</a>
+                    <input name="idAlojamiento" value="${alojamiento.id}" hidden="true"></input>
+                </form>
+                <button id="botonAgregarImagen4" onclick="agregarImagen('divImagen5','botonAgregarImagen4');" style="margin-left: 420px;"> Agregar otra imagen</button>
+            </div>
+            <div id="divImagen5" hidden="true">
+                <form id="imagenForm5" class="imagenForm" enctype="multipart/form-data">
+                    <label>Imagen 5:</label>
+                    <input id="imagenInput5" name="file" type="file" onchange="subirImagen('imagenForm5','linkId5','borrarLinkId5')"/><c:out value=" "/><a id="linkId5" class="fancybox fancybox.image" hidden="true">Visualizar</a><c:out value=" "/><a id="borrarLinkId5" name="borrarLink" hidden="true" href="javascript: borrarImagen('borrarLinkId5','linkId5','imagenInput5','borrarLinkId5')">Borrar</a>
+                    <input name="idAlojamiento" value="${alojamiento.id}" hidden="true"></input>
+                </form>
+            </div>
+            </div>
+            <br/>   
+            
+            <div class="submit" id="roo_alojamiento_continuar">     
+                
+                <spring:url value="/cuentabancaria/form" var="cuentabancaria_url">
+                    <spring:param name="id" value="${alojamiento.id}"/>
+                </spring:url>
+                <input type="button" value="Continuar" onclick="document.location='${cuentabancaria_url}'"/>
+                
+            </div>
+                        
+            <!--<progress></progress>-->
+            <spring:url value="/imagen/previewImagen" var="imagen_preview_url"/>
+            <spring:url value="/imagen/deleteImagen" var="imagen_delete_url"/>
+            <script>
+                <![CDATA[
+                function agregarImagen(proxDiv, botonEsconder){
+                    $('#'+proxDiv).attr('hidden',false);
+                    $('#'+botonEsconder).attr('hidden',true);
+                }
+                function subirImagen(form, link, borrarLink){
+                    
+                    var urlBorrar = $('#'+borrarLink).attr('name');
+                    $.ajax({
+                        url: urlBorrar,  //server script to process data
+                        type: 'POST',                        
+                        success: function(response){
+                           
+                        },                        
+                        cache: false,
+                        contentType: false,
+                        processData: false
+                    });
+                    
+                    var formData = new FormData($('#'+form)[0]);
+                    $.ajax({
+                        url: '${cargar_imagen_url}',  //server script to process data
+                        type: 'POST',                        
+                        //Ajax events
+                        //beforeSend: beforeSendHandler,
+                        success: function(response){
+                            $('#'+link).attr('hidden',false);
+                            $('#'+link).attr('href','${imagen_preview_url}?id='+response['idImagen']);
+                            $('#'+borrarLink).attr('hidden',false);
+                            $('#'+borrarLink).attr('name','${imagen_delete_url}?id='+response['idImagen']);
+
+                        },
+                        //error: errorHandler,
+                        // Form data
+                        data: formData,
+                        //Options to tell JQuery not to process data or worry about content-type
+                        cache: false,
+                        contentType: false,
+                        processData: false
+                    });
+                }
+                function borrarImagen(borrarLinkId, linkId, imagenInput, borrarLink){
+                    var urlBorrar = $('#'+borrarLinkId).attr('name');
+                    $('#'+linkId).attr('hidden',true);
+                    $('#'+borrarLink).attr('hidden',true);
+                    $('#'+imagenInput).val(null);
+                    $.ajax({
+                        url: urlBorrar,  //server script to process data
+                        type: 'POST',
+                        /*xhr: function() {  // custom xhr
+                            myXhr = $.ajaxSettings.xhr();
+                            if(myXhr.upload){ // check if upload property exists
+                                myXhr.upload.addEventListener('progress',progressHandlingFunction, false); // for handling the progress of the upload
+                            }
+                            return myXhr;
+                        },*/
+                        //Ajax events
+                        //beforeSend: beforeSendHandler,
+                        success: function(response){
+                           /* $('#'+link).attr('hidden',true);
+                            $('#'+link).attr('href','');
+                            $('#'+borrarLink).attr('hidden',true);
+                            $('#'+borrarLink).attr('href','');*/
+
+                        },
+                        //error: errorHandler,
+                        // Form data
+                        //data: formData,
+                        //Options to tell JQuery not to process data or worry about content-type
+                        cache: false,
+                        contentType: false,
+                        processData: false
+                    });
+                }
+
+                function progressHandlingFunction(e){
+                    if(e.lengthComputable){
+                        $('progress').attr({value:e.loaded,max:e.total});
+                    }
+                }
+                
+//                function llenarInputs(){
+//                    for(var i = 0; i< arrValores.length; i++) {
+//                        
+//                    }
+//                    
+//                }
+                
+                $(document).ready(function() {
+                        $(".fancybox").fancybox({
+                            maxWidth    : 800,
+                            maxHeight   : 600,
+                            fitToView   : false,
+                            width       : '70%',
+                            height      : '70%',
+                            autoSize    : false,
+                            closeClick  : false,
+                            openEffect  : 'none',
+                            closeEffect : 'none'
+                        });
+                        
+                        //llenarInputs();
+                        
+
+                });
+                ]]>
+            </script>
+            
+            
+        </c:if>
+        <c:if test="${empty alojamiento}">
+            <spring:message arguments="${entity_label}" code="entity.not.found.single"/>
+        </c:if>
+    </div>
+</div>

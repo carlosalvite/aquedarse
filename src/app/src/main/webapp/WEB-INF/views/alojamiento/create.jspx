@@ -1,0 +1,107 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');dojo.require('dijit.form.SimpleTextarea');dojo.require('dijit.form.FilteringSelect');</script>
+    <div id="_title_div">
+        <spring:message code="label.alojamiento" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.create" var="title_msg"/>
+        <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+        <spring:url value="/alojamiento" var="form_url"/>
+        <form:form action="${form_url}" method="POST" modelAttribute="alojamiento">
+            <form:errors cssClass="errors" delimiter="&lt;p/&gt;"/>
+            <div id="roo_alojamiento_nombre">
+                <label for="_nombre_id">Nombre:</label>
+                <form:textarea cssStyle="width:250px" id="_nombre_id" path="nombre"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_nombre_id', widgetType: 'dijit.form.SimpleTextarea', widgetAttrs: {}})); </script>
+                <br/>
+                <form:errors cssClass="errors" id="_nombre_error_id" path="nombre"/>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_descripcionGeneral">
+                <label for="_descripcionGeneral_id">Descripcion General:</label>
+                <form:textarea cssStyle="width:250px" id="_descripcionGeneral_id" path="descripcionGeneral"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_descripcionGeneral_id', widgetType: 'dijit.form.SimpleTextarea', widgetAttrs: {}})); </script>
+                <br/>
+                <form:errors cssClass="errors" id="_descripcionGeneral_error_id" path="descripcionGeneral"/>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_tipoAlojamiento">
+                <c:if test="${not empty tipoalojamientoes}">
+                    <label for="_tipoAlojamiento_id">Tipo Alojamiento:</label>
+                    <form:select cssStyle="width:250px" id="_tipoAlojamiento_id" path="tipoAlojamiento">
+                        <form:options itemValue="id" items="${tipoalojamientoes}"/>
+                    </form:select>
+                    <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_tipoAlojamiento_id', widgetType: 'dijit.form.FilteringSelect', widgetAttrs : {hasDownArrow : true}})); </script>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_ubicacion">
+                <c:if test="${not empty ubicacions}">
+                    <label for="_ubicacion_id">Ubicacion:</label>
+                    <form:select cssStyle="width:250px" id="_ubicacion_id" path="ubicacion">
+                        <form:options itemValue="id" items="${ubicacions}"/>
+                    </form:select>
+                    <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_ubicacion_id', widgetType: 'dijit.form.FilteringSelect', widgetAttrs : {hasDownArrow : true}})); </script>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_direccion">
+                <label for="_direccion_id">Direccion:</label>
+                <form:textarea cssStyle="width:250px" id="_direccion_id" path="direccion"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_direccion_id', widgetType: 'dijit.form.SimpleTextarea', widgetAttrs: {}})); </script>
+                <br/>
+                <form:errors cssClass="errors" id="_direccion_error_id" path="direccion"/>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_latitudGps">
+                <label for="_latitudGps_id">Latitud Gps:</label>
+                <form:textarea cssStyle="width:250px" id="_latitudGps_id" path="latitudGps"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_latitudGps_id', widgetType: 'dijit.form.SimpleTextarea', widgetAttrs: {}})); </script>
+                <br/>
+                <form:errors cssClass="errors" id="_latitudGps_error_id" path="latitudGps"/>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_longitudGps">
+                <label for="_longitudGps_id">Longitud Gps:</label>
+                <form:textarea cssStyle="width:250px" id="_longitudGps_id" path="longitudGps"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_longitudGps_id', widgetType: 'dijit.form.SimpleTextarea', widgetAttrs: {}})); </script>
+                <br/>
+                <form:errors cssClass="errors" id="_longitudGps_error_id" path="longitudGps"/>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_comodidadesGenerales">
+                <c:if test="${not empty comodidadgenerals}">
+                    <label for="_comodidadesGenerales_id">Comodidades Generales:</label>
+                    <form:select cssStyle="width:250px" id="_comodidadesGenerales_id" path="comodidadesGenerales">
+                        <form:options itemValue="id" items="${comodidadgenerals}"/>
+                    </form:select>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_comodidadesGeneralesAdicionales">
+                <c:if test="${not empty comodidadgeneraladicionals}">
+                    <label for="_comodidadesGeneralesAdicionales_id">Comodidades Generales Adicionales:</label>
+                    <form:select cssStyle="width:250px" id="_comodidadesGeneralesAdicionales_id" path="comodidadesGeneralesAdicionales">
+                        <form:options itemValue="id" items="${comodidadgeneraladicionals}"/>
+                    </form:select>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_comodidadesGeneralesAdicionalesTrans">
+                <label for="_comodidadesGeneralesAdicionalesTrans_id">Comodidades Generales Adicionales Trans:</label>
+                <form:input cssStyle="width:250px" id="_comodidadesGeneralesAdicionalesTrans_id" maxlength="30" path="comodidadesGeneralesAdicionalesTrans" size="0"/>
+                <br/>
+                <form:errors cssClass="errors" id="_comodidadesGeneralesAdicionalesTrans_error_id" path="comodidadesGeneralesAdicionalesTrans"/>
+                <spring:message arguments="Comodidades Generales Adicionales Trans" code="field.invalid" var="field_invalid"/>
+                <spring:message code="field.required" var="field_required"/>
+                <spring:message argumentSeparator="," arguments="Comodidades Generales Adicionales Trans," code="field.simple.validation" var="field_validation"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_comodidadesGeneralesAdicionalesTrans_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${field_validation}', invalidMessage: '${field_invalid}', required : false}})); </script>
+            </div>
+            <br/>
+            <div class="submit" id="roo_alojamiento_submit">
+                <spring:message code="button.save" var="save_button"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ValidateAllDecoration({elementId:'proceed', event:'onclick'}));</script>
+                <input id="proceed" type="submit" value="${save_button}"/>
+            </div>
+        </form:form>
+    </div>
+</div>

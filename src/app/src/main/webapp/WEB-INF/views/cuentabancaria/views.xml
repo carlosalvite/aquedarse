@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="cuentabancaria/list">
+        <put-attribute name="body" value="/WEB-INF/views/cuentabancaria/list.jspx"/>
+    </definition>
+    <definition extends="default" name="cuentabancaria/show">
+        <put-attribute name="body" value="/WEB-INF/views/cuentabancaria/mostrar.jspx"/>
+    </definition>
+    <definition extends="default" name="cuentabancaria/create">
+        <put-attribute name="body" value="/WEB-INF/views/cuentabancaria/registrarCuentaBancaria.jspx"/>
+    </definition>
+    <definition extends="default" name="cuentabancaria/update">
+        <put-attribute name="body" value="/WEB-INF/views/cuentabancaria/update.jspx"/>
+    </definition>
+<definition extends="default" name="cuentabancaria/findCuentaBancariasByAlojamiento">
+        <put-attribute name="body" value="/WEB-INF/views/cuentabancaria/findCuentaBancariasByAlojamiento.jspx"/>
+    </definition>
+<definition extends="default" name="cuentabancaria/findCuentaBancariasByAlojamientoAndActiva">
+        <put-attribute name="body" value="/WEB-INF/views/cuentabancaria/findCuentaBancariasByAlojamientoAndActiva.jspx"/>
+    </definition>
+</tiles-definitions>

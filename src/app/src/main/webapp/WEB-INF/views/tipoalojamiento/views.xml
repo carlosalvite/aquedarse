@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="tipoalojamiento/list">
+        <put-attribute name="body" value="/WEB-INF/views/tipoalojamiento/list.jspx"/>
+    </definition>
+    <definition extends="default" name="tipoalojamiento/show">
+        <put-attribute name="body" value="/WEB-INF/views/tipoalojamiento/show.jspx"/>
+    </definition>
+    <definition extends="default" name="tipoalojamiento/create">
+        <put-attribute name="body" value="/WEB-INF/views/tipoalojamiento/create.jspx"/>
+    </definition>
+    <definition extends="default" name="tipoalojamiento/update">
+        <put-attribute name="body" value="/WEB-INF/views/tipoalojamiento/update.jspx"/>
+    </definition>
+</tiles-definitions>

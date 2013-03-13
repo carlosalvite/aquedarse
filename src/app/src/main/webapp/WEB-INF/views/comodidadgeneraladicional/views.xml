@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="comodidadgeneraladicional/list">
+        <put-attribute name="body" value="/WEB-INF/views/comodidadgeneraladicional/list.jspx"/>
+    </definition>
+    <definition extends="default" name="comodidadgeneraladicional/show">
+        <put-attribute name="body" value="/WEB-INF/views/comodidadgeneraladicional/show.jspx"/>
+    </definition>
+    <definition extends="default" name="comodidadgeneraladicional/create">
+        <put-attribute name="body" value="/WEB-INF/views/comodidadgeneraladicional/create.jspx"/>
+    </definition>
+    <definition extends="default" name="comodidadgeneraladicional/update">
+        <put-attribute name="body" value="/WEB-INF/views/comodidadgeneraladicional/update.jspx"/>
+    </definition>
+<definition extends="default" name="comodidadgeneraladicional/findComodidadGeneralAdicionalsByNombreLike">
+        <put-attribute name="body" value="/WEB-INF/views/comodidadgeneraladicional/findComodidadGeneralAdicionalsByNombreLike.jspx"/>
+    </definition>
+</tiles-definitions>

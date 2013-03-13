@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="tipocirif/list">
+        <put-attribute name="body" value="/WEB-INF/views/tipocirif/list.jspx"/>
+    </definition>
+    <definition extends="default" name="tipocirif/show">
+        <put-attribute name="body" value="/WEB-INF/views/tipocirif/show.jspx"/>
+    </definition>
+    <definition extends="default" name="tipocirif/create">
+        <put-attribute name="body" value="/WEB-INF/views/tipocirif/create.jspx"/>
+    </definition>
+    <definition extends="default" name="tipocirif/update">
+        <put-attribute name="body" value="/WEB-INF/views/tipocirif/update.jspx"/>
+    </definition>
+</tiles-definitions>

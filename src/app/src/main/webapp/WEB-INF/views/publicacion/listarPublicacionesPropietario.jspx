@@ -1,0 +1,21 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:roo="urn:jsptagdir:/WEB-INF/tags" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <div id="_title_div">
+         <c:if test="${not empty lasPublicaciones}">
+            <table>
+                <c:forEach items="${lasPublicaciones}" var="publicacion">
+                    <tr>
+                    	<td>
+                    		<h3><c:out value="${publicacion.titulo}"></c:out></h3>
+                    		<pre>Cantidad personas: </pre>
+                    		
+                    	</td>
+                    </tr>
+                </c:forEach>
+            </table>
+        </c:if>
+        <c:if test="${empty lasPublicaciones}">
+            <spring:message arguments="${entity_label_plural}" code="entity.not.found"/>
+        </c:if>
+    </div>
+</div>

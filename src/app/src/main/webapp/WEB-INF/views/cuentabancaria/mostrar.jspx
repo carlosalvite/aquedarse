@@ -1,0 +1,50 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');</script>
+    <div id="_title_div">
+        <spring:message code="label.cuentabancaria" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+        <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+        <c:if test="${not empty cuentaBancaria}">
+            <div id="roo_cuentaBancaria_banco">
+                <label for="_banco_id">Banco:</label>
+                <div class="box" id="_banco_id">
+                    <c:out value="${cuentaBancaria.banco}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_numeroCuenta">
+                <label for="_numeroCuenta_id">Numero Cuenta:</label>
+                <div class="box" id="_numeroCuenta_id">
+                    <c:out value="${cuentaBancaria.numeroCuenta}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_titularCuenta">
+                <label for="_titularCuenta_id">Titular Cuenta:</label>
+                <div class="box" id="_titularCuenta_id">
+                    <c:out value="${cuentaBancaria.titularCuenta}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_ciRif">
+                <label for="_ciRif_id">Ci Rif:</label>
+                <div class="box" id="_ciRif_id">
+                    <c:out value="${cuentaBancaria.tipoCiRif}"/><c:out value="${cuentaBancaria.ciRif}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_correoElectronico">
+                <label for="_correoElectronico_id">Correo Electronico:</label>
+                <div class="box" id="_correoElectronico_id">
+                    <c:out value="${cuentaBancaria.correoElectronico}"/>
+                </div>
+            </div>
+            <br/>
+
+        </c:if>
+        <c:if test="${empty cuentaBancaria}">
+            <spring:message arguments="${entity_label}" code="entity.not.found.single"/>
+        </c:if>
+    </div>
+</div>

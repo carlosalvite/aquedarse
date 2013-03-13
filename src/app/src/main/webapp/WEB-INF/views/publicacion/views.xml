@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="publicacion/list">
+        <put-attribute name="body" value="/WEB-INF/views/publicacion/list.jspx"/>
+    </definition>
+    <definition extends="default" name="publicacion/show">
+        <put-attribute name="body" value="/WEB-INF/views/publicacion/show.jspx"/>
+    </definition>
+    <definition extends="default" name="publicacion/registrarPublicacion">
+        <put-attribute name="body" value="/WEB-INF/views/publicacion/registrarPublicacion.jspx"/>
+    </definition>
+    <definition extends="default" name="publicacion/update">
+        <put-attribute name="body" value="/WEB-INF/views/publicacion/update.jspx"/>
+    </definition>
+    <definition extends="default" name="publicacion/listarPublicacionesPropietario">
+        <put-attribute name="body" value="/WEB-INF/views/publicacion/listarPublicacionesPropietario.jspx"/>
+    </definition>
+    <definition extends="default" name="publicacion/consultarPublicacionPropietario">
+        <put-attribute name="body" value="/WEB-INF/views/publicacion/consultarPublicacionPropietario.jspx"/>
+    </definition>
+<definition extends="default" name="publicacion/create">
+        <put-attribute name="body" value="/WEB-INF/views/publicacion/create.jspx"/>
+    </definition>
+<definition extends="default" name="publicacion/findPublicacionsByAlojamiento">
+        <put-attribute name="body" value="/WEB-INF/views/publicacion/findPublicacionsByAlojamiento.jspx"/>
+    </definition>
+</tiles-definitions>

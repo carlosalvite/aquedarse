@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:BpmnDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bpmn="http://stp.eclipse.org/bpmn" xmi:id="_Y04mUaNREeGlQtPXdUaXAA" iD="_Y04mUKNREeGlQtPXdUaXAA">
+  <pools xmi:type="bpmn:Pool" xmi:id="_Y14E0aNREeGlQtPXdUaXAA" iD="_Y14E0KNREeGlQtPXdUaXAA" name="Usuario">
+    <vertices xmi:type="bpmn:Activity" xmi:id="_2S8KUKNSEeGlQtPXdUaXAA" iD="_2S7jQKNSEeGlQtPXdUaXAA" activityType="EventStartEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_6mbG0aNUEeGlQtPXdUaXAA" iD="_6mbG0KNUEeGlQtPXdUaXAA" outgoingEdges="_G1UFkaNVEeGlQtPXdUaXAA" name="Consultar hospedaje" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_G1QbMaNVEeGlQtPXdUaXAA" iD="_G1QbMKNVEeGlQtPXdUaXAA" outgoingEdges="_lroScaNVEeGlQtPXdUaXAA" incomingEdges="_G1UFkaNVEeGlQtPXdUaXAA" name="Seleccionar habitación/oferta" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_lrlPIaNVEeGlQtPXdUaXAA" iD="_lrlPIKNVEeGlQtPXdUaXAA" outgoingEdges="_TXFHkaNWEeGlQtPXdUaXAA" incomingEdges="_lroScaNVEeGlQtPXdUaXAA" name="Ingresar número de huéspedes y fecha de la estadía" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_TXBdMaNWEeGlQtPXdUaXAA" iD="_TXBdMKNWEeGlQtPXdUaXAA" outgoingEdges="_rSuoYaNWEeGlQtPXdUaXAA" incomingEdges="_TXFHkaNWEeGlQtPXdUaXAA" name="Reservar" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_rSq-AaNWEeGlQtPXdUaXAA" iD="_rSq-AKNWEeGlQtPXdUaXAA" outgoingEdges="_AJDBwawwEeGIwbXC8z56TA _AlXKUKwwEeGIwbXC8z56TA" incomingEdges="_rSuoYaNWEeGlQtPXdUaXAA" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_z2GiMaNXEeGlQtPXdUaXAA" iD="_z2GiMKNXEeGlQtPXdUaXAA" outgoingEdges="_ncaBgawyEeGIwbXC8z56TA" incomingEdges="_AlXKUKwwEeGIwbXC8z56TA" name="Registrar información de facturación, etc" activityType="Task"/>
+    <vertices xmi:type="bpmn:SubProcess" xmi:id="_IGu7EaNeEeGlQtPXdUaXAA" iD="_IGu7EKNeEeGlQtPXdUaXAA" incomingEdges="_ke-OgKzLEeG2v_RyaRlmvw" name="Invitación a calificar hospedaje" looping="true">
+      <vertices xmi:type="bpmn:Activity" xmi:id="_IGu7E6NeEeGlQtPXdUaXAA" iD="_IGu7EqNeEeGlQtPXdUaXAA" outgoingEdges="_S7e3EaNeEeGlQtPXdUaXAA" incomingEdges="_Rrpm4aNeEeGlQtPXdUaXAA" name="Se recibe invitación para efectuar calificación/comentario del hospedaje"/>
+      <vertices xmi:type="bpmn:Activity" xmi:id="_LnFcYKNeEeGlQtPXdUaXAA" iD="_LnE1UKNeEeGlQtPXdUaXAA" outgoingEdges="_Rrpm4aNeEeGlQtPXdUaXAA" activityType="EventStartMessage">
+        <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_vNbfMaNdEeGlQtPXdUaXAA"/>
+      </vertices>
+      <vertices xmi:type="bpmn:Activity" xmi:id="_S7bzwaNeEeGlQtPXdUaXAA" iD="_S7bzwKNeEeGlQtPXdUaXAA" incomingEdges="_S7e3EaNeEeGlQtPXdUaXAA" activityType="EventEndEmpty"/>
+      <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Rrpm4aNeEeGlQtPXdUaXAA" iD="_Rrpm4KNeEeGlQtPXdUaXAA"/>
+      <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_S7e3EaNeEeGlQtPXdUaXAA" iD="_S7e3EKNeEeGlQtPXdUaXAA"/>
+      <eventHandlers xmi:type="bpmn:Activity" xmi:id="_XD5d8aNeEeGlQtPXdUaXAA" iD="_XD5d8KNeEeGlQtPXdUaXAA" activityType="EventIntermediateTimer"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_czzDIaQmEeGOsplfjneHuA" iD="_czzDIKQmEeGOsplfjneHuA" outgoingEdges="_fHTf4azDEeG2v_RyaRlmvw" incomingEdges="_AKPx0azDEeG2v_RyaRlmvw _C4C00azDEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_cz2GcaQmEeGOsplfjneHuA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_fLDjgaQoEeGOsplfjneHuA" iD="_fLDjgKQoEeGOsplfjneHuA" outgoingEdges="_eyXDQazGEeG2v_RyaRlmvw" incomingEdges="_Bgdr8azFEeG2v_RyaRlmvw" name="Realizar checkin en el hospedaje" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_duP8YaQqEeGOsplfjneHuA" iD="_duP8YKQqEeGOsplfjneHuA" outgoingEdges="_jR6lgazLEeG2v_RyaRlmvw" incomingEdges="_eyXDQazGEeG2v_RyaRlmvw _x9T_wKzHEeG2v_RyaRlmvw" name="Disfrutar de la estadía" activityType="Task"/>
+    <vertices xmi:type="bpmn:SubProcess" xmi:id="_orUMAawvEeGIwbXC8z56TA" iD="_orUMAKwvEeGIwbXC8z56TA" incomingEdges="_AJDBwawwEeGIwbXC8z56TA" name="Inciar Sesión/Registro"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_ncW-MawyEeGIwbXC8z56TA" iD="_ncW-MKwyEeGIwbXC8z56TA" outgoingEdges="_tG8icawyEeGIwbXC8z56TA" incomingEdges="_ncaBgawyEeGIwbXC8z56TA" name="Seleccionar tipo de pago (tarjeta, transferencia)" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_tG44EawyEeGIwbXC8z56TA" iD="_tG44EKwyEeGIwbXC8z56TA" outgoingEdges="_0vgpUazBEeG2v_RyaRlmvw" incomingEdges="_tG8icawyEeGIwbXC8z56TA" name="Registrar datos del pago" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_0yi8MawyEeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_MQz9cKwzEeGIwbXC8z56TA" iD="_MQzWYKwzEeGIwbXC8z56TA" outgoingEdges="_NSZWQawzEeGIwbXC8z56TA _Rr7iUawzEeGIwbXC8z56TA" incomingEdges="_0vgpUazBEeG2v_RyaRlmvw _9M9WwazBEeG2v_RyaRlmvw" activityType="GatewayEventBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_NSWS8awzEeGIwbXC8z56TA" iD="_NSWS8KwzEeGIwbXC8z56TA" outgoingEdges="_N5-ToawzEeGIwbXC8z56TA" incomingEdges="_NSZWQawzEeGIwbXC8z56TA" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_UxiBUawzEeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_N57QUawzEeGIwbXC8z56TA" iD="_N57QUKwzEeGIwbXC8z56TA" outgoingEdges="_WUGnUKwzEeGIwbXC8z56TA" incomingEdges="_N5-ToawzEeGIwbXC8z56TA" name="Recibir notificación informando que la transferencia esta siendo verificada" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Rr4fAawzEeGIwbXC8z56TA" iD="_Rr4fAKwzEeGIwbXC8z56TA" outgoingEdges="_WLJi0aw3EeGIwbXC8z56TA _7yB1Yay3EeG2v_RyaRlmvw _WxcTEazBEeG2v_RyaRlmvw _AKPx0azDEeG2v_RyaRlmvw" incomingEdges="_Rr7iUawzEeGIwbXC8z56TA _WUGnUKwzEeGIwbXC8z56TA" activityType="GatewayEventBasedExclusive" looping="false"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_WLGfgaw3EeGIwbXC8z56TA" iD="_WLGfgKw3EeGIwbXC8z56TA" outgoingEdges="_miaFIaw3EeGIwbXC8z56TA" incomingEdges="_WLJi0aw3EeGIwbXC8z56TA" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_aBe7Maw3EeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_miXB0aw3EeGIwbXC8z56TA" iD="_miXB0Kw3EeGIwbXC8z56TA" outgoingEdges="_rM2x4azCEeG2v_RyaRlmvw" incomingEdges="_miaFIaw3EeGIwbXC8z56TA" name="Recibir notificación indicando que la reservación fue cancelada porque el hospedaje nunca respondió la solicitud" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_7x-yEay3EeG2v_RyaRlmvw" iD="_7x-yEKy3EeG2v_RyaRlmvw" outgoingEdges="_8354Uay3EeG2v_RyaRlmvw" incomingEdges="_7yB1Yay3EeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_L8za4ay4EeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_832N8ay3EeG2v_RyaRlmvw" iD="_832N8Ky3EeG2v_RyaRlmvw" outgoingEdges="_Jypoway-EeG2v_RyaRlmvw" incomingEdges="_8354Uay3EeG2v_RyaRlmvw" name="Recibir notificación en donde se informa que el pago no pudo ser verificado" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Jyl-Yay-EeG2v_RyaRlmvw" iD="_Jyl-YKy-EeG2v_RyaRlmvw" outgoingEdges="_RM7pAay-EeG2v_RyaRlmvw _xvnboKy_EeG2v_RyaRlmvw" incomingEdges="_Jypoway-EeG2v_RyaRlmvw" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_RM4lsay-EeG2v_RyaRlmvw" iD="_RM4lsKy-EeG2v_RyaRlmvw" outgoingEdges="_AfCdcazAEeG2v_RyaRlmvw" incomingEdges="_RM7pAay-EeG2v_RyaRlmvw" name="N horas" activityType="EventIntermediateTimer"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Ho_YIay_EeG2v_RyaRlmvw" iD="_Ho_YIKy_EeG2v_RyaRlmvw" outgoingEdges="_9M9WwazBEeG2v_RyaRlmvw _wBTYUazCEeG2v_RyaRlmvw" incomingEdges="_xvnboKy_EeG2v_RyaRlmvw" name="Registrar datos del 2do. intento de pago" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_UUVCUay_EeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Ae_aIazAEeG2v_RyaRlmvw" iD="_Ae_aIKzAEeG2v_RyaRlmvw" outgoingEdges="_BWMH4azAEeG2v_RyaRlmvw" incomingEdges="_AfCdcazAEeG2v_RyaRlmvw _xUYJwazCEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_e7Cs4azAEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_BWJEkazAEeG2v_RyaRlmvw" iD="_BWJEkKzAEeG2v_RyaRlmvw" outgoingEdges="_8I-msazAEeG2v_RyaRlmvw" incomingEdges="_BWMH4azAEeG2v_RyaRlmvw" name="Recibir notificación indicando que la reservación fue cancelada por falta de pago" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_8I6VQKzAEeG2v_RyaRlmvw" iD="_8I5uMKzAEeG2v_RyaRlmvw" incomingEdges="_8I-msazAEeG2v_RyaRlmvw" activityType="EventEndEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_WxZPwazBEeG2v_RyaRlmvw" iD="_WxZPwKzBEeG2v_RyaRlmvw" outgoingEdges="_XY4tkazBEeG2v_RyaRlmvw" incomingEdges="_WxcTEazBEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_gHrpsKzBEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_XY1DMazBEeG2v_RyaRlmvw" iD="_XY1DMKzBEeG2v_RyaRlmvw" outgoingEdges="_rLkN4azBEeG2v_RyaRlmvw" incomingEdges="_XY4tkazBEeG2v_RyaRlmvw" name="Recibir notificación indicando que la reservación fue cancelada porque el hospedaje no tiene disponibilidad" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_rLhKkazBEeG2v_RyaRlmvw" iD="_rLhKkKzBEeG2v_RyaRlmvw" incomingEdges="_rLkN4azBEeG2v_RyaRlmvw" activityType="EventEndEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_rMzukazCEeG2v_RyaRlmvw" iD="_rMzukKzCEeG2v_RyaRlmvw" incomingEdges="_rM2x4azCEeG2v_RyaRlmvw" activityType="EventEndEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_wBQVAazCEeG2v_RyaRlmvw" iD="_wBQVAKzCEeG2v_RyaRlmvw" outgoingEdges="_xUYJwazCEeG2v_RyaRlmvw _C4C00azDEeG2v_RyaRlmvw" incomingEdges="_wBTYUazCEeG2v_RyaRlmvw" activityType="GatewayEventBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_fHQckazDEeG2v_RyaRlmvw" iD="_fHQckKzDEeG2v_RyaRlmvw" outgoingEdges="_BLbQEazFEeG2v_RyaRlmvw" incomingEdges="_fHTf4azDEeG2v_RyaRlmvw" name="Recibir notificación indicando que la reservación ha sido confirmada" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_BLYMwazFEeG2v_RyaRlmvw" iD="_BLYMwKzFEeG2v_RyaRlmvw" outgoingEdges="_Bgdr8azFEeG2v_RyaRlmvw _DNX5sazFEeG2v_RyaRlmvw" incomingEdges="_BLbQEazFEeG2v_RyaRlmvw" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_DNUPUazFEeG2v_RyaRlmvw" iD="_DNUPUKzFEeG2v_RyaRlmvw" outgoingEdges="_KFhV4azIEeG2v_RyaRlmvw" incomingEdges="_DNX5sazFEeG2v_RyaRlmvw" name="Reportar reclamo" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_duhdIazFEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_p75uEazHEeG2v_RyaRlmvw" iD="_p75uEKzHEeG2v_RyaRlmvw" outgoingEdges="_q9dRsazHEeG2v_RyaRlmvw" incomingEdges="_Rp9-wazIEeG2v_RyaRlmvw" activityType="GatewayEventBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_q9aOYazHEeG2v_RyaRlmvw" iD="_q9aOYKzHEeG2v_RyaRlmvw" outgoingEdges="_rgyBMazHEeG2v_RyaRlmvw" incomingEdges="_q9dRsazHEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_5uI68azLEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_rgu94azHEeG2v_RyaRlmvw" iD="_rgu94KzHEeG2v_RyaRlmvw" outgoingEdges="_x9T_wKzHEeG2v_RyaRlmvw" incomingEdges="_rgyBMazHEeG2v_RyaRlmvw" name="Recibir notificación indicando que el reclamo no es válido" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_KFe5oazIEeG2v_RyaRlmvw" iD="_KFe5oKzIEeG2v_RyaRlmvw" outgoingEdges="_MMfpcazIEeG2v_RyaRlmvw" incomingEdges="_KFhV4azIEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_kvdB4azIEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_MMb_EazIEeG2v_RyaRlmvw" iD="_MMb_EKzIEeG2v_RyaRlmvw" outgoingEdges="_Rp9-wazIEeG2v_RyaRlmvw" incomingEdges="_MMfpcazIEeG2v_RyaRlmvw" name="Recibir notificación de que el reclamo fue recibido y está siendo procesado" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_jR2UEazLEeG2v_RyaRlmvw" iD="_jR2UEKzLEeG2v_RyaRlmvw" outgoingEdges="_ke-OgKzLEeG2v_RyaRlmvw" incomingEdges="_jR6lgazLEeG2v_RyaRlmvw" name="Realizar checkout" activityType="Task"/>
+    <vertices xmi:type="bpmn:SubProcess" xmi:id="_HbwScM3yEeGWx_PdFVxCVg" iD="_HbvrYM3yEeGWx_PdFVxCVg" name="buscarOfertas"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_G1UFkaNVEeGlQtPXdUaXAA" iD="_G1UFkKNVEeGlQtPXdUaXAA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_lroScaNVEeGlQtPXdUaXAA" iD="_lroScKNVEeGlQtPXdUaXAA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_TXFHkaNWEeGlQtPXdUaXAA" iD="_TXFHkKNWEeGlQtPXdUaXAA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_rSuoYaNWEeGlQtPXdUaXAA" iD="_rSuoYKNWEeGlQtPXdUaXAA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_AJDBwawwEeGIwbXC8z56TA" iD="_AJDBwKwwEeGIwbXC8z56TA" name="No inició sesión"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_AlXKUKwwEeGIwbXC8z56TA" iD="_AlWjQKwwEeGIwbXC8z56TA" name="Inició sesión"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_ncaBgawyEeGIwbXC8z56TA" iD="_ncaBgKwyEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_tG8icawyEeGIwbXC8z56TA" iD="_tG8icKwyEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_NSZWQawzEeGIwbXC8z56TA" iD="_NSZWQKwzEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_N5-ToawzEeGIwbXC8z56TA" iD="_N5-ToKwzEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Rr7iUawzEeGIwbXC8z56TA" iD="_Rr7iUKwzEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_WUGnUKwzEeGIwbXC8z56TA" iD="_WUGAQKwzEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_WLJi0aw3EeGIwbXC8z56TA" iD="_WLJi0Kw3EeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_miaFIaw3EeGIwbXC8z56TA" iD="_miaFIKw3EeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_7yB1Yay3EeG2v_RyaRlmvw" iD="_7yB1YKy3EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_8354Uay3EeG2v_RyaRlmvw" iD="_8354UKy3EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Jypoway-EeG2v_RyaRlmvw" iD="_JypowKy-EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_RM7pAay-EeG2v_RyaRlmvw" iD="_RM7pAKy-EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_xvnboKy_EeG2v_RyaRlmvw" iD="_xvm0kKy_EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_AfCdcazAEeG2v_RyaRlmvw" iD="_AfCdcKzAEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_BWMH4azAEeG2v_RyaRlmvw" iD="_BWMH4KzAEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_8I-msazAEeG2v_RyaRlmvw" iD="_8I-msKzAEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_WxcTEazBEeG2v_RyaRlmvw" iD="_WxcTEKzBEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_XY4tkazBEeG2v_RyaRlmvw" iD="_XY4tkKzBEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_rLkN4azBEeG2v_RyaRlmvw" iD="_rLkN4KzBEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_0vgpUazBEeG2v_RyaRlmvw" iD="_0vgpUKzBEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_9M9WwazBEeG2v_RyaRlmvw" iD="_9M9WwKzBEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_rM2x4azCEeG2v_RyaRlmvw" iD="_rM2x4KzCEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_wBTYUazCEeG2v_RyaRlmvw" iD="_wBTYUKzCEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_xUYJwazCEeG2v_RyaRlmvw" iD="_xUYJwKzCEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_AKPx0azDEeG2v_RyaRlmvw" iD="_AKPx0KzDEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_C4C00azDEeG2v_RyaRlmvw" iD="_C4C00KzDEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_fHTf4azDEeG2v_RyaRlmvw" iD="_fHTf4KzDEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_BLbQEazFEeG2v_RyaRlmvw" iD="_BLbQEKzFEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Bgdr8azFEeG2v_RyaRlmvw" iD="_Bgdr8KzFEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_DNX5sazFEeG2v_RyaRlmvw" iD="_DNX5sKzFEeG2v_RyaRlmvw" name="El huésped no pudo hacer checkin"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_eyXDQazGEeG2v_RyaRlmvw" iD="_eyXDQKzGEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_q9dRsazHEeG2v_RyaRlmvw" iD="_q9dRsKzHEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_rgyBMazHEeG2v_RyaRlmvw" iD="_rgyBMKzHEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_x9T_wKzHEeG2v_RyaRlmvw" iD="_x9TYsKzHEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_KFhV4azIEeG2v_RyaRlmvw" iD="_KFhV4KzIEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_MMfpcazIEeG2v_RyaRlmvw" iD="_MMfpcKzIEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Rp9-wazIEeG2v_RyaRlmvw" iD="_Rp9-wKzIEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_jR6lgazLEeG2v_RyaRlmvw" iD="_jR6lgKzLEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_ke-OgKzLEeG2v_RyaRlmvw" iD="_ke9ncKzLEeG2v_RyaRlmvw"/>
+  </pools>
+  <pools xmi:type="bpmn:Pool" xmi:id="_KCGDQaNYEeGlQtPXdUaXAA" iD="_KCGDQKNYEeGlQtPXdUaXAA" name="Sistema">
+    <artifacts xmi:type="bpmn:TextAnnotation" xmi:id="_tI3GwaNaEeGlQtPXdUaXAA" iD="_tI3GwKNaEeGlQtPXdUaXAA" name="Lapso para esperar reclamo"/>
+    <artifacts xmi:type="bpmn:TextAnnotation" xmi:id="_cVeecaw0EeGIwbXC8z56TA" iD="_cVeecKw0EeGIwbXC8z56TA" name="Definir tiempo de espera de respuesta del hospedaje"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_YKZv0aNaEeGlQtPXdUaXAA" iD="_YKZv0KNaEeGlQtPXdUaXAA" outgoingEdges="_qViDgaNaEeGlQtPXdUaXAA _8VWxoazHEeG2v_RyaRlmvw" incomingEdges="_Z-qyIazDEeG2v_RyaRlmvw" activityType="GatewayEventBasedExclusive" looping="false"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_qVfAMaNaEeGlQtPXdUaXAA" iD="_qVfAMKNaEeGlQtPXdUaXAA" outgoingEdges="_tJX0YaNrEeGlQtPXdUaXAA" incomingEdges="_qViDgaNaEeGlQtPXdUaXAA" name="N días" activityType="EventIntermediateTimer"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_EG36oaNbEeGlQtPXdUaXAA" iD="_EG36oKNbEeGlQtPXdUaXAA" outgoingEdges="_y0EWsazJEeG2v_RyaRlmvw" incomingEdges="_rV2cMazKEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_NwxEsaNpEeGlQtPXdUaXAA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_pc_nEaNcEeGlQtPXdUaXAA" iD="_pc_nEKNcEeGlQtPXdUaXAA" outgoingEdges="_pcbw8aNdEeGlQtPXdUaXAA" incomingEdges="_Ydic8azLEeG2v_RyaRlmvw" name="Se coloca en lista de observación al hospedaje" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_pcYGkaNdEeGlQtPXdUaXAA" iD="_pcYGkKNdEeGlQtPXdUaXAA" outgoingEdges="_VEDGsazNEeG2v_RyaRlmvw" incomingEdges="_pcbw8aNdEeGlQtPXdUaXAA _o5V1gaNeEeGlQtPXdUaXAA" name="Se invita al usuario a realizar calificaión/comentario del hospedaje" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_vNbfMaNdEeGlQtPXdUaXAA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_jSwngaNeEeGlQtPXdUaXAA" iD="_jSwngKNeEeGlQtPXdUaXAA" outgoingEdges="_o5V1gaNeEeGlQtPXdUaXAA" incomingEdges="_B_WtwazNEeG2v_RyaRlmvw" name="lapso después del checkout " activityType="EventIntermediateTimer"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_DNdBgaNqEeGlQtPXdUaXAA" iD="_DNdBgKNqEeGlQtPXdUaXAA" outgoingEdges="_TZ15kazLEeG2v_RyaRlmvw" incomingEdges="_Ec7q0azKEeG2v_RyaRlmvw" name="Notifica al hospedaje que la reservación fue cancelada" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_M6tJ8aNqEeGlQtPXdUaXAA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:SubProcess" xmi:id="_tJRtwaNrEeGlQtPXdUaXAA" iD="_tJRtwKNrEeGlQtPXdUaXAA" outgoingEdges="_79TEsazMEeG2v_RyaRlmvw" incomingEdges="_tJX0YaNrEeGlQtPXdUaXAA" name="Enviar pago a hospedaje y cobrar comisión" activityType="SubProcess"/>
+    <vertices xmi:type="bpmn:SubProcess" xmi:id="_k_1aEaNuEeGlQtPXdUaXAA" iD="_k_1aEKNuEeGlQtPXdUaXAA" outgoingEdges="_58xVMay9EeG2v_RyaRlmvw" incomingEdges="_c69p0aQgEeGOsplfjneHuA" name="Procesamiento de bloqueo por punto de venta electrónico">
+      <vertices xmi:type="bpmn:Activity" xmi:id="_k_2BIaNuEeGlQtPXdUaXAA" iD="_k_2BIKNuEeGlQtPXdUaXAA" outgoingEdges="_GBO-caNvEeGlQtPXdUaXAA" incomingEdges="_3EZLsaNuEeGlQtPXdUaXAA" name="Procesar bloqueo del pago"/>
+      <vertices xmi:type="bpmn:Activity" xmi:id="_1_GXkaNuEeGlQtPXdUaXAA" iD="_1_GXkKNuEeGlQtPXdUaXAA" outgoingEdges="_3EZLsaNuEeGlQtPXdUaXAA" activityType="EventStartEmpty"/>
+      <vertices xmi:type="bpmn:Activity" xmi:id="_GBL7IaNvEeGlQtPXdUaXAA" iD="_GBL7IKNvEeGlQtPXdUaXAA" outgoingEdges="_f8KPYKNvEeGlQtPXdUaXAA" incomingEdges="_GBO-caNvEeGlQtPXdUaXAA" name="Enviar resultado del procesamiento del pago por TDC/TDD" activityType="Task"/>
+      <vertices xmi:type="bpmn:Activity" xmi:id="_f8HMEaNvEeGlQtPXdUaXAA" iD="_f8HMEKNvEeGlQtPXdUaXAA" incomingEdges="_f8KPYKNvEeGlQtPXdUaXAA" activityType="EventEndEmpty"/>
+      <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_3EZLsaNuEeGlQtPXdUaXAA" iD="_3EZLsKNuEeGlQtPXdUaXAA"/>
+      <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_GBO-caNvEeGlQtPXdUaXAA" iD="_GBO-cKNvEeGlQtPXdUaXAA"/>
+      <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_f8KPYKNvEeGlQtPXdUaXAA" iD="_f8JoUKNvEeGlQtPXdUaXAA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_BC3XAaQfEeGOsplfjneHuA" iD="_BC3XAKQfEeGOsplfjneHuA" outgoingEdges="_Q27CYawyEeGIwbXC8z56TA" activityType="EventStartMessage" looping="false">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_0yi8MawyEeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_CyloMaQfEeGOsplfjneHuA" iD="_CyloMKQfEeGOsplfjneHuA" outgoingEdges="_MjOb0aQfEeGOsplfjneHuA" incomingEdges="_A1ZDAawzEeGIwbXC8z56TA _45_NEay-EeG2v_RyaRlmvw" name="Verificar tipo de pago" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_MjL_kaQfEeGOsplfjneHuA" iD="_MjL_kKQfEeGOsplfjneHuA" outgoingEdges="_c69p0aQgEeGOsplfjneHuA _Cg5ikawzEeGIwbXC8z56TA" incomingEdges="_MjOb0aQfEeGOsplfjneHuA" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_1wagcaQgEeGOsplfjneHuA" iD="_1wagcKQgEeGOsplfjneHuA" outgoingEdges="_V56zgaQhEeGOsplfjneHuA" incomingEdges="_E3kfAawzEeGIwbXC8z56TA" name="Verificar si es del mismo banco" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_V53JIaQhEeGOsplfjneHuA" iD="_V53JIKQhEeGOsplfjneHuA" outgoingEdges="_WzZZMaQhEeGOsplfjneHuA _aVHMcaQhEeGOsplfjneHuA" incomingEdges="_V56zgaQhEeGOsplfjneHuA" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_WzWV4aQhEeGOsplfjneHuA" iD="_WzWV4KQhEeGOsplfjneHuA" outgoingEdges="_AO51Uaw0EeGIwbXC8z56TA" incomingEdges="_WzZZMaQhEeGOsplfjneHuA _f-hsAaQhEeGOsplfjneHuA" name="Enviar notificación a administrador para verificar pago" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_F3h4gaQiEeGOsplfjneHuA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_aVEJIaQhEeGOsplfjneHuA" iD="_aVEJIKQhEeGOsplfjneHuA" outgoingEdges="_f-hsAaQhEeGOsplfjneHuA" incomingEdges="_aVHMcaQhEeGOsplfjneHuA" name="1,5 días hábiles" activityType="EventIntermediateTimer"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_2wd9UaQiEeGOsplfjneHuA" iD="_2wd9UKQiEeGOsplfjneHuA" outgoingEdges="_HMyI0ay1EeG2v_RyaRlmvw" incomingEdges="_AO51Uaw0EeGIwbXC8z56TA" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_8XYigaQiEeGOsplfjneHuA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_DPWf4aQjEeGOsplfjneHuA" iD="_DPWf4KQjEeGOsplfjneHuA" outgoingEdges="_z7E8say2EeG2v_RyaRlmvw _D_9UkazCEeG2v_RyaRlmvw" incomingEdges="_rFYj0ay1EeG2v_RyaRlmvw" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_6nvUYaQjEeGOsplfjneHuA" iD="_6nvUYKQjEeGOsplfjneHuA" outgoingEdges="_Bh0KkaQkEeGOsplfjneHuA" incomingEdges="_HgQLgazCEeG2v_RyaRlmvw" name="Bloquear reservación por N horas" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_BhxHQaQkEeGOsplfjneHuA" iD="_BhxHQKQkEeGOsplfjneHuA" outgoingEdges="_rCOzEay-EeG2v_RyaRlmvw" incomingEdges="_Bh0KkaQkEeGOsplfjneHuA" name="Enviar notificación de pago fallido a usuario" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_L8za4ay4EeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Bv27saQmEeGOsplfjneHuA" iD="_Bv27sKQmEeGOsplfjneHuA" outgoingEdges="_Z-qyIazDEeG2v_RyaRlmvw" incomingEdges="_XUHYwKy1EeG2v_RyaRlmvw" name="Se envía notificación al usuario informando que la  reservación ha sido confirmada" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_cz2GcaQmEeGOsplfjneHuA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Q23YAawyEeGIwbXC8z56TA" iD="_Q23YAKwyEeGIwbXC8z56TA" outgoingEdges="_A1ZDAawzEeGIwbXC8z56TA _X0e08KwzEeGIwbXC8z56TA" incomingEdges="_Q27CYawyEeGIwbXC8z56TA" activityType="GatewayParallel"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Cg2fQawzEeGIwbXC8z56TA" iD="_Cg2fQKwzEeGIwbXC8z56TA" outgoingEdges="_E3kfAawzEeGIwbXC8z56TA" incomingEdges="_Cg5ikawzEeGIwbXC8z56TA" name="Notificar que el pago está siendo verificado" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_UxiBUawzEeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_X0bKkawzEeGIwbXC8z56TA" iD="_X0bKkKwzEeGIwbXC8z56TA" outgoingEdges="_WhdRYaw0EeGIwbXC8z56TA" incomingEdges="_X0e08KwzEeGIwbXC8z56TA" name="Enviar solicitud de confirmación de la habitación/oferta al hospedaje" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_kk7ooawzEeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_vd6kYawzEeGIwbXC8z56TA" iD="_vd6kYKwzEeGIwbXC8z56TA" outgoingEdges="_wH8Y0awzEeGIwbXC8z56TA" incomingEdges="_W_Yjgaw0EeGIwbXC8z56TA" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_7bwPYawzEeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_wH5VgKwzEeGIwbXC8z56TA" iD="_wH4ucKwzEeGIwbXC8z56TA" outgoingEdges="_BoaAoay9EeG2v_RyaRlmvw" incomingEdges="_wH8Y0awzEeGIwbXC8z56TA" name="Recibir confirmación de si tiene  disponibilidad de habitación/oferta" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_WhYY4aw0EeGIwbXC8z56TA" iD="_WhYY4Kw0EeGIwbXC8z56TA" outgoingEdges="_W_Yjgaw0EeGIwbXC8z56TA _Y8l3Eaw0EeGIwbXC8z56TA _1Q4DQay8EeG2v_RyaRlmvw" incomingEdges="_WhdRYaw0EeGIwbXC8z56TA" activityType="GatewayEventBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Y8izwaw0EeGIwbXC8z56TA" iD="_Y8izwKw0EeGIwbXC8z56TA" outgoingEdges="_JMahcay5EeG2v_RyaRlmvw" incomingEdges="_Y8l3Eaw0EeGIwbXC8z56TA" name="N días" activityType="EventIntermediateTimer"/>
+    <vertices xmi:type="bpmn:SubProcess" xmi:id="_xhABAaw0EeGIwbXC8z56TA" iD="_xhABAKw0EeGIwbXC8z56TA" outgoingEdges="_PBXU4ay0EeG2v_RyaRlmvw" incomingEdges="_Ck-6cay5EeG2v_RyaRlmvw" name="Proceso para reversar pago" activityType="SubProcess"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_nBSO8aw2EeGIwbXC8z56TA" iD="_nBSO8Kw2EeGIwbXC8z56TA" outgoingEdges="_Ck-6cay5EeG2v_RyaRlmvw" incomingEdges="_-zlscay4EeG2v_RyaRlmvw _Zh7-Yay5EeG2v_RyaRlmvw" name="Cancelar solicitud de reservación" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_OVGzoaw3EeGIwbXC8z56TA" iD="_OVGzoKw3EeGIwbXC8z56TA" outgoingEdges="_N8BrMay5EeG2v_RyaRlmvw" incomingEdges="_JMahcay5EeG2v_RyaRlmvw" name="Notificar al usuario que el hospedaje no confirmó la reservación y que por tanto será cancelada" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_aBe7Maw3EeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_PBR1Uay0EeG2v_RyaRlmvw" iD="_PBR1UKy0EeG2v_RyaRlmvw" incomingEdges="_PBXU4ay0EeG2v_RyaRlmvw" activityType="EventEndEmpty" looping="false"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_upRWway0EeG2v_RyaRlmvw" iD="_upRWwKy0EeG2v_RyaRlmvw" outgoingEdges="_XUHYwKy1EeG2v_RyaRlmvw" incomingEdges="_z7E8say2EeG2v_RyaRlmvw _BoaAoay9EeG2v_RyaRlmvw _58xVMay9EeG2v_RyaRlmvw" activityType="GatewayParallel"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_HMvFgay1EeG2v_RyaRlmvw" iD="_HMvFgKy1EeG2v_RyaRlmvw" outgoingEdges="_rFYj0ay1EeG2v_RyaRlmvw" incomingEdges="_HMyI0ay1EeG2v_RyaRlmvw" name="Recibir notificación de verificación de pago" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_g8EqIay4EeG2v_RyaRlmvw" iD="_g8EqIKy4EeG2v_RyaRlmvw" outgoingEdges="_-zlscay4EeG2v_RyaRlmvw" incomingEdges="__py-4ay8EeG2v_RyaRlmvw" name="Notificar al usuario que el hospedaje no tiene disponibilidad" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_gHrpsKzBEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_N7-A0ay5EeG2v_RyaRlmvw" iD="_N7-A0Ky5EeG2v_RyaRlmvw" outgoingEdges="_Zh7-Yay5EeG2v_RyaRlmvw" incomingEdges="_N8BrMay5EeG2v_RyaRlmvw" name="Notificar al hospedaje que la confirmación fue cancelada porque no respondió a la solicitud" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_fWc94ay9EeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_1Q0Y4ay8EeG2v_RyaRlmvw" iD="_1Q0Y4Ky8EeG2v_RyaRlmvw" outgoingEdges="_2sCZsay8EeG2v_RyaRlmvw" incomingEdges="_1Q4DQay8EeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_NRKzgay9EeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_2r_WYay8EeG2v_RyaRlmvw" iD="_2r_WYKy8EeG2v_RyaRlmvw" outgoingEdges="__py-4ay8EeG2v_RyaRlmvw" incomingEdges="_2sCZsay8EeG2v_RyaRlmvw" name="Recibir notificación del hospedaje indicando que no tiene disponibilidad" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_rCLvway-EeG2v_RyaRlmvw" iD="_rCLvwKy-EeG2v_RyaRlmvw" outgoingEdges="_xZlWsay-EeG2v_RyaRlmvw _WslTIay_EeG2v_RyaRlmvw" incomingEdges="_rCOzEay-EeG2v_RyaRlmvw" activityType="GatewayEventBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_xZiTYay-EeG2v_RyaRlmvw" iD="_xZiTYKy-EeG2v_RyaRlmvw" outgoingEdges="_zwlqUay-EeG2v_RyaRlmvw" incomingEdges="_xZlWsay-EeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_UUVCUay_EeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_zwinAay-EeG2v_RyaRlmvw" iD="_zwinAKy-EeG2v_RyaRlmvw" outgoingEdges="_45_NEay-EeG2v_RyaRlmvw" incomingEdges="_zwlqUay-EeG2v_RyaRlmvw" name="Recibir segundo registro de pago" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_WsiP0ay_EeG2v_RyaRlmvw" iD="_WsiP0Ky_EeG2v_RyaRlmvw" outgoingEdges="_YihhEay_EeG2v_RyaRlmvw" incomingEdges="_WslTIay_EeG2v_RyaRlmvw" name="N horas" activityType="EventIntermediateTimer"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Yiedway_EeG2v_RyaRlmvw" iD="_YiedwKy_EeG2v_RyaRlmvw" outgoingEdges="_cJkgQay_EeG2v_RyaRlmvw" incomingEdges="_YihhEay_EeG2v_RyaRlmvw _NSlWgazCEeG2v_RyaRlmvw" name="Cancelar reservación" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_cJg14ay_EeG2v_RyaRlmvw" iD="_cJg14Ky_EeG2v_RyaRlmvw" outgoingEdges="_fVlJQay_EeG2v_RyaRlmvw" incomingEdges="_cJkgQay_EeG2v_RyaRlmvw" name="Notificar al usuario que su reservación fue cancelada porque el pago no pudo ser verificado" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_e7Cs4azAEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_fViF8ay_EeG2v_RyaRlmvw" iD="_fViF8Ky_EeG2v_RyaRlmvw" outgoingEdges="_MJcHsKzDEeG2v_RyaRlmvw" incomingEdges="_fVlJQay_EeG2v_RyaRlmvw" name="Notificar al hospedaje que la reservación fue cancelada por falta de pago" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_3fLxEazAEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_D_6RQazCEeG2v_RyaRlmvw" iD="_D_6RQKzCEeG2v_RyaRlmvw" outgoingEdges="_HgQLgazCEeG2v_RyaRlmvw _NSlWgazCEeG2v_RyaRlmvw" incomingEdges="_D_9UkazCEeG2v_RyaRlmvw" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_MJZEYazDEeG2v_RyaRlmvw" iD="_MJZEYKzDEeG2v_RyaRlmvw" incomingEdges="_MJcHsKzDEeG2v_RyaRlmvw" activityType="EventEndEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_X5_n0azHEeG2v_RyaRlmvw" iD="_X5_n0KzHEeG2v_RyaRlmvw" outgoingEdges="_Ec7q0azKEeG2v_RyaRlmvw" incomingEdges="_y0EWsazJEeG2v_RyaRlmvw" name="Recibir notificación indicando que la reservación fue cancelada " activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_8VTuUazHEeG2v_RyaRlmvw" iD="_8VTuUKzHEeG2v_RyaRlmvw" outgoingEdges="_9r-mUazHEeG2v_RyaRlmvw" incomingEdges="_8VWxoazHEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_FSLisazIEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_9r678azHEeG2v_RyaRlmvw" iD="_9r678KzHEeG2v_RyaRlmvw" outgoingEdges="_XWGbIazIEeG2v_RyaRlmvw" incomingEdges="_9r-mUazHEeG2v_RyaRlmvw" name="Recibir notificación de reclamo" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_XWDX0azIEeG2v_RyaRlmvw" iD="_XWDX0KzIEeG2v_RyaRlmvw" outgoingEdges="_cC-Z8azIEeG2v_RyaRlmvw" incomingEdges="_XWGbIazIEeG2v_RyaRlmvw" name="Notificar al usuario que se ha recibido el reclamo" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_kvdB4azIEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_cC6vkazIEeG2v_RyaRlmvw" iD="_cC6vkKzIEeG2v_RyaRlmvw" outgoingEdges="_gENv4azKEeG2v_RyaRlmvw" incomingEdges="_cC-Z8azIEeG2v_RyaRlmvw" name="Notificar al hospedaje del reclamo" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_HPdSQazJEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_gEI3YazKEeG2v_RyaRlmvw" iD="_gEI3YKzKEeG2v_RyaRlmvw" outgoingEdges="_rV2cMazKEeG2v_RyaRlmvw _vSPj0azLEeG2v_RyaRlmvw" incomingEdges="_gENv4azKEeG2v_RyaRlmvw" activityType="GatewayEventBasedExclusive"/>
+    <vertices xmi:type="bpmn:SubProcess" xmi:id="_TZhwgazLEeG2v_RyaRlmvw" iD="_TZhwgKzLEeG2v_RyaRlmvw" outgoingEdges="_Ydic8azLEeG2v_RyaRlmvw" incomingEdges="_TZ15kazLEeG2v_RyaRlmvw" name="Proceso reversar pago y comisión" activityType="SubProcess"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_vSKEQazLEeG2v_RyaRlmvw" iD="_vSKEQKzLEeG2v_RyaRlmvw" outgoingEdges="_x53tYazLEeG2v_RyaRlmvw" incomingEdges="_vSPj0azLEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_xPcQUazLEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_x51RIazLEeG2v_RyaRlmvw" iD="_x51RIKzLEeG2v_RyaRlmvw" outgoingEdges="_04yVkazLEeG2v_RyaRlmvw" incomingEdges="_x53tYazLEeG2v_RyaRlmvw" name="Recibir notificación indicando que el reclamo no es válido" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_04urMazLEeG2v_RyaRlmvw" iD="_04urMKzLEeG2v_RyaRlmvw" outgoingEdges="_HJLjwazMEeG2v_RyaRlmvw" incomingEdges="_04yVkazLEeG2v_RyaRlmvw" name="Notificar al usuario que el reclamo no es válido" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_5uI68azLEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_HJH5YazMEeG2v_RyaRlmvw" iD="_HJH5YKzMEeG2v_RyaRlmvw" incomingEdges="_HJLjwazMEeG2v_RyaRlmvw" name="Notificar al hospedaje que el reclamo no es válido" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_QG-lMazMEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_79QBYazMEeG2v_RyaRlmvw" iD="_79QBYKzMEeG2v_RyaRlmvw" outgoingEdges="_B_WtwazNEeG2v_RyaRlmvw" incomingEdges="_79TEsazMEeG2v_RyaRlmvw" name="Notificar al hospedaje que se le ha depositado su pago" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_L2ZrYKzNEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_VEADYazNEeG2v_RyaRlmvw" iD="_VEADYKzNEeG2v_RyaRlmvw" incomingEdges="_VEDGsazNEeG2v_RyaRlmvw" activityType="EventEndTerminate"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_qViDgaNaEeGlQtPXdUaXAA" iD="_qViDgKNaEeGlQtPXdUaXAA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_pcbw8aNdEeGlQtPXdUaXAA" iD="_pcbw8KNdEeGlQtPXdUaXAA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_o5V1gaNeEeGlQtPXdUaXAA" iD="_o5V1gKNeEeGlQtPXdUaXAA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_tJX0YaNrEeGlQtPXdUaXAA" iD="_tJX0YKNrEeGlQtPXdUaXAA" name="No se recibió reclamo"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_MjOb0aQfEeGOsplfjneHuA" iD="_MjOb0KQfEeGOsplfjneHuA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_c69p0aQgEeGOsplfjneHuA" iD="_c69p0KQgEeGOsplfjneHuA" name="TDC/TDD"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_V56zgaQhEeGOsplfjneHuA" iD="_V56zgKQhEeGOsplfjneHuA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_WzZZMaQhEeGOsplfjneHuA" iD="_WzZZMKQhEeGOsplfjneHuA" name="Es del mismo banco"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_aVHMcaQhEeGOsplfjneHuA" iD="_aVHMcKQhEeGOsplfjneHuA" name="Otros bancos"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_f-hsAaQhEeGOsplfjneHuA" iD="_f-hsAKQhEeGOsplfjneHuA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Bh0KkaQkEeGOsplfjneHuA" iD="_Bh0KkKQkEeGOsplfjneHuA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Q27CYawyEeGIwbXC8z56TA" iD="_Q27CYKwyEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_A1ZDAawzEeGIwbXC8z56TA" iD="_A1ZDAKwzEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Cg5ikawzEeGIwbXC8z56TA" iD="_Cg5ikKwzEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_E3kfAawzEeGIwbXC8z56TA" iD="_E3kfAKwzEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_X0e08KwzEeGIwbXC8z56TA" iD="_X0eN4KwzEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_wH8Y0awzEeGIwbXC8z56TA" iD="_wH8Y0KwzEeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_AO51Uaw0EeGIwbXC8z56TA" iD="_AO51UKw0EeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_WhdRYaw0EeGIwbXC8z56TA" iD="_WhdRYKw0EeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_W_Yjgaw0EeGIwbXC8z56TA" iD="_W_YjgKw0EeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Y8l3Eaw0EeGIwbXC8z56TA" iD="_Y8l3EKw0EeGIwbXC8z56TA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_PBXU4ay0EeG2v_RyaRlmvw" iD="_PBXU4Ky0EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_HMyI0ay1EeG2v_RyaRlmvw" iD="_HMyI0Ky1EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_XUHYwKy1EeG2v_RyaRlmvw" iD="_XUGxsKy1EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_rFYj0ay1EeG2v_RyaRlmvw" iD="_rFYj0Ky1EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_z7E8say2EeG2v_RyaRlmvw" iD="_z7E8sKy2EeG2v_RyaRlmvw" name="Pago verificado"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_-zlscay4EeG2v_RyaRlmvw" iD="_-zlscKy4EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Ck-6cay5EeG2v_RyaRlmvw" iD="_Ck-6cKy5EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_JMahcay5EeG2v_RyaRlmvw" iD="_JMahcKy5EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_N8BrMay5EeG2v_RyaRlmvw" iD="_N8BrMKy5EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Zh7-Yay5EeG2v_RyaRlmvw" iD="_Zh7-YKy5EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_1Q4DQay8EeG2v_RyaRlmvw" iD="_1Q4DQKy8EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_2sCZsay8EeG2v_RyaRlmvw" iD="_2sCZsKy8EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="__py-4ay8EeG2v_RyaRlmvw" iD="__py-4Ky8EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_BoaAoay9EeG2v_RyaRlmvw" iD="_BoaAoKy9EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_58xVMay9EeG2v_RyaRlmvw" iD="_58xVMKy9EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_rCOzEay-EeG2v_RyaRlmvw" iD="_rCOzEKy-EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_xZlWsay-EeG2v_RyaRlmvw" iD="_xZlWsKy-EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_zwlqUay-EeG2v_RyaRlmvw" iD="_zwlqUKy-EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_45_NEay-EeG2v_RyaRlmvw" iD="_45_NEKy-EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_WslTIay_EeG2v_RyaRlmvw" iD="_WslTIKy_EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_YihhEay_EeG2v_RyaRlmvw" iD="_YihhEKy_EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_cJkgQay_EeG2v_RyaRlmvw" iD="_cJkgQKy_EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_fVlJQay_EeG2v_RyaRlmvw" iD="_fVlJQKy_EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_D_9UkazCEeG2v_RyaRlmvw" iD="_D_9UkKzCEeG2v_RyaRlmvw" name="El pago no pudo ser verificado"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_HgQLgazCEeG2v_RyaRlmvw" iD="_HgQLgKzCEeG2v_RyaRlmvw" name="Es primer intento de pago "/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_NSlWgazCEeG2v_RyaRlmvw" iD="_NSlWgKzCEeG2v_RyaRlmvw" name="Es segundo intento de pago"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_MJcHsKzDEeG2v_RyaRlmvw" iD="_MJbgoKzDEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Z-qyIazDEeG2v_RyaRlmvw" iD="_Z-qyIKzDEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_8VWxoazHEeG2v_RyaRlmvw" iD="_8VWxoKzHEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_9r-mUazHEeG2v_RyaRlmvw" iD="_9r-mUKzHEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_XWGbIazIEeG2v_RyaRlmvw" iD="_XWGbIKzIEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_cC-Z8azIEeG2v_RyaRlmvw" iD="_cC-Z8KzIEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_y0EWsazJEeG2v_RyaRlmvw" iD="_y0EWsKzJEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Ec7q0azKEeG2v_RyaRlmvw" iD="_Ec7q0KzKEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_gENv4azKEeG2v_RyaRlmvw" iD="_gENv4KzKEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_rV2cMazKEeG2v_RyaRlmvw" iD="_rV2cMKzKEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_TZ15kazLEeG2v_RyaRlmvw" iD="_TZ15kKzLEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Ydic8azLEeG2v_RyaRlmvw" iD="_Ydic8KzLEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_vSPj0azLEeG2v_RyaRlmvw" iD="_vSPj0KzLEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_x53tYazLEeG2v_RyaRlmvw" iD="_x53tYKzLEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_04yVkazLEeG2v_RyaRlmvw" iD="_04yVkKzLEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_HJLjwazMEeG2v_RyaRlmvw" iD="_HJLjwKzMEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_79TEsazMEeG2v_RyaRlmvw" iD="_79TEsKzMEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_B_WtwazNEeG2v_RyaRlmvw" iD="_B_WtwKzNEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_VEDGsazNEeG2v_RyaRlmvw" iD="_VEDGsKzNEeG2v_RyaRlmvw"/>
+  </pools>
+  <pools xmi:type="bpmn:Pool" xmi:id="_Lr2H8aNbEeGlQtPXdUaXAA" iD="_Lr2H8KNbEeGlQtPXdUaXAA" name="Administrador">
+    <vertices xmi:type="bpmn:Activity" xmi:id="_1YNRUaNbEeGlQtPXdUaXAA" iD="_1YNRUKNbEeGlQtPXdUaXAA" outgoingEdges="_CogxwazIEeG2v_RyaRlmvw" incomingEdges="_ePNIUazFEeG2v_RyaRlmvw" name="Recibir reclamo "/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_3M4oEaNoEeGlQtPXdUaXAA" iD="_3M4oEKNoEeGlQtPXdUaXAA" outgoingEdges="_0C79kazJEeG2v_RyaRlmvw _3UrbIazJEeG2v_RyaRlmvw" incomingEdges="_ssLXgaNqEeGlQtPXdUaXAA" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_4OGNcaNoEeGlQtPXdUaXAA" iD="_4OGNcKNoEeGlQtPXdUaXAA" outgoingEdges="_XnO1IazNEeG2v_RyaRlmvw" incomingEdges="_CP2IMazKEeG2v_RyaRlmvw" name="Notificar al hospedaje que la reservación fue cancelada" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_NwxEsaNpEeGlQtPXdUaXAA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:SubProcess" xmi:id="_r94HEaNqEeGlQtPXdUaXAA" iD="_r94HEKNqEeGlQtPXdUaXAA" outgoingEdges="_ssLXgaNqEeGlQtPXdUaXAA" incomingEdges="_DA-8IKzIEeG2v_RyaRlmvw" name="Procesar el reclamo" activityType="SubProcess"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_F3eOIaQiEeGOsplfjneHuA" iD="_F3eOIKQiEeGOsplfjneHuA" outgoingEdges="_KVxlcaQiEeGOsplfjneHuA" activityType="EventStartMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_F3h4gaQiEeGOsplfjneHuA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_KVt7EaQiEeGOsplfjneHuA" iD="_KVt7EKQiEeGOsplfjneHuA" outgoingEdges="_4JlsYaQiEeGOsplfjneHuA" incomingEdges="_KVxlcaQiEeGOsplfjneHuA" name="Verificar el pago por transferencia en la cuenta bancaria" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_nbpIYaQiEeGOsplfjneHuA" iD="_nbpIYKQiEeGOsplfjneHuA" incomingEdges="_4JlsYaQiEeGOsplfjneHuA" name="Enviar notificación de confirmación o ausencia del pago" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_8XYigaQiEeGOsplfjneHuA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_dueZ0azFEeG2v_RyaRlmvw" iD="_dueZ0KzFEeG2v_RyaRlmvw" outgoingEdges="_ePNIUazFEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_duhdIazFEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_wj8OgazGEeG2v_RyaRlmvw" iD="_wj8OgKzGEeG2v_RyaRlmvw" outgoingEdges="_MKIVIazMEeG2v_RyaRlmvw" incomingEdges="_3UrbIazJEeG2v_RyaRlmvw" name="Notificar al usuario y hospedaje que el reclamo no es válido" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_xPcQUazLEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Cob5QazIEeG2v_RyaRlmvw" iD="_Cob5QKzIEeG2v_RyaRlmvw" outgoingEdges="_DA-8IKzIEeG2v_RyaRlmvw" incomingEdges="_CogxwazIEeG2v_RyaRlmvw" name="Notificar que se ha recibido el reclamo" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_FSLisazIEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_0C4TMazJEeG2v_RyaRlmvw" iD="_0C4TMKzJEeG2v_RyaRlmvw" outgoingEdges="_CP2IMazKEeG2v_RyaRlmvw" incomingEdges="_0C79kazJEeG2v_RyaRlmvw" name="Cancelar la reservación manualmente" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_GLLf4azLEeG2v_RyaRlmvw" iD="_GLLf4KzLEeG2v_RyaRlmvw" incomingEdges="_MKIVIazMEeG2v_RyaRlmvw" activityType="EventEndEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_XnMY4azNEeG2v_RyaRlmvw" iD="_XnMY4KzNEeG2v_RyaRlmvw" incomingEdges="_XnO1IazNEeG2v_RyaRlmvw" activityType="EventEndEmpty"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_ssLXgaNqEeGlQtPXdUaXAA" iD="_ssLXgKNqEeGlQtPXdUaXAA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_KVxlcaQiEeGOsplfjneHuA" iD="_KVxlcKQiEeGOsplfjneHuA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_4JlsYaQiEeGOsplfjneHuA" iD="_4JlsYKQiEeGOsplfjneHuA"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_ePNIUazFEeG2v_RyaRlmvw" iD="_ePNIUKzFEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_CogxwazIEeG2v_RyaRlmvw" iD="_CogxwKzIEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_DA-8IKzIEeG2v_RyaRlmvw" iD="_DA-VEKzIEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_0C79kazJEeG2v_RyaRlmvw" iD="_0C79kKzJEeG2v_RyaRlmvw" name="El reclamo es válido"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_3UrbIazJEeG2v_RyaRlmvw" iD="_3UrbIKzJEeG2v_RyaRlmvw" name="El reclamo no es válido"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_CP2IMazKEeG2v_RyaRlmvw" iD="_CP2IMKzKEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_MKIVIazMEeG2v_RyaRlmvw" iD="_MKIVIKzMEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_XnO1IazNEeG2v_RyaRlmvw" iD="_XnO1IKzNEeG2v_RyaRlmvw"/>
+  </pools>
+  <pools xmi:type="bpmn:Pool" xmi:id="_G1SE0aNfEeGlQtPXdUaXAA" iD="_G1SE0KNfEeGlQtPXdUaXAA" name="Hospedaje">
+    <vertices xmi:type="bpmn:Activity" xmi:id="_dFxrYaNfEeGlQtPXdUaXAA" iD="_dFxrYKNfEeGlQtPXdUaXAA" outgoingEdges="_v0urAay5EeG2v_RyaRlmvw" activityType="EventStartMessage" looping="false">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_kk7ooawzEeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_4HRi0aNfEeGlQtPXdUaXAA" iD="_4HRi0KNfEeGlQtPXdUaXAA" outgoingEdges="_tedFQay7EeG2v_RyaRlmvw" incomingEdges="_-cEu4ay5EeG2v_RyaRlmvw" name="Responde confirmación indicando que está confirmada disponibilidad" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_7bwPYawzEeGIwbXC8z56TA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_M6qGoaNqEeGlQtPXdUaXAA" iD="_M6qGoKNqEeGlQtPXdUaXAA" outgoingEdges="_KLabIazLEeG2v_RyaRlmvw" incomingEdges="_I_y8kazLEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_M6tJ8aNqEeGlQtPXdUaXAA"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_uF1gQay5EeG2v_RyaRlmvw" iD="_uF1gQKy5EeG2v_RyaRlmvw" outgoingEdges="_9sV7Eay5EeG2v_RyaRlmvw _-cEu4ay5EeG2v_RyaRlmvw _Fxlcgay9EeG2v_RyaRlmvw" incomingEdges="_yYIb4ay5EeG2v_RyaRlmvw" activityType="GatewayDataBasedExclusive" looping="false"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_v0rAoay5EeG2v_RyaRlmvw" iD="_v0rAoKy5EeG2v_RyaRlmvw" outgoingEdges="_yYIb4ay5EeG2v_RyaRlmvw" incomingEdges="_v0urAay5EeG2v_RyaRlmvw" name="Recibir notificación de solicitud de confirmación" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_9sS3way5EeG2v_RyaRlmvw" iD="_9sS3wKy5EeG2v_RyaRlmvw" outgoingEdges="_S-FaYKy6EeG2v_RyaRlmvw" incomingEdges="_9sV7Eay5EeG2v_RyaRlmvw" name="N días " activityType="EventIntermediateTimer"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_S-CXEKy6EeG2v_RyaRlmvw" iD="_S-BwAKy6EeG2v_RyaRlmvw" outgoingEdges="_h_990ay9EeG2v_RyaRlmvw" incomingEdges="_S-FaYKy6EeG2v_RyaRlmvw" activityType="EventIntermediateMessage" looping="false">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_fWc94ay9EeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_teVwgay7EeG2v_RyaRlmvw" iD="_teVwgKy7EeG2v_RyaRlmvw" outgoingEdges="_k6iKIazAEeG2v_RyaRlmvw _7oq1UazIEeG2v_RyaRlmvw _ggRH0azMEeG2v_RyaRlmvw" incomingEdges="_tedFQay7EeG2v_RyaRlmvw" activityType="GatewayEventBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_FxiZMay9EeG2v_RyaRlmvw" iD="_FxiZMKy9EeG2v_RyaRlmvw" incomingEdges="_Fxlcgay9EeG2v_RyaRlmvw" name="Responde confirmación indicando que no tiene disponipilidad" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_NRKzgay9EeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_h_6Tcay9EeG2v_RyaRlmvw" iD="_h_6TcKy9EeG2v_RyaRlmvw" outgoingEdges="_n-o7say9EeG2v_RyaRlmvw" incomingEdges="_h_990ay9EeG2v_RyaRlmvw" name="Recibir notificación indicando que la reservación fue cancelada porque no respondió en el tiempo previsto a la solicitud" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_n-l4Yay9EeG2v_RyaRlmvw" iD="_n-l4YKy9EeG2v_RyaRlmvw" incomingEdges="_n-o7say9EeG2v_RyaRlmvw" activityType="EventEndEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_k6fG0KzAEeG2v_RyaRlmvw" iD="_k6efwKzAEeG2v_RyaRlmvw" outgoingEdges="_wv-HEazAEeG2v_RyaRlmvw" incomingEdges="_k6iKIazAEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_3fLxEazAEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_wv7DwazAEeG2v_RyaRlmvw" iD="_wv7DwKzAEeG2v_RyaRlmvw" outgoingEdges="_H5K3QazBEeG2v_RyaRlmvw" incomingEdges="_wv-HEazAEeG2v_RyaRlmvw" name="Recibir notificación indicando que la reservación fue cancelada por falta de pago por parte del usuario" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_H5IbAazBEeG2v_RyaRlmvw" iD="_H5IbAKzBEeG2v_RyaRlmvw" incomingEdges="_H5K3QazBEeG2v_RyaRlmvw" activityType="EventEndEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_7onyAazIEeG2v_RyaRlmvw" iD="_7onyAKzIEeG2v_RyaRlmvw" outgoingEdges="_CDwpcazJEeG2v_RyaRlmvw" incomingEdges="_7oq1UazIEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_HPdSQazJEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_CDtmIazJEeG2v_RyaRlmvw" iD="_CDtmIKzJEeG2v_RyaRlmvw" outgoingEdges="_YMSm0azJEeG2v_RyaRlmvw" incomingEdges="_CDwpcazJEeG2v_RyaRlmvw" name="Recibir notificación indicando que el usuario hizo un reclamo" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_YMOVYazJEeG2v_RyaRlmvw" iD="_YMOVYKzJEeG2v_RyaRlmvw" outgoingEdges="_aH3isazJEeG2v_RyaRlmvw _I_y8kazLEeG2v_RyaRlmvw" incomingEdges="_YMSm0azJEeG2v_RyaRlmvw" activityType="GatewayEventBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_aH0fYazJEeG2v_RyaRlmvw" iD="_aH0fYKzJEeG2v_RyaRlmvw" outgoingEdges="_b9K3cazJEeG2v_RyaRlmvw" incomingEdges="_aH3isazJEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_QG-lMazMEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_b9H0IazJEeG2v_RyaRlmvw" iD="_b9H0IKzJEeG2v_RyaRlmvw" outgoingEdges="_24ZAYazMEeG2v_RyaRlmvw" incomingEdges="_b9K3cazJEeG2v_RyaRlmvw" name="Recibir notificación de que el reclamo no es válido" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_KLXX0azLEeG2v_RyaRlmvw" iD="_KLXX0KzLEeG2v_RyaRlmvw" outgoingEdges="_XJpWsazMEeG2v_RyaRlmvw" incomingEdges="_KLabIazLEeG2v_RyaRlmvw" name="Recibir notificación indicando que la reservación fue cancelada por el reclamo del usuario" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_XJlsUazMEeG2v_RyaRlmvw" iD="_XJlsUKzMEeG2v_RyaRlmvw" incomingEdges="_XJpWsazMEeG2v_RyaRlmvw" activityType="EventEndEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_ggNdcazMEeG2v_RyaRlmvw" iD="_ggNdcKzMEeG2v_RyaRlmvw" outgoingEdges="_hJY9UazMEeG2v_RyaRlmvw" incomingEdges="_ggRH0azMEeG2v_RyaRlmvw" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_L2ZrYKzNEeG2v_RyaRlmvw"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_hJV6AazMEeG2v_RyaRlmvw" iD="_hJV6AKzMEeG2v_RyaRlmvw" outgoingEdges="_TAGR8azNEeG2v_RyaRlmvw" incomingEdges="_hJY9UazMEeG2v_RyaRlmvw _24ZAYazMEeG2v_RyaRlmvw" name="Recibir notificación de que se le ha realizado su pago" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_TACAgazNEeG2v_RyaRlmvw" iD="_TACAgKzNEeG2v_RyaRlmvw" incomingEdges="_TAGR8azNEeG2v_RyaRlmvw" activityType="EventEndTerminate"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_v0urAay5EeG2v_RyaRlmvw" iD="_v0urAKy5EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_yYIb4ay5EeG2v_RyaRlmvw" iD="_yYIb4Ky5EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_9sV7Eay5EeG2v_RyaRlmvw" iD="_9sV7EKy5EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_-cEu4ay5EeG2v_RyaRlmvw" iD="_-cEu4Ky5EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_S-FaYKy6EeG2v_RyaRlmvw" iD="_S-EzUKy6EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_tedFQay7EeG2v_RyaRlmvw" iD="_tedFQKy7EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Fxlcgay9EeG2v_RyaRlmvw" iD="_FxlcgKy9EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_h_990ay9EeG2v_RyaRlmvw" iD="_h_990Ky9EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_n-o7say9EeG2v_RyaRlmvw" iD="_n-o7sKy9EeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_k6iKIazAEeG2v_RyaRlmvw" iD="_k6iKIKzAEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_wv-HEazAEeG2v_RyaRlmvw" iD="_wv-HEKzAEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_H5K3QazBEeG2v_RyaRlmvw" iD="_H5K3QKzBEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_7oq1UazIEeG2v_RyaRlmvw" iD="_7oq1UKzIEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_CDwpcazJEeG2v_RyaRlmvw" iD="_CDwpcKzJEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_YMSm0azJEeG2v_RyaRlmvw" iD="_YMSm0KzJEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_aH3isazJEeG2v_RyaRlmvw" iD="_aH3isKzJEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_b9K3cazJEeG2v_RyaRlmvw" iD="_b9K3cKzJEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_I_y8kazLEeG2v_RyaRlmvw" iD="_I_y8kKzLEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_KLabIazLEeG2v_RyaRlmvw" iD="_KLabIKzLEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_XJpWsazMEeG2v_RyaRlmvw" iD="_XJpWsKzMEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_ggRH0azMEeG2v_RyaRlmvw" iD="_ggRH0KzMEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_hJY9UazMEeG2v_RyaRlmvw" iD="_hJY9UKzMEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_24ZAYazMEeG2v_RyaRlmvw" iD="_24ZAYKzMEeG2v_RyaRlmvw"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_TAGR8azNEeG2v_RyaRlmvw" iD="_TAGR8KzNEeG2v_RyaRlmvw"/>
+  </pools>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_vNbfMaNdEeGlQtPXdUaXAA" iD="_vNbfMKNdEeGlQtPXdUaXAA" source="_pcYGkaNdEeGlQtPXdUaXAA" target="_LnFcYKNeEeGlQtPXdUaXAA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_NwxEsaNpEeGlQtPXdUaXAA" iD="_NwxEsKNpEeGlQtPXdUaXAA" source="_4OGNcaNoEeGlQtPXdUaXAA" target="_EG36oaNbEeGlQtPXdUaXAA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_M6tJ8aNqEeGlQtPXdUaXAA" iD="_M6tJ8KNqEeGlQtPXdUaXAA" source="_DNdBgaNqEeGlQtPXdUaXAA" target="_M6qGoaNqEeGlQtPXdUaXAA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_F3h4gaQiEeGOsplfjneHuA" iD="_F3h4gKQiEeGOsplfjneHuA" source="_WzWV4aQhEeGOsplfjneHuA" target="_F3eOIaQiEeGOsplfjneHuA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_8XYigaQiEeGOsplfjneHuA" iD="_8XYigKQiEeGOsplfjneHuA" source="_nbpIYaQiEeGOsplfjneHuA" target="_2wd9UaQiEeGOsplfjneHuA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_cz2GcaQmEeGOsplfjneHuA" iD="_cz2GcKQmEeGOsplfjneHuA" source="_Bv27saQmEeGOsplfjneHuA" target="_czzDIaQmEeGOsplfjneHuA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_0yi8MawyEeGIwbXC8z56TA" iD="_0yi8MKwyEeGIwbXC8z56TA" source="_tG44EawyEeGIwbXC8z56TA" target="_BC3XAaQfEeGOsplfjneHuA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_UxiBUawzEeGIwbXC8z56TA" iD="_UxiBUKwzEeGIwbXC8z56TA" source="_Cg2fQawzEeGIwbXC8z56TA" target="_NSWS8awzEeGIwbXC8z56TA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_kk7ooawzEeGIwbXC8z56TA" iD="_kk7ooKwzEeGIwbXC8z56TA" source="_X0bKkawzEeGIwbXC8z56TA" target="_dFxrYaNfEeGlQtPXdUaXAA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_7bwPYawzEeGIwbXC8z56TA" iD="_7bwPYKwzEeGIwbXC8z56TA" source="_4HRi0aNfEeGlQtPXdUaXAA" target="_vd6kYawzEeGIwbXC8z56TA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_aBe7Maw3EeGIwbXC8z56TA" iD="_aBe7MKw3EeGIwbXC8z56TA" source="_OVGzoaw3EeGIwbXC8z56TA" target="_WLGfgaw3EeGIwbXC8z56TA"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_L8za4ay4EeG2v_RyaRlmvw" iD="_L8za4Ky4EeG2v_RyaRlmvw" source="_BhxHQaQkEeGOsplfjneHuA" target="_7x-yEay3EeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_NRKzgay9EeG2v_RyaRlmvw" iD="_NRKzgKy9EeG2v_RyaRlmvw" source="_FxiZMay9EeG2v_RyaRlmvw" target="_1Q0Y4ay8EeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_fWc94ay9EeG2v_RyaRlmvw" iD="_fWc94Ky9EeG2v_RyaRlmvw" source="_N7-A0ay5EeG2v_RyaRlmvw" target="_S-CXEKy6EeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_UUVCUay_EeG2v_RyaRlmvw" iD="_UUVCUKy_EeG2v_RyaRlmvw" source="_Ho_YIay_EeG2v_RyaRlmvw" target="_xZiTYay-EeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_e7Cs4azAEeG2v_RyaRlmvw" iD="_e7Cs4KzAEeG2v_RyaRlmvw" source="_cJg14ay_EeG2v_RyaRlmvw" target="_Ae_aIazAEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_3fLxEazAEeG2v_RyaRlmvw" iD="_3fLxEKzAEeG2v_RyaRlmvw" source="_fViF8ay_EeG2v_RyaRlmvw" target="_k6fG0KzAEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_gHrpsKzBEeG2v_RyaRlmvw" iD="_gHrCoKzBEeG2v_RyaRlmvw" source="_g8EqIay4EeG2v_RyaRlmvw" target="_WxZPwazBEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_duhdIazFEeG2v_RyaRlmvw" iD="_duhdIKzFEeG2v_RyaRlmvw" source="_DNUPUazFEeG2v_RyaRlmvw" target="_dueZ0azFEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_FSLisazIEeG2v_RyaRlmvw" iD="_FSLisKzIEeG2v_RyaRlmvw" source="_Cob5QazIEeG2v_RyaRlmvw" target="_8VTuUazHEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_kvdB4azIEeG2v_RyaRlmvw" iD="_kvdB4KzIEeG2v_RyaRlmvw" source="_XWDX0azIEeG2v_RyaRlmvw" target="_KFe5oazIEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_HPdSQazJEeG2v_RyaRlmvw" iD="_HPdSQKzJEeG2v_RyaRlmvw" source="_cC6vkazIEeG2v_RyaRlmvw" target="_7onyAazIEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_xPcQUazLEeG2v_RyaRlmvw" iD="_xPcQUKzLEeG2v_RyaRlmvw" source="_wj8OgazGEeG2v_RyaRlmvw" target="_vSKEQazLEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_5uI68azLEeG2v_RyaRlmvw" iD="_5uI68KzLEeG2v_RyaRlmvw" source="_04urMazLEeG2v_RyaRlmvw" target="_q9aOYazHEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_QG-lMazMEeG2v_RyaRlmvw" iD="_QG-lMKzMEeG2v_RyaRlmvw" source="_HJH5YazMEeG2v_RyaRlmvw" target="_aH0fYazJEeG2v_RyaRlmvw"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_L2ZrYKzNEeG2v_RyaRlmvw" iD="_L2ZEUKzNEeG2v_RyaRlmvw" source="_79QBYazMEeG2v_RyaRlmvw" target="_ggNdcazMEeG2v_RyaRlmvw"/>
+</bpmn:BpmnDiagram>

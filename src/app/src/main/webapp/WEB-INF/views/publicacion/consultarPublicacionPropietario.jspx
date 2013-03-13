@@ -1,0 +1,287 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <style>
+        /*TODO: Mover a .css*/
+        .ui-datepicker .ui-datepicker-calendar .ui-state-highlight a {
+            background: #743620 none; /* a color that fits the widget theme */
+            color: white; /* a color that is readeable with the color above */
+            
+        }
+    </style>
+    <h1>Consultar publicacion</h1>
+    <div id="_title_div">
+        <spring:message code="label.publicacion" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+        <c:if test="${not empty publicacion}">
+        	<h3>Caracteristicas</h3>
+            <div id="roo_publicacion_titulo">
+                <label for="_titulo_id">Titulo:</label>
+                <div class="box" id="_titulo_id">
+                    <c:out value="${publicacion.titulo}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tipoHabitacion">
+                <label for="_tipoHabitacion_id">Tipo Habitacion:</label>
+                <div class="box" id="_tipoHabitacion_id">
+                    <c:out value="${publicacion.tipoHabitacion}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_cantidadPersonas">
+                <label for="_cantidadPersonas_id">Cantidad Personas:</label>
+                <div class="box" id="_cantidadPersonas_id">
+                    <c:out value="${publicacion.cantidadPersonas}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_serviciosIncluidos">
+                <label for="_serviciosIncluidos_id">Servicios Incluidos:</label>
+                <div class="box" id="_serviciosIncluidos_id">
+                    <c:out value="${publicacion.serviciosIncluidos}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_serviciosIncluidosAdicionales">
+                <label for="_serviciosIncluidosAdicionales_id">Otros Servicios Adicionales:</label>
+                <div class="box" id="_serviciosIncluidosAdicionales_id">
+                    <c:out value="${publicacion.serviciosIncluidosAdicionales}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_comodidades">
+                <label for="_comodidades_id">Comodidades:</label>
+                <div class="box" id="_comodidades_id">
+                    <c:out value="${publicacion.comodidades}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_condicionesEspeciales">
+                <label for="_condicionesEspeciales_id">Otras comodidades:</label>
+                <div class="box" id="_condicionesEspeciales_id">
+                    <c:out value="${publicacion.comodidadesAdicionales}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_condicionesEspeciales">
+                <label for="_condicionesEspeciales_id">Condiciones Especiales:</label>
+                <div class="box" id="_condicionesEspeciales_id">
+                    <c:out value="${publicacion.condicionesEspeciales}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_habitacionesDisponibles">
+                <label for="_habitacionesDisponibles_id">Habitaciones Disponibles para la publicacion:</label>
+                <div class="box" id="_habitacionesDisponibles_id">
+                    <c:out value="${publicacion.habitacionesDisponibles}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_minimoNoches">
+                <label for="_minimoNoches_id">Minimo de Noches por reservacion:</label>
+                <div class="box" id="_minimoNoches_id">
+                    <c:out value="${publicacion.minimoNoches}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_maximoNoches">
+                <label for="_maximoNoches_id">Maximo de Noches por reservacion:</label>
+                <div class="box" id="_maximoNoches_id">
+                    <c:out value="${publicacion.maximoNoches}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tipoTarifa">
+                <label for="_tipoTarifa_id">Tipo de Tarifa:</label>
+                <div class="box" id="_tipoTarifa_id">
+                    <c:out value="${publicacion.tipoTarifa}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_horaCheckIn">
+                <label for="_horaCheckIn_id">Hora de Check In:</label>
+                <div class="box" id="_horaCheckIn_id">
+                    <fmt:formatDate pattern="${publicacion_horaCheckIn_date_format}" value="${publicacion.horaCheckIn}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_horaCheckOut">
+                <label for="_horaCheckOut_id">Hora de Check Out:</label>
+                <div class="box" id="_horaCheckOut_id">
+                    <fmt:formatDate pattern="${publicacion_horaCheckOut_date_format}" value="${publicacion.horaCheckOut}"/>
+                </div>
+            </div>
+            <br/>
+            <h3>Precio de Venta al Publico (P.V.P.)</h3>
+            <c:if test="${publicacion.temporadas eq true }">
+            	<h3>Temporada baja</h3>
+            </c:if>
+           	<label for="_tarifaTemporadaBaja_id">Precio:</label>
+           	<div class="box" id="_tarifaTemporadaBaja_id">
+                <c:out value="${publicacion.tarifaTemporadaBaja}"/>
+            </div>
+            <br/>
+            <script>
+            	$('#_tarifaTemporadaBaja_id').formatCurrency({region:'es-VE'});
+            </script>
+            <label for="">Precio para minimo <c:out value="${publicacion.minimoNoches}"> </c:out> noche(s) y <c:out value="${publicacion.cantidadPersonas}"></c:out> persona(s):</label>
+           	<div class="box" id="totalTarifaBajaDiv">
+                <c:out value="${totalTarifaBaja}"/>
+            </div>
+            <br/>
+            <script>
+            	$('#totalTarifaBajaDiv').formatCurrency({region:'es-VE'});
+            </script>
+           	<label>Comision aquedarse.com</label>
+           	<div class="box" id="comisionAquedarseBajaDiv">
+                <c:out value="${comisionBaja}"/>
+            </div>
+            <br/>
+            <script>
+            	$('#comisionAquedarseBajaDiv').formatCurrency({region:'es-VE'});
+            </script>
+           	<label>Precio de Venta al Publico (P.V.P.)</label>
+           	<div class="box" id="pvpBajaDiv">
+                <c:out value="${pvpBaja}"/>
+            </div>
+            <br/>
+            <script>
+            	$('#pvpBajaDiv').formatCurrency({region:'es-VE'});
+            </script>
+           	<br/>
+           	<c:if test="${publicacion.temporadas eq true }">
+            	<h3>Temporada Alta</h3>
+	           	<label for="_tarifaTemporadaAlta_id">Precio:</label>
+	           	<div class="box" id="_tarifaTemporadaAlta_id">
+	                <c:out value="${publicacion.tarifaTemporadaAlta}"/>
+	            </div>
+	            <br/>
+	             <script>
+	            	$('#_tarifaTemporadaAlta_id').formatCurrency({region:'es-VE'});
+	            </script>
+	            <label for="">Precio para minimo <c:out value="${publicacion.minimoNoches}"> </c:out> noche(s) y <c:out value="${publicacion.cantidadPersonas}"></c:out> persona(s):</label>
+	           	<div class="box" id="totalTarifaAltaDiv">
+	                <c:out value="${totalTarifaAlta}"/>
+	            </div>
+	            <br/>
+	            <script>
+	            	$('#totalTarifaAltaDiv').formatCurrency({region:'es-VE'});
+	            </script>
+	           	<label>Comision aquedarse.com</label>
+	           	<div class="box" id="comisionAquedarseAltaDiv">
+	                <c:out value="${comisionAlta}"/>
+	            </div>
+	            <br/>
+	            <script>
+	            	$('#comisionAquedarseAltaDiv').formatCurrency({region:'es-VE'});
+	            </script>
+	           	<label>Precio de Venta al Publico (P.V.P.)</label>
+	           	<div class="box" id="pvpAltaDiv">
+	                <c:out value="${pvpAlta}"/>
+	            </div>
+	            <br/>
+	            <script>
+	            	$('#pvpAltaDiv').formatCurrency({region:'es-VE'});
+	            </script>
+	           	<br/>
+           	</c:if>
+            
+            <h3>Pagos para el alojamiento</h3> 
+            <c:if test="${publicacion.temporadas eq true}">
+            	<h3>Temporada baja</h3>
+            </c:if>
+            <label for="">Precio para minimo <c:out value="${publicacion.minimoNoches}"> </c:out> noche(s) y <c:out value="${publicacion.cantidadPersonas}"></c:out> persona(s):</label>
+           	<div class="box" id="totalTarifaBajaPagoDiv">
+                <c:out value="${totalTarifaBaja}"/>
+            </div>
+            <br/>
+            <script>
+            	$('#totalTarifaBajaPagoDiv').formatCurrency({region:'es-VE'});
+            </script>
+            
+            <label for="">Comision de la plataforma de pagos electronicos: </label>
+           	<div class="box" id="comisionPlataformaBajaDiv">
+                <c:out value="${comisionPlataformaBaja}"/>
+            </div>
+            <br/>
+            <script>
+            	$('#comisionPlataformaBajaDiv').formatCurrency({region:'es-VE'});
+            </script>
+            
+            <label for="">Pago total a recibir: </label>
+           	<div class="box" id="pagoAlojamientoBajaDiv">
+                <c:out value="${pagoAlojamientoBaja}"/>
+            </div>
+            <br/>
+            <script>
+            	$('#pagoAlojamientoBajaDiv').formatCurrency({region:'es-VE'});
+            </script>
+            <c:if test="${publicacion.temporadas eq true}"> 
+            	<h3> Temporada alta</h3>
+	            <!--<div id="pagoAlojamientoAltaDiv"> -->
+		            <label for="">Precio para minimo <c:out value="${publicacion.minimoNoches}"> </c:out> noche(s) y <c:out value="${publicacion.cantidadPersonas}"></c:out> persona(s):</label>
+		           	<div class="box" id="totalTarifaAltaPagoDiv">
+		                <c:out value="${totalTarifaAlta}"/>
+		            </div>
+		            <br/>
+		            <script>
+		            	$('#totalTarifaAltaPagoDiv').formatCurrency({region:'es-VE'});
+		            </script>
+		            <label for="">Comision de la plataforma de pagos electronicos: </label>
+		           	<div class="box" id="comisionPlataformaAltaDiv">
+		                <c:out value="${comisionPlataformaAlta}"/>
+		            </div>
+		            <br/>
+		            <script>
+		            	$('#comisionPlataformaAltaDiv').formatCurrency({region:'es-VE'});
+		            </script>
+		            
+		            <label for="">Pago total a recibir: </label>
+		           	<div class="box" id="pagoAlojamientoAltaDiv">
+		                <c:out value="${pagoAlojamientoAlta}"/>
+		            </div>
+		            <br/>
+		            <script>
+		            	$('#pagoAlojamientoAltaDiv').formatCurrency({region:'es-VE'});
+		            </script>
+	            <!--</div>  -->
+            </c:if>
+            
+            <h3>Validez de la publicacion</h3> 
+            <div id="roo_publicacion_fechaDesde">
+                <label for="_fechaDesde_id">Fecha Desde:</label>
+                <div class="box" id="_fechaDesde_id">
+                    <fmt:formatDate pattern="${publicacion_fechaDesde_date_format}" value="${publicacion.fechaDesde}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_fechaHasta">
+                <label for="_fechaHasta_id">Fecha Hasta:</label>
+                <div class="box" id="_fechaHasta_id">
+                    <fmt:formatDate pattern="${publicacion_fechaHasta_date_format}" value="${publicacion.fechaHasta}"/>
+                </div>
+            </div>
+            <br/>
+            
+            <c:if test="${publicacion.temporadas eq true }">
+	            <div id="MultidatePickerX" >
+	                <label>Dias de temporada alta</label>
+	                <!--TODO: ver como posicionar el multidatepicker sin usar px-->
+	                <div  id="fechasTemporadaAlta" type="text" style="margin-left: 265px"></div>
+	            </div>
+	            <script type="text/javascript">
+	            	var date = new Date();
+	            	$( "#fechasTemporadaAlta" ).multiDatesPicker({
+	            		dateFormat: "dd/mm/yy",
+	            		addDates: [${fechasTemporadaAlta}],
+	            		minDate: ${fechaDesde},
+	            		maxDate: ${fechaHasta}
+	            	});
+	            </script>
+            </c:if>
+        </c:if>
+        <c:if test="${empty publicacion}">
+            <spring:message arguments="${entity_label}" code="entity.not.found.single"/>
+        </c:if>
+    </div>
+</div>

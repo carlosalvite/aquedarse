@@ -1,0 +1,53 @@
+<aspectj>
+<aspects>
+<aspect name="com.alojamientosturisticos.domain.UbicacionDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.TipoHabitacionDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.ServiciosIncluidosIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.FechaTemporadaAltaIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.TipoAlojamientoIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.ParroquiaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.UbicacionDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.TipoHabitacionDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.MunicipioDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.ComodidadesDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.TipoAlojamientoIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.FechaTemporadaAltaDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.ComodidadGeneralIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.TipoAlojamientoDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.ComodidadGeneralDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.AlojamientoIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.ParroquiaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.TipoHabitacionIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.ParroquiaIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.TipoHabitacionIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.ParroquiaDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.UbicacionIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.MunicipioIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.EstadoIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.EstadoIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.EstadoDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.AlojamientoDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.ServiciosIncluidosIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.CuentaBancariaDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.CuentaBancariaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.CuentaBancariaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.ComodidadesDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.ServiciosIncluidosDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.CuentaBancariaIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.FechaTemporadaAltaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.ComodidadGeneralDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.MunicipioIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.ComodidadesIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.MunicipioDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.ComodidadesIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.EstadoDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.FechaTemporadaAltaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.alojamientosturisticos.domain.ServiciosIncluidosDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.alojamientosturisticos.domain.AlojamientoDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.ComodidadGeneralIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.TipoAlojamientoDataOnDemand_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.UbicacionIntegrationTest_Roo_Configurable"/>
+<aspect name="com.alojamientosturisticos.domain.AlojamientoIntegrationTest_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

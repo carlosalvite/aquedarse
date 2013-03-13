@@ -1,0 +1,203 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');</script>
+    <div id="_title_div">
+        <spring:message code="label.publicacion" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+        <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+        <c:if test="${not empty publicacion}">
+            <div id="roo_publicacion_titulo">
+                <label for="_titulo_id">Titulo:</label>
+                <div class="box" id="_titulo_id">
+                    <c:out value="${publicacion.titulo}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tipoHabitacion">
+                <label for="_tipoHabitacion_id">Tipo Habitacion:</label>
+                <div class="box" id="_tipoHabitacion_id">
+                    <c:out value="${publicacion.tipoHabitacion}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_serviciosIncluidos">
+                <label for="_serviciosIncluidos_id">Servicios Incluidos:</label>
+                <div class="box" id="_serviciosIncluidos_id">
+                    <c:out value="${publicacion.serviciosIncluidos}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_serviciosIncluidosAdicionales">
+                <label for="_serviciosIncluidosAdicionales_id">Servicios Incluidos Adicionales:</label>
+                <div class="box" id="_serviciosIncluidosAdicionales_id">
+                    <c:out value="${publicacion.serviciosIncluidosAdicionales}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_serviciosIncluidosAdicionalesTrans">
+                <label for="_serviciosIncluidosAdicionalesTrans_id">Servicios Incluidos Adicionales Trans:</label>
+                <div class="box" id="_serviciosIncluidosAdicionalesTrans_id">
+                    <c:out value="${publicacion.serviciosIncluidosAdicionalesTrans}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_comodidades">
+                <label for="_comodidades_id">Comodidades:</label>
+                <div class="box" id="_comodidades_id">
+                    <c:out value="${publicacion.comodidades}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_comodidadesAdicionales">
+                <label for="_comodidadesAdicionales_id">Comodidades Adicionales:</label>
+                <div class="box" id="_comodidadesAdicionales_id">
+                    <c:out value="${publicacion.comodidadesAdicionales}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_comodidadesAdicionalesTrans">
+                <label for="_comodidadesAdicionalesTrans_id">Comodidades Adicionales Trans:</label>
+                <div class="box" id="_comodidadesAdicionalesTrans_id">
+                    <c:out value="${publicacion.comodidadesAdicionalesTrans}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_condicionesEspeciales">
+                <label for="_condicionesEspeciales_id">Condiciones Especiales:</label>
+                <div class="box" id="_condicionesEspeciales_id">
+                    <c:out value="${publicacion.condicionesEspeciales}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_habitacionesDisponibles">
+                <label for="_habitacionesDisponibles_id">Habitaciones Disponibles:</label>
+                <div class="box" id="_habitacionesDisponibles_id">
+                    <c:out value="${publicacion.habitacionesDisponibles}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_minimoNoches">
+                <label for="_minimoNoches_id">Minimo Noches:</label>
+                <div class="box" id="_minimoNoches_id">
+                    <c:out value="${publicacion.minimoNoches}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_maximoNoches">
+                <label for="_maximoNoches_id">Maximo Noches:</label>
+                <div class="box" id="_maximoNoches_id">
+                    <c:out value="${publicacion.maximoNoches}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_cantidadPersonas">
+                <label for="_cantidadPersonas_id">Cantidad Personas:</label>
+                <div class="box" id="_cantidadPersonas_id">
+                    <c:out value="${publicacion.cantidadPersonas}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tipoTarifa">
+                <label for="_tipoTarifa_id">Tipo Tarifa:</label>
+                <div class="box" id="_tipoTarifa_id">
+                    <c:out value="${publicacion.tipoTarifa}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tarifaTemporadaBajaStr">
+                <label for="_tarifaTemporadaBajaStr_id">Tarifa Temporada Baja Str:</label>
+                <div class="box" id="_tarifaTemporadaBajaStr_id">
+                    <c:out value="${publicacion.tarifaTemporadaBajaStr}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tarifaTemporadaBaja">
+                <label for="_tarifaTemporadaBaja_id">Tarifa Temporada Baja:</label>
+                <div class="box" id="_tarifaTemporadaBaja_id">
+                    <c:out value="${publicacion.tarifaTemporadaBaja}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tarifaTemporadaAltaStr">
+                <label for="_tarifaTemporadaAltaStr_id">Tarifa Temporada Alta Str:</label>
+                <div class="box" id="_tarifaTemporadaAltaStr_id">
+                    <c:out value="${publicacion.tarifaTemporadaAltaStr}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tarifaTemporadaAlta">
+                <label for="_tarifaTemporadaAlta_id">Tarifa Temporada Alta:</label>
+                <div class="box" id="_tarifaTemporadaAlta_id">
+                    <c:out value="${publicacion.tarifaTemporadaAlta}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_fechaDesde">
+                <label for="_fechaDesde_id">Fecha Desde:</label>
+                <div class="box" id="_fechaDesde_id">
+                    <fmt:formatDate pattern="${publicacion_fechaDesde_date_format}" value="${publicacion.fechaDesde}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_fechaHasta">
+                <label for="_fechaHasta_id">Fecha Hasta:</label>
+                <div class="box" id="_fechaHasta_id">
+                    <fmt:formatDate pattern="${publicacion_fechaHasta_date_format}" value="${publicacion.fechaHasta}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_fechasTemporadaAlta">
+                <label for="_fechasTemporadaAlta_id">Fechas Temporada Alta:</label>
+                <div class="box" id="_fechasTemporadaAlta_id">
+                    <c:out value="${publicacion.fechasTemporadaAlta}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_porcentajeComision">
+                <label for="_porcentajeComision_id">Porcentaje Comision:</label>
+                <div class="box" id="_porcentajeComision_id">
+                    <c:out value="${publicacion.porcentajeComision}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_horaCheckIn">
+                <label for="_horaCheckIn_id">Hora Check In:</label>
+                <div class="box" id="_horaCheckIn_id">
+                    <fmt:formatDate pattern="${publicacion_horaCheckIn_date_format}" value="${publicacion.horaCheckIn}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_horaCheckOut">
+                <label for="_horaCheckOut_id">Hora Check Out:</label>
+                <div class="box" id="_horaCheckOut_id">
+                    <fmt:formatDate pattern="${publicacion_horaCheckOut_date_format}" value="${publicacion.horaCheckOut}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_temporadas">
+                <label for="_temporadas_id">Temporadas:</label>
+                <div class="box" id="_temporadas_id">
+                    <c:out value="${publicacion.temporadas}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_moneda">
+                <label for="_moneda_id">Moneda:</label>
+                <div class="box" id="_moneda_id">
+                    <c:out value="${publicacion.moneda}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_publicacion_alojamiento">
+                <label for="_alojamiento_id">Alojamiento:</label>
+                <div class="box" id="_alojamiento_id">
+                    <c:out value="${publicacion.alojamiento}"/>
+                </div>
+            </div>
+            <br/>
+        </c:if>
+        <c:if test="${empty publicacion}">
+            <spring:message arguments="${entity_label}" code="entity.not.found.single"/>
+        </c:if>
+    </div>
+</div>

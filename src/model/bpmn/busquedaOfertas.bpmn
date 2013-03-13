@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:BpmnDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bpmn="http://stp.eclipse.org/bpmn" xmi:id="_2pmVsa6pEeGJ9Nz4-3Ji4A" iD="_2pmVsK6pEeGJ9Nz4-3Ji4A">
+  <pools xmi:type="bpmn:Pool" xmi:id="_2qsh4a6pEeGJ9Nz4-3Ji4A" iD="_2qsh4K6pEeGJ9Nz4-3Ji4A" name="Usuario">
+    <vertices xmi:type="bpmn:Activity" xmi:id="_2qtwAa6pEeGJ9Nz4-3Ji4A" iD="_2qtwAK6pEeGJ9Nz4-3Ji4A" outgoingEdges="_843M8a6sEeGJ9Nz4-3Ji4A" incomingEdges="_IsFOQa6rEeGJ9Nz4-3Ji4A" name="Escribir nombre del alojamiento o la localidad (estado, region, ciudad, etc.) en el campo de búsqueda" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_mzG2wK6sEeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_HVP-MK6rEeGJ9Nz4-3Ji4A" iD="_HVPXIK6rEeGJ9Nz4-3Ji4A" outgoingEdges="_IsFOQa6rEeGJ9Nz4-3Ji4A" activityType="EventStartEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_DGlv8a6sEeGJ9Nz4-3Ji4A" iD="_DGlv8K6sEeGJ9Nz4-3Ji4A" outgoingEdges="_K_X7Aa61EeGJ9Nz4-3Ji4A" incomingEdges="_1HHLEa6wEeGJ9Nz4-3Ji4A" name="Seleccionar fecha de llegada y fecha de salida, cantidad de huéspedes y tipo de alojamiento" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_MJ48ca6sEeGJ9Nz4-3Ji4A" iD="_MJ48cK6sEeGJ9Nz4-3Ji4A" outgoingEdges="_AcqxQa61EeGJ9Nz4-3Ji4A" incomingEdges="_1fsDIa6wEeGJ9Nz4-3Ji4A" name="Seleccionar fecha de llegada y fecha de salida y cantidad de huéspedes" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_bjgx0a6sEeGJ9Nz4-3Ji4A" iD="_bjgx0K6sEeGJ9Nz4-3Ji4A" outgoingEdges="__5oVoa60EeGJ9Nz4-3Ji4A" incomingEdges="_14Ulka6wEeGJ9Nz4-3Ji4A" name="Seleccionar fecha de llegada y fecha de salida" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_8C-t0a6sEeGJ9Nz4-3Ji4A" iD="_8C-t0K6sEeGJ9Nz4-3Ji4A" outgoingEdges="_9dj1ca6sEeGJ9Nz4-3Ji4A" incomingEdges="_843M8a6sEeGJ9Nz4-3Ji4A" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_8DBxIa6sEeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_9de88K6sEeGJ9Nz4-3Ji4A" iD="_9deV4K6sEeGJ9Nz4-3Ji4A" outgoingEdges="_CtBuga6uEeGJ9Nz4-3Ji4A" incomingEdges="_9dj1ca6sEeGJ9Nz4-3Ji4A" name="Seleccionar resultado" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Cs-rMa6uEeGJ9Nz4-3Ji4A" iD="_Cs-rMK6uEeGJ9Nz4-3Ji4A" outgoingEdges="_1HHLEa6wEeGJ9Nz4-3Ji4A _1fsDIa6wEeGJ9Nz4-3Ji4A _14Ulka6wEeGJ9Nz4-3Ji4A _Fz9Q8a6zEeGJ9Nz4-3Ji4A _M20Psa6zEeGJ9Nz4-3Ji4A _SHJg4a6zEeGJ9Nz4-3Ji4A _Jy8usa62EeGJ9Nz4-3Ji4A" incomingEdges="_CtBuga6uEeGJ9Nz4-3Ji4A _Cwhi4a64EeGJ9Nz4-3Ji4A" activityType="GatewayDataBasedExclusive" looping="false"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Fz6Noa6zEeGJ9Nz4-3Ji4A" iD="_Fz6NoK6zEeGJ9Nz4-3Ji4A" outgoingEdges="__d-7ca60EeGJ9Nz4-3Ji4A" incomingEdges="_Fz9Q8a6zEeGJ9Nz4-3Ji4A" name="Seleccionar cantidad de huéspedes y tipo de alojamiento" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_M2xMYa6zEeGJ9Nz4-3Ji4A" iD="_M2xMYK6zEeGJ9Nz4-3Ji4A" outgoingEdges="_-_7Gca60EeGJ9Nz4-3Ji4A" incomingEdges="_M20Psa6zEeGJ9Nz4-3Ji4A" name="Seleccionar cantidad de huéspedes" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_SHGdka6zEeGJ9Nz4-3Ji4A" iD="_SHGdkK6zEeGJ9Nz4-3Ji4A" outgoingEdges="_Of-wca60EeGJ9Nz4-3Ji4A" incomingEdges="_SHJg4a6zEeGJ9Nz4-3Ji4A" name="Seleccionar tipo de alojamiento" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Of7tIa60EeGJ9Nz4-3Ji4A" iD="_Of7tIK60EeGJ9Nz4-3Ji4A" outgoingEdges="_VECBYa62EeGJ9Nz4-3Ji4A" incomingEdges="_Of-wca60EeGJ9Nz4-3Ji4A _-_7Gca60EeGJ9Nz4-3Ji4A __d-7ca60EeGJ9Nz4-3Ji4A __5oVoa60EeGJ9Nz4-3Ji4A _AcqxQa61EeGJ9Nz4-3Ji4A _K_X7Aa61EeGJ9Nz4-3Ji4A _Le6hQa62EeGJ9Nz4-3Ji4A" name="Hacer click en buscar" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_ttm0oa61EeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Jy5EUa62EeGJ9Nz4-3Ji4A" iD="_Jy5EUK62EeGJ9Nz4-3Ji4A" outgoingEdges="_Le6hQa62EeGJ9Nz4-3Ji4A" incomingEdges="_Jy8usa62EeGJ9Nz4-3Ji4A" name="No seleccionar filtro" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_VD--Ea62EeGJ9Nz4-3Ji4A" iD="_VD--EK62EeGJ9Nz4-3Ji4A" outgoingEdges="_oJUawa63EeGJ9Nz4-3Ji4A" incomingEdges="_VECBYa62EeGJ9Nz4-3Ji4A" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_WapPAa62EeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_oJRXca63EeGJ9Nz4-3Ji4A" iD="_oJRXcK63EeGJ9Nz4-3Ji4A" outgoingEdges="_Bv_6Aa64EeGJ9Nz4-3Ji4A" incomingEdges="_oJUawa63EeGJ9Nz4-3Ji4A" name="Visualizar los resultados de la búsqueda" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Bv9dwa64EeGJ9Nz4-3Ji4A" iD="_Bv9dwK64EeGJ9Nz4-3Ji4A" outgoingEdges="_Cwhi4a64EeGJ9Nz4-3Ji4A _Ducjsa64EeGJ9Nz4-3Ji4A" incomingEdges="_Bv_6Aa64EeGJ9Nz4-3Ji4A" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_DuZgYa64EeGJ9Nz4-3Ji4A" iD="_DuZgYK64EeGJ9Nz4-3Ji4A" incomingEdges="_Ducjsa64EeGJ9Nz4-3Ji4A" name="Consultar oferta" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_27yUEa64EeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_IsFOQa6rEeGJ9Nz4-3Ji4A" iD="_IsFOQK6rEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_843M8a6sEeGJ9Nz4-3Ji4A" iD="_843M8K6sEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_9dj1ca6sEeGJ9Nz4-3Ji4A" iD="_9dj1cK6sEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_CtBuga6uEeGJ9Nz4-3Ji4A" iD="_CtBugK6uEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_1HHLEa6wEeGJ9Nz4-3Ji4A" iD="_1HHLEK6wEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_1fsDIa6wEeGJ9Nz4-3Ji4A" iD="_1fsDIK6wEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_14Ulka6wEeGJ9Nz4-3Ji4A" iD="_14UlkK6wEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Fz9Q8a6zEeGJ9Nz4-3Ji4A" iD="_Fz9Q8K6zEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_M20Psa6zEeGJ9Nz4-3Ji4A" iD="_M20PsK6zEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_SHJg4a6zEeGJ9Nz4-3Ji4A" iD="_SHJg4K6zEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Of-wca60EeGJ9Nz4-3Ji4A" iD="_Of-wcK60EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_-_7Gca60EeGJ9Nz4-3Ji4A" iD="_-_7GcK60EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="__d-7ca60EeGJ9Nz4-3Ji4A" iD="__d-7cK60EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="__5oVoa60EeGJ9Nz4-3Ji4A" iD="__5oVoK60EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_AcqxQa61EeGJ9Nz4-3Ji4A" iD="_AcqxQK61EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_K_X7Aa61EeGJ9Nz4-3Ji4A" iD="_K_X7AK61EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Jy8usa62EeGJ9Nz4-3Ji4A" iD="_Jy8usK62EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Le6hQa62EeGJ9Nz4-3Ji4A" iD="_Le6hQK62EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_VECBYa62EeGJ9Nz4-3Ji4A" iD="_VECBYK62EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_oJUawa63EeGJ9Nz4-3Ji4A" iD="_oJUawK63EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Bv_6Aa64EeGJ9Nz4-3Ji4A" iD="_Bv_6AK64EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Cwhi4a64EeGJ9Nz4-3Ji4A" iD="_Cwhi4K64EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Ducjsa64EeGJ9Nz4-3Ji4A" iD="_DucjsK64EeGJ9Nz4-3Ji4A"/>
+  </pools>
+  <pools xmi:type="bpmn:Pool" xmi:id="_EjgPUa6rEeGJ9Nz4-3Ji4A" iD="_EjgPUK6rEeGJ9Nz4-3Ji4A" name="Sistema">
+    <vertices xmi:type="bpmn:Activity" xmi:id="_mzDzca6sEeGJ9Nz4-3Ji4A" iD="_mzDzcK6sEeGJ9Nz4-3Ji4A" outgoingEdges="_nb0cka6sEeGJ9Nz4-3Ji4A" activityType="EventStartMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_mzG2wK6sEeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_nbwyMa6sEeGJ9Nz4-3Ji4A" iD="_nbwyMK6sEeGJ9Nz4-3Ji4A" outgoingEdges="_vpJDUa6sEeGJ9Nz4-3Ji4A" incomingEdges="_nb0cka6sEeGJ9Nz4-3Ji4A" name="Filtrar búsqueda dinámicamente a medida que el usuario va tecleando" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_vpGAAa6sEeGJ9Nz4-3Ji4A" iD="_vpGAAK6sEeGJ9Nz4-3Ji4A" outgoingEdges="_rCpDMa61EeGJ9Nz4-3Ji4A" incomingEdges="_vpJDUa6sEeGJ9Nz4-3Ji4A" name="Mostrar al usuario resultados en lista desplegable" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_8DBxIa6sEeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Sdz38a60EeGJ9Nz4-3Ji4A" iD="_Sdz38K60EeGJ9Nz4-3Ji4A" outgoingEdges="_1mxB4a64EeGJ9Nz4-3Ji4A" incomingEdges="_RZ9jYa62EeGJ9Nz4-3Ji4A" name="Mostrar ofertas de hospedaje de acuerdo al filtro aplicado" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_WapPAa62EeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_rCl_4a61EeGJ9Nz4-3Ji4A" iD="_rCl_4K61EeGJ9Nz4-3Ji4A" outgoingEdges="_RZ9jYa62EeGJ9Nz4-3Ji4A" incomingEdges="_rCpDMa61EeGJ9Nz4-3Ji4A" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_ttm0oa61EeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_1mt-ka64EeGJ9Nz4-3Ji4A" iD="_1mt-kK64EeGJ9Nz4-3Ji4A" outgoingEdges="_4lxwsa64EeGJ9Nz4-3Ji4A" incomingEdges="_1mxB4a64EeGJ9Nz4-3Ji4A" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_27yUEa64EeGJ9Nz4-3Ji4A"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_4lutYa64EeGJ9Nz4-3Ji4A" iD="_4lutYK64EeGJ9Nz4-3Ji4A" outgoingEdges="_UgoSAa65EeGJ9Nz4-3Ji4A" incomingEdges="_4lxwsa64EeGJ9Nz4-3Ji4A" name="Mostrar información de la habitación u oferta" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Ugl1wK65EeGJ9Nz4-3Ji4A" iD="_UglOsK65EeGJ9Nz4-3Ji4A" incomingEdges="_UgoSAa65EeGJ9Nz4-3Ji4A" activityType="EventEndTerminate"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_nb0cka6sEeGJ9Nz4-3Ji4A" iD="_nb0ckK6sEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_vpJDUa6sEeGJ9Nz4-3Ji4A" iD="_vpJDUK6sEeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_rCpDMa61EeGJ9Nz4-3Ji4A" iD="_rCpDMK61EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_RZ9jYa62EeGJ9Nz4-3Ji4A" iD="_RZ9jYK62EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_1mxB4a64EeGJ9Nz4-3Ji4A" iD="_1mxB4K64EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_4lxwsa64EeGJ9Nz4-3Ji4A" iD="_4lxwsK64EeGJ9Nz4-3Ji4A"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_UgoSAa65EeGJ9Nz4-3Ji4A" iD="_UgoSAK65EeGJ9Nz4-3Ji4A"/>
+  </pools>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_mzG2wK6sEeGJ9Nz4-3Ji4A" iD="_mzGPsK6sEeGJ9Nz4-3Ji4A" source="_2qtwAa6pEeGJ9Nz4-3Ji4A" target="_mzDzca6sEeGJ9Nz4-3Ji4A"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_8DBxIa6sEeGJ9Nz4-3Ji4A" iD="_8DBxIK6sEeGJ9Nz4-3Ji4A" source="_vpGAAa6sEeGJ9Nz4-3Ji4A" target="_8C-t0a6sEeGJ9Nz4-3Ji4A"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_ttm0oa61EeGJ9Nz4-3Ji4A" iD="_ttm0oK61EeGJ9Nz4-3Ji4A" source="_Of7tIa60EeGJ9Nz4-3Ji4A" target="_rCl_4a61EeGJ9Nz4-3Ji4A"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_WapPAa62EeGJ9Nz4-3Ji4A" iD="_WapPAK62EeGJ9Nz4-3Ji4A" source="_Sdz38a60EeGJ9Nz4-3Ji4A" target="_VD--Ea62EeGJ9Nz4-3Ji4A"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_27yUEa64EeGJ9Nz4-3Ji4A" iD="_27yUEK64EeGJ9Nz4-3Ji4A" source="_DuZgYa64EeGJ9Nz4-3Ji4A" target="_1mt-ka64EeGJ9Nz4-3Ji4A"/>
+</bpmn:BpmnDiagram>

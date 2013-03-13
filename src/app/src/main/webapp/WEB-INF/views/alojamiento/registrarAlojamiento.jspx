@@ -1,0 +1,194 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');dojo.require('dijit.form.SimpleTextarea');dojo.require('dijit.form.FilteringSelect');</script>
+    <spring:url value="/resources/jquery-ui-1.8.23.custom/development-bundle/demos/autocomplete/images/ui-anim_basic_16x16.gif" var="jquery_ui_autocomplete_gif_url"/>
+    <style>
+
+        .ui-autocomplete-loading { background: white url('${jquery_ui_autocomplete_gif_url}') right center no-repeat; }
+        .ui-autocomplete {
+            max-height: 100px;
+            overflow-y: auto;
+            /* prevent horizontal scrollbar */
+            overflow-x: hidden;
+            /* add padding to account for vertical scrollbar */
+            padding-right: 20px;
+        }
+    </style>
+    <spring:url value="/ubicacion/autocomplete" var="ubicacion_autocomplete_url"/>
+
+    <script>
+            <![CDATA[
+                $(function() {    
+        
+                    //Autocomplete
+                    $( "#ubicacion_autocomplete" ).autocomplete({
+                        source: "${ubicacion_autocomplete_url}",
+                        minLength: 2
+                    });
+
+                    //
+                    $("#ubicacion_autocomplete").blur(function(){
+                        //alert("Salio del campo");
+                    });
+                });
+            ]]>
+    </script>
+
+    <div id="_title_div">
+        <spring:message code="label.alojamiento" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.create" var="title_msg"/>
+        <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+        <spring:url value="/alojamiento" var="form_url"/>
+        <form:form action="${form_url}" method="POST" modelAttribute="alojamientoMegaForm">
+            <form:errors cssClass="errors" delimiter="&lt;p/&gt;"/>
+            <div id="roo_alojamiento_tipoAlojamiento">
+                <c:if test="${not empty tipoalojamientoes}">
+                    <label for="_tipoAlojamiento_id">Tipo de Alojamiento:</label>
+                    <form:select cssStyle="width:250px" id="_tipoAlojamiento_id" path="alojamiento.tipoAlojamiento">
+                        <form:options itemValue="id" items="${tipoalojamientoes}"/>
+                    </form:select>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_nombre" >
+                <label for="_nombre_id">Nombre:</label>
+                <form:input cssStyle="width:250px" id="_nombre_id" path="alojamiento.nombre"/>
+                <br/>
+                <form:errors cssClass="errors" id="_nombre_error_id" path="alojamiento.nombre"/>
+            </div>
+            <br/>
+            <div class="ui-widget">
+                <label for="ubicacion">Ubicacion: </label>
+                <form:input cssStyle="width:400px" id="ubicacion_autocomplete" path="ubicacion.nombre"/>
+                <br/>
+                <form:errors cssClass="errors" id="_ubicacion_autocomplete_error_id" path="ubicacion.nombre"></form:errors>
+                    <script>
+                        $("#_ubicacion_autocomplete_error_id").append(' <a href="javascript: mostrarEstados()" > Si</a>');
+                        function mostrarEstados()
+                        {
+                            $('#roo_ubicacion_estado').attr('hidden',false);
+                        }
+                    </script>
+                </div>
+                <br/>
+                <div id="roo_ubicacion_estado" hidden="true">
+                <c:if test="${not empty estadoes}">
+                    <p class="errors" >Seleccione el estado de la nueva ubicacion</p>
+                    <label for="_estado_id">Estado:</label>
+                    <form:select cssStyle="width:250px" id="_estado_id" path="ubicacion.estado">
+                        <form:option value="">-- Seleccionar --</form:option>
+                        <form:options itemValue="id" items="${estadoes}"/>
+                    </form:select>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_direccion">
+                <label for="_direccion_id">Direccion:</label>
+                <form:textarea cssStyle="width:250px" id="_direccion_id" path="alojamiento.direccion"/>
+                <br/>
+                <form:errors cssClass="errors" id="_direccion_error_id" path="alojamiento.direccion"/>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_latitudGps">
+                <label for="_latitudGps_id">Latitud Gps:</label>
+                <form:input cssStyle="width:250px" id="_latitudGps_id" path="alojamiento.latitudGps"/>
+                <br/>
+                <form:errors cssClass="errors" id="_latitudGps_error_id" path="alojamiento.latitudGps"/>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_longitudGps">
+                <label for="_longitudGps_id">Longitud Gps:</label>
+                <form:input cssStyle="width:250px" id="_longitudGps_id" path="alojamiento.longitudGps"/>
+                <br/>
+                <form:errors cssClass="errors" id="_longitudGps_error_id" path="alojamiento.longitudGps"/>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_descripcionGeneral">
+                <label for="_descripcionGeneral_id">Descripcion General:</label>
+                <form:textarea cssStyle="width:250px" id="_descripcionGeneral_id" path="alojamiento.descripcionGeneral"/>
+                <br/>
+                <form:errors cssClass="errors" id="_descripcionGeneral_error_id" path="alojamiento.descripcionGeneral"/>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_comodidadesGenerales">
+                <c:if test="${not empty comodidadgenerals}">
+                    <label for="_comodidadesGenerales_id">Comodidades Generales:</label>
+                    <form:select data-placeholder="." class="chzn-select" cssStyle="width:250px; height:150px" id="_comodidadesGenerales_id" path="alojamiento.comodidadesGenerales">
+                        <form:options itemValue="id" items="${comodidadgenerals}"/>                        
+                    </form:select>
+                    <script type="text/javascript"> $(".chzn-select").chosen(); </script>
+                </c:if>
+            </div>
+            <br/>
+            
+            <div id="roo_alojamiento_comodidadesGeneralesAdicionalesTrans">
+                <label for="_comodidadesGeneralesAdicionalesTrans_id">Comodidades Generales Adicionales:</label>
+                <form:select data-placeholder="Selecciona una o varias opciones" cssStyle="width:350px; " id="_comodidadesGeneralesAdicionales_id"  multiple="multiple" path="alojamiento.comodidadesGeneralesAdicionalesTrans">
+                    <form:options items="${comodidadgeneraladicionals}"/>
+                </form:select><a id="aComodidadesAdicionalesId" href="javascript: abrirCrearComodidadAdicionalDialog()">Agregar nueva comodidad</a>
+                <script type="text/javascript"> 
+                $('#_comodidadesGeneralesAdicionales_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+                </script>
+            </div>
+            <br/>
+            
+            <div class="submit" id="roo_alojamiento_submit">
+                <spring:message code="button.save" var="save_button"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ValidateAllDecoration({elementId:'proceed', event:'onclick'}));</script>
+                <input id="proceed" type="submit" value="${save_button}"/>
+            </div>
+            
+            <!-- Modal para errores -->
+            <div id="dialogError" title="Error">
+                <p id="dialogErrorP"></p>
+            </div>
+            
+            <!-- Modal Form Comodidades Generales Adcionales -->
+            <div id="comodidadesGeneralesAdicionalesDiv" title="Nueva comodidad general adicional">
+                <form id="comodidadesGeneralesAdicionalesForm">
+                    Nombre de la comodidad
+                    <input type="text" name="nombreComodidad" style="width: 180px" id="nombreComodidadAdicionalId" class="text ui-widget-content ui-corner-all" />
+                </form>
+            </div>            
+            
+            <script type="text/javascript">
+                //Dialog form
+                $( "#comodidadesGeneralesAdicionalesDiv" ).dialog({
+                    autoOpen: false,
+                    height: 160,
+                    width: 350,
+                    modal: true,
+                    resizable: false,
+                    buttons: {
+                        "Aceptar": function() {
+                           $('#_comodidadesGeneralesAdicionales_id').append('<option selected="true" value="'+$('#nombreComodidadAdicionalId').val()+'">'+$("#nombreComodidadAdicionalId").val()+'</option>');
+                           $("#_comodidadesGeneralesAdicionales_id").trigger("liszt:updated");	                            
+                           $( this ).dialog( "close" );
+                        },
+                        "Cancelar": function() {
+                            $( this ).dialog( "close" );
+                        }
+                   },
+                        close: function() {
+                            var input = document.getElementById("nombreComodidadAdicionalId");
+                            input.value = '';
+                        }
+                    }); 
+                $( "#comodidadesGeneralesAdicionalesDiv" ).dialog({ position: { my: "left top", at: "left bottom", of: "#aComodidadesAdicionalesId" } }); 
+
+
+                //Funcion boton agregar comodidad adicional
+                function abrirCrearComodidadAdicionalDialog(){
+                    $( "#comodidadesGeneralesAdicionalesDiv" ).dialog( "open" );	 
+                }
+             </script>            
+            
+
+            
+
+        </form:form>
+
+    </div>
+
+
+</div>

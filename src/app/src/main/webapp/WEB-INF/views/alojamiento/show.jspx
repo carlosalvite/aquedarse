@@ -1,0 +1,84 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');</script>
+    <div id="_title_div">
+        <spring:message code="label.alojamiento" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+        <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+        <c:if test="${not empty alojamiento}">
+            <div id="roo_alojamiento_nombre">
+                <label for="_nombre_id">Nombre:</label>
+                <div class="box" id="_nombre_id">
+                    <c:out value="${alojamiento.nombre}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_descripcionGeneral">
+                <label for="_descripcionGeneral_id">Descripcion General:</label>
+                <div class="box" id="_descripcionGeneral_id">
+                    <c:out value="${alojamiento.descripcionGeneral}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_tipoAlojamiento">
+                <label for="_tipoAlojamiento_id">Tipo Alojamiento:</label>
+                <div class="box" id="_tipoAlojamiento_id">
+                    <c:out value="${alojamiento.tipoAlojamiento}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_ubicacion">
+                <label for="_ubicacion_id">Ubicacion:</label>
+                <div class="box" id="_ubicacion_id">
+                    <c:out value="${alojamiento.ubicacion}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_direccion">
+                <label for="_direccion_id">Direccion:</label>
+                <div class="box" id="_direccion_id">
+                    <c:out value="${alojamiento.direccion}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_latitudGps">
+                <label for="_latitudGps_id">Latitud Gps:</label>
+                <div class="box" id="_latitudGps_id">
+                    <c:out value="${alojamiento.latitudGps}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_longitudGps">
+                <label for="_longitudGps_id">Longitud Gps:</label>
+                <div class="box" id="_longitudGps_id">
+                    <c:out value="${alojamiento.longitudGps}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_comodidadesGenerales">
+                <label for="_comodidadesGenerales_id">Comodidades Generales:</label>
+                <div class="box" id="_comodidadesGenerales_id">
+                    <c:out value="${alojamiento.comodidadesGenerales}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_comodidadesGeneralesAdicionales">
+                <label for="_comodidadesGeneralesAdicionales_id">Comodidades Generales Adicionales:</label>
+                <div class="box" id="_comodidadesGeneralesAdicionales_id">
+                    <c:out value="${alojamiento.comodidadesGeneralesAdicionales}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_alojamiento_comodidadesGeneralesAdicionalesTrans">
+                <label for="_comodidadesGeneralesAdicionalesTrans_id">Comodidades Generales Adicionales Trans:</label>
+                <div class="box" id="_comodidadesGeneralesAdicionalesTrans_id">
+                    <c:out value="${alojamiento.comodidadesGeneralesAdicionalesTrans}"/>
+                </div>
+            </div>
+            <br/>
+        </c:if>
+        <c:if test="${empty alojamiento}">
+            <spring:message arguments="${entity_label}" code="entity.not.found.single"/>
+        </c:if>
+    </div>
+</div>

@@ -1,0 +1,254 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');</script>
+    <div id="_title_div">
+        <spring:message code="label.alojamiento" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+        <script type="text/javascript">//Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: 'Mostrar Alojamiento'}})); </script>
+        <c:if test="${not empty alojamiento}">
+            
+            <script type="text/javascript">
+	
+		var theInt = null;
+		var $crosslink, $navthumb;
+		var curclicked = 0;
+		
+		theInterval = function(cur){
+			clearInterval(theInt);
+			
+			if( typeof cur != 'undefined' )
+				curclicked = cur;
+			
+			$crosslink.removeClass("active-thumb");
+			$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+			
+			theInt = setInterval(function(){
+				$crosslink.removeClass("active-thumb");
+				$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+				curclicked++;
+				if( 6 == curclicked )
+					curclicked = 0;
+				
+			}, 3000);
+		};
+		
+		$(function(){
+			
+			$("#main-photo-slider").codaSlider();
+			
+			$navthumb = $(".nav-thumb");
+			$crosslink = $(".cross-link");
+			
+			$navthumb
+			.click(function() {
+				var $this = $(this);
+				theInterval($this.parent().attr('href').slice(1) - 1);
+				return false;
+			});
+			
+			theInterval();
+		});
+                
+                
+                $(document).ready(function() {
+                        $(".fancybox").fancybox({
+                            maxWidth    : 800,
+                            maxHeight   : 600,
+                            fitToView   : false,
+                            width       : '100%',
+                            height      : '100%',
+                            autoSize    : false,
+                            closeClick  : false,
+                            openEffect  : 'none',
+                            closeEffect : 'none'
+                        });
+                        
+                        //llenarInputs();
+                        
+
+                });
+                
+                $(function() {
+                    $( "#tabs" ).tabs();
+                });
+                
+	</script>
+        <style>
+            label{
+                width: 230px;
+                font-weight: bold;
+            }
+        </style>
+        
+        
+        
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Datos del Alojamiento</a></li>
+                <li><a href="#tabs-2">Cuenta Bancaria</a></li>                
+            </ul>
+            <div id="tabs-1">
+                
+                <table>
+                    <tr>
+                        <td>
+                            <!--  SLIDER  -->
+                            <div id="page-wrap">
+                                <div class="slider-wrap">
+                                    <div id="main-photo-slider" class="csw">
+                                        <div class="panelContainer">
+
+                                            <c:forEach items="${imagenes}" var="imagen">
+                                                <div class="panel" title="Panel ${imagen[0]}">
+                                                    <div class="wrapper">
+                                                        <spring:url value="/imagen/previewImagen" var="imagen_url">
+                                                            <spring:param name="id" value="${imagen[0]}"/>
+                                                        </spring:url>                                                
+                                                        <a id="linkId" href="${imagen_url}" class="fancybox fancybox.image"><img src="${imagen_url}" width="420px" height="300px"/></a>
+                                                        <c:if test="${imagen[2] eq true}">
+                                                            <div class="photo-meta-data">                                        
+                                                                <span>Imagen Principal</span>
+                                                            </div>
+                                                        </c:if>                                        
+                                                    </div>
+                                                </div>
+                                            </c:forEach>
+
+                                        </div>
+                                    </div>                 
+
+                                    <div id="movers-row" style="z-index: -1;">                        
+                                        <c:forEach items="${imagenes}" var="imagen">
+                                            <spring:url value="/imagen/previewImagen" var="imagen_url_thumb">
+                                                <spring:param name="id" value="${imagen[0]}"/>
+                                            </spring:url>
+                                            <div><a href="${imagen[3]}" class="cross-link active-thumb"><img src="${imagen_url_thumb}" class="nav-thumb" alt="temp-thumb"/></a></div>                            
+                                        </c:forEach>                                              
+                                    </div>
+
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="roo_alojamiento_nombre">
+                                <label for="_nombre_id" >Nombre:</label>
+                                <div class="box" id="_nombre_id">
+                                    <c:out value="${alojamiento.nombre}"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <div id="roo_alojamiento_descripcionGeneral">
+                                <label for="_descripcionGeneral_id" >Descripcion General:</label>
+                                <div class="box" id="_descripcionGeneral_id">
+                                    <c:out value="${alojamiento.descripcionGeneral}"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <div id="roo_alojamiento_tipoAlojamiento">
+                                <label for="_tipoAlojamiento_id" >Tipo Alojamiento:</label>
+                                <div class="box" id="_tipoAlojamiento_id">
+                                    <c:out value="${alojamiento.tipoAlojamiento}"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <div id="roo_alojamiento_ubicacion">
+                                <label for="_ubicacion_id" >Ubicacion:</label>
+                                <div class="box" id="_ubicacion_id">
+                                    <c:out value="${alojamiento.ubicacion}"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <div id="roo_alojamiento_direccion">
+                                <label for="_direccion_id" >Direccion:</label>
+                                <div class="box" id="_direccion_id">
+                                    <c:out value="${alojamiento.direccion}"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <div id="roo_alojamiento_latitudGps">
+                                <label for="_latitudGps_id" >Latitud Gps:</label>
+                                <div class="box" id="_latitudGps_id">
+                                    <c:out value="${alojamiento.latitudGps}"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <div id="roo_alojamiento_longitudGps">
+                                <label for="_longitudGps_id" >Longitud Gps:</label>
+                                <div class="box" id="_longitudGps_id">
+                                    <c:out value="${alojamiento.longitudGps}"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <c:if test="${not empty comodidadgenerals}">
+                                <label for="_comodidadesGenerales_id" >Comodidades Generales:</label>          
+                                <div id="roo_alojamiento_comodidadesGenerales" class="box" style="margin-left: 220px;">                                
+                                    <ul type="circle" >
+                                        <c:forEach items="${comodidadgenerals}" var="t">                        
+                                            <li><c:out value="${t.nombre}"/></li>
+                                        </c:forEach>
+                                    </ul>
+                                </div>
+                            </c:if>  
+                            <br/>
+                            <c:if test="${not empty alojamiento.comodidadesGeneralesAdicionales}">
+                                <label for="_comodidadesGeneralesAdicionales_id" >Comodidades Generales Adicionales:</label>          
+                                <div id="roo_alojamiento_comodidadesGeneralesAdicionales" class="box" style="margin-left: 220px;">                                
+                                    <ul type="circle">
+                                        <c:forEach items="${alojamiento.comodidadesGeneralesAdicionales}" var="p">                        
+                                            <li><c:out value="${p.nombre}"/></li>
+                                        </c:forEach>
+                                    </ul>
+                                </div>
+                            </c:if>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tabs-2">
+                <div id="roo_cuentaBancaria_banco">
+                    <label for="_banco_id" >Banco:</label>
+                    <div class="box" id="_banco_id">
+                        <c:out value="${cuentaBancaria.banco}"/>
+                    </div>
+                </div>
+                <br/>
+                <div id="roo_cuentaBancaria_numeroCuenta">
+                    <label for="_numeroCuenta_id" >Numero Cuenta:</label>
+                    <div class="box" id="_numeroCuenta_id">
+                        <c:out value="${cuentaBancaria.numeroCuenta}"/>
+                    </div>
+                </div>
+                <br/>
+                <div id="roo_cuentaBancaria_titularCuenta">
+                    <label for="_titularCuenta_id" >Titular Cuenta:</label>
+                    <div class="box" id="_titularCuenta_id">
+                        <c:out value="${cuentaBancaria.titularCuenta}"/>
+                    </div>
+                </div>
+                <br/>
+                <div id="roo_cuentaBancaria_ciRif">
+                    <label for="_ciRif_id" >Ci Rif:</label>
+                    <div class="box" id="_ciRif_id">
+                        <c:out value="${cuentaBancaria.tipoCiRif}"/><c:out value="${cuentaBancaria.ciRif}"/>
+                    </div>
+                </div>
+                <br/>
+                <div id="roo_cuentaBancaria_correoElectronico">
+                    <label for="_correoElectronico_id" >Correo Electronico:</label>
+                    <div class="box" id="_correoElectronico_id">
+                        <c:out value="${cuentaBancaria.correoElectronico}"/>
+                    </div>
+                </div>
+                <br/>
+            </div>            
+        </div>
+   
+                
+        </c:if>
+        <c:if test="${empty alojamiento}">
+            <spring:message arguments="${entity_label}" code="entity.not.found.single"/>
+        </c:if>
+    </div>
+</div>

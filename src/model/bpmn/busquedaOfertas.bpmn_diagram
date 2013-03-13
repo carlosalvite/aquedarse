@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bpmn="http://stp.eclipse.org/bpmn" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_2p8T8K6pEeGJ9Nz4-3Ji4A" type="Bpmn" name="busquedaOfertas.bpmn_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_2qyBcK6pEeGJ9Nz4-3Ji4A" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_2qz2oK6pEeGJ9Nz4-3Ji4A" type="4008"/>
+    <children xmi:type="notation:Node" xmi:id="_2q1EwK6pEeGJ9Nz4-3Ji4A" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_2q4IEK6pEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_2q4vIK6pEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_2q4IEa6pEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_2q4IEq6pEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_2q4IE66pEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_2q4IFK6pEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_2qtwAa6pEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2q5WMK6pEeGJ9Nz4-3Ji4A" x="114" y="569" width="111" height="61"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_HVQlQK6rEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_HVRMUK6rEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_HVQlQa6rEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_HVQlQq6rEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_HVQlQ66rEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_HVQlRK6rEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_HVP-MK6rEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HVQlRa6rEeGJ9Nz4-3Ji4A" x="29" y="583"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_DGmXAK6sEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_DGm-EK6sEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_DGmXAa6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_DGmXAq6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_DGmXA66sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_DGmXBK6sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_DGlv8a6sEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DGmXBa6sEeGJ9Nz4-3Ji4A" x="818" y="119" width="124"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_MJ5jgK6sEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_MJ6KkK6sEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_MJ5jga6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_MJ5jgq6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_MJ5jg66sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_MJ5jhK6sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_MJ48ca6sEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MJ5jha6sEeGJ9Nz4-3Ji4A" x="835" y="323" width="113"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_bjh_8K6sEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_bjinAK6sEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_bjh_8a6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_bjh_8q6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_bjh_866sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_bjh_9K6sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_bjgx0a6sEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bjh_9a6sEeGJ9Nz4-3Ji4A" x="858" y="411" width="110"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_8C_U4K6sEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_8C_U5q6sEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_8C_U4a6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_8C_U4q6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_8C_U466sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_8C_U5K6sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_8C-t0a6sEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8C_U5a6sEeGJ9Nz4-3Ji4A" x="433" y="583"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_9de88a6sEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_9dfkBa6sEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_9dfkAK6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_9dfkAa6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_9dfkAq6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_9dfkA66sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_9de88K6sEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9dfkBK6sEeGJ9Nz4-3Ji4A" x="505" y="569"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Cs_SQK6uEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_Cs_5UK6uEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Cs_SQa6uEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Cs_SQq6uEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Cs_SQ66uEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Cs_SRK6uEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_Cs-rMa6uEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Cs_SRa6uEeGJ9Nz4-3Ji4A" x="687" y="571" width="50" height="50"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Fz6Noq6zEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_Fz60sK6zEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Fz6No66zEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Fz6NpK6zEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Fz6Npa6zEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Fz6Npq6zEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_Fz6Noa6zEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fz6Np66zEeGJ9Nz4-3Ji4A" x="810" y="243" width="164"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_M2xMYq6zEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_M2xzc66zEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_M2xMY66zEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_M2xMZK6zEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_M2xzcK6zEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_M2xzca6zEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_M2xMYa6zEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M2xzcq6zEeGJ9Nz4-3Ji4A" x="843" y="539" width="127"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_SHHEoK6zEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_SHHrsK6zEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_SHHEoa6zEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_SHHEoq6zEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_SHHEo66zEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_SHHEpK6zEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_SHGdka6zEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SHHEpa6zEeGJ9Nz4-3Ji4A" x="846" y="642" width="122"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Of8UMK60EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_Of87QK60EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Of8UMa60EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Of8UMq60EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Of8UM660EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Of8UNK60EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_Of7tIa60EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Of8UNa60EeGJ9Nz4-3Ji4A" x="1330" y="543"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Jy5rYK62EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_Jy6ScK62EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Jy5rYa62EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Jy5rYq62EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Jy5rY662EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Jy5rZK62EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_Jy5EUa62EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Jy5rZa62EeGJ9Nz4-3Ji4A" x="851" y="731"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_VD_lIK62EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_VEAMMK62EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_VD_lIa62EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_VD_lIq62EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_VD_lI662EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_VD_lJK62EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_VD--Ea62EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VD_lJa62EeGJ9Nz4-3Ji4A" x="1546" y="557"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_oJR-gK63EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_oJSlkK63EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_oJR-ga63EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_oJR-gq63EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_oJR-g663EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_oJR-hK63EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_oJRXca63EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oJR-ha63EeGJ9Nz4-3Ji4A" x="1650" y="543" width="139"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Bv9dwq64EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_Bv-E0K64EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Bv9dw664EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Bv9dxK64EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Bv9dxa64EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Bv9dxq64EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_Bv9dwa64EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Bv9dx664EeGJ9Nz4-3Ji4A" x="1851" y="546"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_DuaHcK64EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_DuaugK64EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_DuaHca64EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_DuaHcq64EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_DuaHc664EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_DuaHdK64EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_DuZgYa64EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DuaHda64EeGJ9Nz4-3Ji4A" x="2034" y="539" width="115"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_2q1Ewa6pEeGJ9Nz4-3Ji4A"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_2q1Ewq6pEeGJ9Nz4-3Ji4A"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_2q1Ew66pEeGJ9Nz4-3Ji4A"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_2qyBca6pEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_2qyBcq6pEeGJ9Nz4-3Ji4A"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_2qyBc66pEeGJ9Nz4-3Ji4A" fillColor="16771304"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_2qyBdK6pEeGJ9Nz4-3Ji4A" lineColor="11119017"/>
+    <element xmi:type="bpmn:Pool" href="busquedaOfertas.bpmn#_2qsh4a6pEeGJ9Nz4-3Ji4A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2q2S4K6pEeGJ9Nz4-3Ji4A" x="16" y="16" width="2871" height="1097"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_EjhdcK6rEeGJ9Nz4-3Ji4A" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_EjiEgK6rEeGJ9Nz4-3Ji4A" type="4008"/>
+    <children xmi:type="notation:Node" xmi:id="_EjiEga6rEeGJ9Nz4-3Ji4A" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_mzDzcq6sEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_mzEagK6sEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_mzDzc66sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_mzDzdK6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_mzDzda6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_mzDzdq6sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_mzDzca6sEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzDzd66sEeGJ9Nz4-3Ji4A" x="149" y="77"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_nbxZQK6sEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_nbyAUK6sEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_nbxZQa6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_nbxZQq6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_nbxZQ66sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_nbxZRK6sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_nbwyMa6sEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nbxZRa6sEeGJ9Nz4-3Ji4A" x="224" y="63" width="126"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_vpGnEK6sEeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_vpGnFq6sEeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_vpGnEa6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_vpGnEq6sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_vpGnE66sEeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_vpGnFK6sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_vpGAAa6sEeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vpGnFa6sEeGJ9Nz4-3Ji4A" x="397" y="63" width="116"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Sd0fAK60EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_Sd0fBq60EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Sd0fAa60EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Sd0fAq60EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Sd0fA660EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Sd0fBK60EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_Sdz38a60EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Sd0fBa60EeGJ9Nz4-3Ji4A" x="1502" y="63" width="133"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_rCmm8K61EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_rCnOAK61EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_rCmm8a61EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_rCmm8q61EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_rCmm8661EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_rCmm9K61EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_rCl_4a61EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rCmm9a61EeGJ9Nz4-3Ji4A" x="1385" y="77"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_1muloK64EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_1mvMsK64EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_1muloa64EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_1muloq64EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_1mulo664EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_1mulpK64EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_1mt-ka64EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1mulpa64EeGJ9Nz4-3Ji4A" x="2058" y="77"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_4lvUcK64EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_4lv7gK64EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_4lvUca64EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_4lvUcq64EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_4lvUc664EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_4lvUdK64EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_4lutYa64EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4lvUda64EeGJ9Nz4-3Ji4A" x="2173" y="66" width="107"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Ugl1wa65EeGJ9Nz4-3Ji4A" type="2001">
+        <children xmi:type="notation:Node" xmi:id="_Ugmc0K65EeGJ9Nz4-3Ji4A" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Ugl1wq65EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Ugl1w665EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Ugl1xK65EeGJ9Nz4-3Ji4A"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Ugl1xa65EeGJ9Nz4-3Ji4A" lineColor="0"/>
+        <element xmi:type="bpmn:Activity" href="busquedaOfertas.bpmn#_Ugl1wK65EeGJ9Nz4-3Ji4A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ugl1xq65EeGJ9Nz4-3Ji4A" x="2362" y="80"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_EjiEgq6rEeGJ9Nz4-3Ji4A"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_EjiEg66rEeGJ9Nz4-3Ji4A"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_EjiEhK6rEeGJ9Nz4-3Ji4A"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Ejhdca6rEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_Ejhdcq6rEeGJ9Nz4-3Ji4A"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_Ejhdc66rEeGJ9Nz4-3Ji4A" fillColor="16771304"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_EjhddK6rEeGJ9Nz4-3Ji4A" lineColor="11119017"/>
+    <element xmi:type="bpmn:Pool" href="busquedaOfertas.bpmn#_EjgPUa6rEeGJ9Nz4-3Ji4A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ejhdda6rEeGJ9Nz4-3Ji4A" x="16" y="1129" width="2871" height="201"/>
+  </children>
+  <styles xmi:type="notation:PageStyle" xmi:id="_2p8T8a6pEeGJ9Nz4-3Ji4A"/>
+  <styles xmi:type="notation:GuideStyle" xmi:id="_2p8T8q6pEeGJ9Nz4-3Ji4A"/>
+  <styles xmi:type="notation:DescriptionStyle" xmi:id="_2p8T866pEeGJ9Nz4-3Ji4A"/>
+  <element xmi:type="bpmn:BpmnDiagram" href="busquedaOfertas.bpmn#_2pmVsa6pEeGJ9Nz4-3Ji4A"/>
+  <edges xmi:type="notation:Edge" xmi:id="_IsHqgK6rEeGJ9Nz4-3Ji4A" type="3001" source="_HVQlQK6rEeGJ9Nz4-3Ji4A" target="_2q4IEK6pEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_IsJfsK6rEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_IsJfsa6rEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_IsJfsq6rEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_IsJfs66rEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_IsHqga6rEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_IsHqgq6rEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_IsHqg66rEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_IsFOQa6rEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IsHqhK6rEeGJ9Nz4-3Ji4A" points="[15, 2, -108, 3]$[116, 28, -7, 29]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_mzIE4K6sEeGJ9Nz4-3Ji4A" type="3002" source="_2q4IEK6pEeGJ9Nz4-3Ji4A" target="_mzDzcq6sEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_mzIr8K6sEeGJ9Nz4-3Ji4A" type="4013">
+      <styles xmi:type="notation:FillStyle" xmi:id="_mzIr8a6sEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_mzIr8q6sEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_mzIr866sEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_mzIE4a6sEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_mzIE4q6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_mzIE466sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:MessagingEdge" href="busquedaOfertas.bpmn#_mzG2wK6sEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mzIE5K6sEeGJ9Nz4-3Ji4A" points="[-30, 29, 139, -136]$[-167, 163, 2, -2]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_nb1DoK6sEeGJ9Nz4-3Ji4A" type="3001" source="_mzDzcq6sEeGJ9Nz4-3Ji4A" target="_nbxZQK6sEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_nb1Dpa6sEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_nb1Dpq6sEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_nb1Dp66sEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_nb1DqK6sEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_nb1Doa6sEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_nb1Doq6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_nb1Do66sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_nb0cka6sEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nb1DpK6sEeGJ9Nz4-3Ji4A" points="[-15, -9, 151, 84]$[-164, -92, 2, 1]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_vpJqYK6sEeGJ9Nz4-3Ji4A" type="3001" source="_nbxZQK6sEeGJ9Nz4-3Ji4A" target="_vpGnEK6sEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_vpJqZa6sEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_vpJqZq6sEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_vpJqZ66sEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_vpJqaK6sEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_vpJqYa6sEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_vpJqYq6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_vpJqY66sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_vpJDUa6sEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vpJqZK6sEeGJ9Nz4-3Ji4A" points="[-61, -20, 226, 72]$[-285, -92, 2, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_8DCYMK6sEeGJ9Nz4-3Ji4A" type="3002" source="_vpGnEK6sEeGJ9Nz4-3Ji4A" target="_8C_U4K6sEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_8DC_QK6sEeGJ9Nz4-3Ji4A" type="4013">
+      <styles xmi:type="notation:FillStyle" xmi:id="_8DC_Qa6sEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_8DC_Qq6sEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8DC_Q66sEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_8DCYMa6sEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_8DCYMq6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_8DCYM66sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:MessagingEdge" href="busquedaOfertas.bpmn#_8DBxIa6sEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8DCYNK6sEeGJ9Nz4-3Ji4A" points="[-37, -28, 418, 318]$[-453, -345, 2, 1]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_8430AK6sEeGJ9Nz4-3Ji4A" type="3001" source="_2q4IEK6pEeGJ9Nz4-3Ji4A" target="_8C_U4K6sEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_844bEq6sEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_844bE66sEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_844bFK6sEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_844bFa6sEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_8430Aa6sEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_8430Aq6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_844bEK6sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_843M8a6sEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_844bEa6sEeGJ9Nz4-3Ji4A" points="[54, -6, -227, 1]$[276, 8, -5, 15]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_9dkcgK6sEeGJ9Nz4-3Ji4A" type="3001" source="_8C_U4K6sEeGJ9Nz4-3Ji4A" target="_9de88a6sEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_9dlDkK6sEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_9dlDka6sEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_9dlDkq6sEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9dlDk66sEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_9dkcga6sEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9dkcgq6sEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_9dkcg66sEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_9dj1ca6sEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9dkchK6sEeGJ9Nz4-3Ji4A" points="[-15, -3, 435, 87]$[-448, -90, 2, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_CtCVkK6uEeGJ9Nz4-3Ji4A" type="3001" source="_9de88a6sEeGJ9Nz4-3Ji4A" target="_Cs_SQK6uEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_CtC8oK6uEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_CtC8oa6uEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_CtC8oq6uEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_CtC8o66uEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_CtCVka6uEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_CtCVkq6uEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_CtCVk66uEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_CtBuga6uEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CtCVlK6uEeGJ9Nz4-3Ji4A" points="[-53, -9, 507, 80]$[-559, -89, 1, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_1HHyIK6wEeGJ9Nz4-3Ji4A" type="3001" source="_Cs_SQK6uEeGJ9Nz4-3Ji4A" target="_DGmXAK6sEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_1HIZMK6wEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_1HIZMa6wEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_1HIZMq6wEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1HIZM66wEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_1HHyIa6wEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1HHyIq6wEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_1HHyI66wEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_1HHLEa6wEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1HHyJK6wEeGJ9Nz4-3Ji4A" points="[8, -17, -189, 263]$[137, -285, -60, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_1fsqMK6wEeGJ9Nz4-3Ji4A" type="3001" source="_Cs_SQK6uEeGJ9Nz4-3Ji4A" target="_MJ5jgK6sEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_1ftRQK6wEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_1ftRQa6wEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_1ftRQq6wEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1ftRQ66wEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_1fsqMa6wEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1fsqMq6wEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_1fsqM66wEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_1fsDIa6wEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1fsqNK6wEeGJ9Nz4-3Ji4A" points="[11, -14, -185, 171]$[142, -171, -54, 14]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_14VzsK6wEeGJ9Nz4-3Ji4A" type="3001" source="_Cs_SQK6uEeGJ9Nz4-3Ji4A" target="_bjh_8K6sEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_14Vzta6wEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_14Vztq6wEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_14Vzt66wEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_14VzuK6wEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_14Vzsa6wEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_14Vzsq6wEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_14Vzs66wEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_14Ulka6wEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_14VztK6wEeGJ9Nz4-3Ji4A" points="[16, -9, -174, 82]$[137, -76, -53, 15]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Fz94AK6zEeGJ9Nz4-3Ji4A" type="3001" source="_Cs_SQK6uEeGJ9Nz4-3Ji4A" target="_Fz6Noq6zEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_Fz94Ba6zEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_Fz94Bq6zEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Fz94B66zEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Fz94CK6zEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Fz94Aa6zEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Fz94Aq6zEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_Fz94A66zEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_Fz9Q8a6zEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Fz94BK6zEeGJ9Nz4-3Ji4A" points="[-15, -11, 691, 469]$[-704, -479, 2, 1]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_M202wK6zEeGJ9Nz4-3Ji4A" type="3001" source="_Cs_SQK6uEeGJ9Nz4-3Ji4A" target="_M2xMYq6zEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_M202xa6zEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_M202xq6zEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_M202x66zEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_M202yK6zEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_M202wa6zEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_M202wq6zEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_M202w66zEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_M20Psa6zEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_M202xK6zEeGJ9Nz4-3Ji4A" points="[-15, -11, 691, 469]$[-704, -479, 2, 1]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_SHKH8K6zEeGJ9Nz4-3Ji4A" type="3001" source="_Cs_SQK6uEeGJ9Nz4-3Ji4A" target="_SHHEoK6zEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_SHKvAK6zEeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_SHKvAa6zEeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_SHKvAq6zEeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SHKvA66zEeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_SHKH8a6zEeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_SHKH8q6zEeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_SHKH866zEeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_SHJg4a6zEeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SHKH9K6zEeGJ9Nz4-3Ji4A" points="[-15, -11, 691, 469]$[-704, -479, 2, 1]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Of_XgK60EeGJ9Nz4-3Ji4A" type="3001" source="_SHHEoK6zEeGJ9Nz4-3Ji4A" target="_Of8UMK60EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_Of_Xha60EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_Of_Xhq60EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Of_Xh660EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Of_XiK60EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Of_Xga60EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Of_Xgq60EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_Of_Xg660EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_Of-wca60EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Of_XhK60EeGJ9Nz4-3Ji4A" points="[-31, -28, 863, 800]$[-892, -826, 2, 2]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_-_7tgK60EeGJ9Nz4-3Ji4A" type="3001" source="_M2xMYq6zEeGJ9Nz4-3Ji4A" target="_Of8UMK60EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_-_8UkK60EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_-_8Uka60EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-_8Ukq60EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-_8Uk660EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_-_7tga60EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-_7tgq60EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_-_7tg660EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_-_7Gca60EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-_7thK60EeGJ9Nz4-3Ji4A" points="[43, -28, -409, 225]$[400, -281, -52, -28]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="__d_igK60EeGJ9Nz4-3Ji4A" type="3001" source="_Fz6Noq6zEeGJ9Nz4-3Ji4A" target="_Of8UMK60EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="__eAJkK60EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="__eAJka60EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="__eAJkq60EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__eAJk660EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="__d_iga60EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="__d_igq60EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="__d_ig660EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#__d-7ca60EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__d_ihK60EeGJ9Nz4-3Ji4A" points="[80, -21, -297, 75]$[324, -82, -53, 14]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="__5o8sK60EeGJ9Nz4-3Ji4A" type="3001" source="_bjh_8K6sEeGJ9Nz4-3Ji4A" target="_Of8UMK60EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="__5pjwK60EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="__5pjwa60EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="__5pjwq60EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__5pjw660EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="__5o8sa60EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="__5o8sq60EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="__5o8s660EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#__5oVoa60EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__5o8tK60EeGJ9Nz4-3Ji4A" points="[53, 6, -351, -37]$[435, 72, 31, 29]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Acr_YK61EeGJ9Nz4-3Ji4A" type="3001" source="_MJ5jgK6sEeGJ9Nz4-3Ji4A" target="_Of8UMK60EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_Acr_Za61EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_Acr_Zq61EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Acr_Z661EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Acr_aK61EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Acr_Ya61EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Acr_Yq61EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_Acr_Y661EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_AcqxQa61EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Acr_ZK61EeGJ9Nz4-3Ji4A" points="[55, 28, -385, -183]$[387, 208, -53, -3]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_K_ZJIK61EeGJ9Nz4-3Ji4A" type="3001" source="_DGmXAK6sEeGJ9Nz4-3Ji4A" target="_Of8UMK60EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_K_ZJJa61EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_K_ZJJq61EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_K_ZJJ661EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_ZJKK61EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_K_ZJIa61EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_ZJIq61EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_K_ZJI661EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_K_X7Aa61EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_ZJJK61EeGJ9Nz4-3Ji4A" points="[44, 29, -472, -285]$[463, 308, -53, -6]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_rCpqQK61EeGJ9Nz4-3Ji4A" type="3001" source="_vpGnEK6sEeGJ9Nz4-3Ji4A" target="_rCmm8K61EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_rCqRUK61EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_rCqRUa61EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_rCqRUq61EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rCqRU661EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_rCpqQa61EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_rCpqQq61EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_rCpqQ661EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_rCpDMa61EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rCpqRK61EeGJ9Nz4-3Ji4A" points="[-56, -12, 399, 81]$[-453, -93, 2, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_ttoCwK61EeGJ9Nz4-3Ji4A" type="3002" source="_Of8UMK60EeGJ9Nz4-3Ji4A" target="_rCmm8K61EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_ttop0K61EeGJ9Nz4-3Ji4A" type="4013">
+      <styles xmi:type="notation:FillStyle" xmi:id="_ttop0a61EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_ttop0q61EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ttop0661EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_ttoCwa61EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ttoCwq61EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_ttoCw661EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:MessagingEdge" href="busquedaOfertas.bpmn#_ttm0oa61EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ttoCxK61EeGJ9Nz4-3Ji4A" points="[1, 29, -24, -605]$[33, 649, 8, 15]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Jy8usq62EeGJ9Nz4-3Ji4A" type="3001" source="_Cs_SQK6uEeGJ9Nz4-3Ji4A" target="_Jy5rYK62EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_Jy9VwK62EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_Jy9Vwa62EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Jy9Vwq62EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Jy9Vw662EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Jy8us662EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Jy8utK62EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_Jy8uta62EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_Jy8usa62EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Jy8utq62EeGJ9Nz4-3Ji4A" points="[-14, -12, 700, 586]$[-712, -596, 2, 2]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Le7vYK62EeGJ9Nz4-3Ji4A" type="3001" source="_Jy5rYK62EeGJ9Nz4-3Ji4A" target="_Of8UMK60EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_Le8WcK62EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_Le8Wca62EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Le8Wcq62EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Le8Wc662EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Le7vYa62EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Le7vYq62EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_Le7vY662EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_Le6hQa62EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Le7vZK62EeGJ9Nz4-3Ji4A" points="[54, -23, -402, 183]$[438, -177, -18, 29]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_RZ-xgK62EeGJ9Nz4-3Ji4A" type="3001" source="_rCmm8K61EeGJ9Nz4-3Ji4A" target="_Sd0fAK60EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_RZ-xha62EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_RZ-xhq62EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_RZ-xh662EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_RZ-xiK62EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_RZ-xga62EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_RZ-xgq62EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_RZ-xg662EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_RZ9jYa62EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RZ-xhK62EeGJ9Nz4-3Ji4A" points="[15, 0, -275, 6]$[218, 13, -72, 19]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_VEDPgK62EeGJ9Nz4-3Ji4A" type="3001" source="_Of8UMK60EeGJ9Nz4-3Ji4A" target="_VD_lIK62EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_VEDPha62EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_VEDPhq62EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_VEDPh662EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_VEDPiK62EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_VEDPga62EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_VEDPgq62EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_VEDPg662EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_VECBYa62EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VEDPhK62EeGJ9Nz4-3Ji4A" points="[-53, -22, 1332, 551]$[-1383, -573, 2, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_WaqdIK62EeGJ9Nz4-3Ji4A" type="3002" source="_Sd0fAK60EeGJ9Nz4-3Ji4A" target="_VD_lIK62EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_WarEMK62EeGJ9Nz4-3Ji4A" type="4013">
+      <styles xmi:type="notation:FillStyle" xmi:id="_WarEMa62EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_WarEMq62EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_WarEM662EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_WaqdIa62EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_WaqdIq62EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_WaqdI662EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:MessagingEdge" href="busquedaOfertas.bpmn#_WapPAa62EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WaqdJK62EeGJ9Nz4-3Ji4A" points="[-3, -28, 14, 608]$[-2, -647, 15, -11]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_oJVB0K63EeGJ9Nz4-3Ji4A" type="3001" source="_VD_lIK62EeGJ9Nz4-3Ji4A" target="_oJR-gK63EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_oJVB1a63EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_oJVB1q63EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_oJVB1663EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_oJVB2K63EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_oJVB0a63EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_oJVB0q63EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_oJVB0663EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_oJUawa63EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oJVB1K63EeGJ9Nz4-3Ji4A" points="[-15, -6, 1548, 568]$[-1561, -574, 2, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_BwAhEK64EeGJ9Nz4-3Ji4A" type="3001" source="_oJR-gK63EeGJ9Nz4-3Ji4A" target="_Bv9dwq64EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_BwAhFa64EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_BwAhFq64EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_BwAhF664EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BwAhGK64EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_BwAhEa64EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BwAhEq64EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_BwAhE664EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_Bv_6Aa64EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BwAhFK64EeGJ9Nz4-3Ji4A" points="[-62, -21, 1652, 552]$[-1713, -573, 1, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_CwiJ8K64EeGJ9Nz4-3Ji4A" type="3001" source="_Bv9dwq64EeGJ9Nz4-3Ji4A" target="_Cs_SQK6uEeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_CwixAK64EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_CwixAa64EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_CwixAq64EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_CwixA664EeGJ9Nz4-3Ji4A" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_CwiJ8a64EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_CwiJ8q64EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_CwiJ8664EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_Cwhi4a64EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CwiJ9K64EeGJ9Nz4-3Ji4A" points="[-25, 0, 1139, -25]$[-1166, 48, -2, 23]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_DudKwK64EeGJ9Nz4-3Ji4A" type="3001" source="_Bv9dwq64EeGJ9Nz4-3Ji4A" target="_DuaHcK64EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_DudKxa64EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_DudKxq64EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_DudKx664EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DudKyK64EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_DudKwa64EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DudKwq64EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_DudKw664EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_Ducjsa64EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DudKxK64EeGJ9Nz4-3Ji4A" points="[-20, -6, 1858, 567]$[-1876, -573, 2, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_1mxo8K64EeGJ9Nz4-3Ji4A" type="3001" source="_Sd0fAK60EeGJ9Nz4-3Ji4A" target="_1muloK64EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_1mxo9a64EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_1mxo9q64EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_1mxo9664EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1mxo-K64EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_1mxo8a64EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1mxo8q64EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_1mxo8664EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_1mxB4a64EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1mxo9K64EeGJ9Nz4-3Ji4A" points="[-64, -4, 1504, 89]$[-1566, -93, 2, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_27ziMK64EeGJ9Nz4-3Ji4A" type="3002" source="_DuaHcK64EeGJ9Nz4-3Ji4A" target="_1muloK64EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_270JQK64EeGJ9Nz4-3Ji4A" type="4013">
+      <styles xmi:type="notation:FillStyle" xmi:id="_270JQa64EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_270JQq64EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_270JQ664EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_27ziMa64EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_27ziMq64EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_27ziM664EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:MessagingEdge" href="busquedaOfertas.bpmn#_27yUEa64EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_27ziNK64EeGJ9Nz4-3Ji4A" points="[-2, 29, 30, -605]$[-17, 634, 15, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_4lyXwK64EeGJ9Nz4-3Ji4A" type="3001" source="_1muloK64EeGJ9Nz4-3Ji4A" target="_4lvUcK64EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_4lyXxa64EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_4lyXxq64EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_4lyXx664EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_4lyXyK64EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_4lyXwa64EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_4lyXwq64EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_4lyXw664EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_4lxwsa64EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4lyXxK64EeGJ9Nz4-3Ji4A" points="[-15, -1, 2060, 93]$[-2073, -94, 2, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Ugo5EK65EeGJ9Nz4-3Ji4A" type="3001" source="_4lvUcK64EeGJ9Nz4-3Ji4A" target="_Ugl1wa65EeGJ9Nz4-3Ji4A">
+    <children xmi:type="notation:Node" xmi:id="_Ugo5Fa65EeGJ9Nz4-3Ji4A" type="4012">
+      <styles xmi:type="notation:FillStyle" xmi:id="_Ugo5Fq65EeGJ9Nz4-3Ji4A" fillColor="16776959"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Ugo5F665EeGJ9Nz4-3Ji4A" lineColor="16776959"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Ugo5GK65EeGJ9Nz4-3Ji4A" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Ugo5Ea65EeGJ9Nz4-3Ji4A" routing="Rectilinear" smoothness="Normal" closestDistance="true"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Ugo5Eq65EeGJ9Nz4-3Ji4A" fontName="Arial"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_Ugo5E665EeGJ9Nz4-3Ji4A" lineColor="0"/>
+    <element xmi:type="bpmn:SequenceEdge" href="busquedaOfertas.bpmn#_UgoSAa65EeGJ9Nz4-3Ji4A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ugo5FK65EeGJ9Nz4-3Ji4A" points="[-51, -3, 2175, 93]$[-2224, -96, 2, 0]"/>
+  </edges>
+</notation:Diagram>

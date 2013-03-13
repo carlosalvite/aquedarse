@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="alojamiento/list">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/list.jspx"/>
+    </definition>
+    <definition extends="default" name="alojamiento/show">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/show.jspx"/>
+    </definition>
+    <definition extends="default" name="alojamiento/create">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/registrarAlojamiento.jspx"/>
+    </definition>
+    <definition extends="default" name="alojamiento/update">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/update.jspx"/>
+    </definition>
+    <definition extends="default" name="alojamiento/findAlojamientoesByNombre">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/findAlojamientoesByNombre.jspx"/>
+    </definition>
+    <definition extends="default" name="alojamiento/registrarAlojamientoFotos">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/registrarAlojamientoFotos.jspx"/>
+    </definition>
+    <definition extends="default" name="alojamiento/mostrar">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/mostrar.jspx"/>
+    </definition>
+    <definition extends="default" name="alojamiento/panelDeControl">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/panelDeControl.jspx"/>
+    </definition>
+</tiles-definitions>

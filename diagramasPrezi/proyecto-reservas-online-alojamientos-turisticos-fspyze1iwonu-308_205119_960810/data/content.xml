@@ -1,0 +1,1536 @@
+<zuiprezi>
+  <version>5</version>
+  <zui-table>
+    <settings>
+      <autoplay>
+        <delay>4000</delay>
+      </autoplay>
+      <bounds x="-41283.666363804325" y="-32710.45715384557" width="107164.15794958262" height="82658.03572069271"/>
+      <aspectratio>off</aspectratio>
+      <languages>
+        <language>es</language>
+      </languages>
+    </settings>
+    <object id="0" type="button" x="-32541.793908822983" y="12902.123720947588" r="0" s="4.1841033191525785" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1025.831730625609</w>
+        <h>578.6249245659664</h>
+      </size>
+    </object>
+    <object id="44_3317874" type="button" x="-15597.049999999997" y="-8907.85" r="34.84294407491023" s="4.112358315834688" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>892.7884615384615</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="10_3275186" type="image" x="-16963.8786304042" y="-8914.869395906266" r="36.887043366148475" s="3.414227701118114">
+      <source w="128" h="128">293792263.png<url>293792263.png</url>
+      </source>
+      <sourceUrl>1351456101_iPhoto.png</sourceUrl>
+    <resource><id>
+        293792263
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/1/6/bd3b99f22e5f8a6bfef33145aece072b5b4e7.png</url></resource></object>
+    <object id="11_3275186" type="image" x="-15287.963372631248" y="-7748.187197863791" r="34.84294407491024" s="0.6631635710346823">
+      <source w="512" h="512">293795303.png<url>293795303.png</url>
+      </source>
+      <sourceUrl>1351456231_Youtube_512x512.png</sourceUrl>
+    <resource><id>
+        293795303
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/a/3/a44d74fa81ad607cb291992a3ae10d5b29f95.png</url></resource></object>
+    <object id="14_3275186" type="image" x="-16147.172846987321" y="-8346.065692314853" r="34.84294407491023" s="2.438734072227226">
+      <source w="128" h="128">293798089.png<url>293798089.png</url>
+      </source>
+      <sourceUrl>1351456347_Maps.png</sourceUrl>
+    <resource><id>
+        293798089
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/2/4/2aebcc7957108b219a78a6e5ef5e1ac841a1b.png</url></resource></object>
+    <object id="15_3275186" type="image" x="-14948.176644229585" y="-7511.36626420509" r="34.84294407491024" s="4.375433461343338">
+      <source w="64" h="64">293809333.png<url>293809333.png</url>
+      </source>
+      <sourceUrl>1351456871_vimeo.png</sourceUrl>
+    <resource><id>
+        293809333
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/e/2/f82bd6c7cc572cb9f318afdeafc8c199186eb.png</url></resource></object>
+    <object id="9_3132628" type="button" x="-23936.872759257178" y="12927.009804644436" r="0" s="13.645659739098305" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>359.8952512104322</w>
+        <h>191.51082235081984</h>
+      </size>
+    </object>
+    <object id="45_3317874" type="button" x="-20598.881101015868" y="-12389.64277214108" r="34.84294407491023" s="4.79874273904967" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>909</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="18_3275186" type="image" x="-21001.891702513505" y="-11919.819816257706" r="16.148155355474053" s="11.067013490293249">
+      <source w="128" h="128">293827087.png<url>293827087.png</url>
+      </source>
+      <sourceUrl>1351457562_check.png</sourceUrl>
+    <resource><id>
+        293827087
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/d/a/dfb12986f71eddc9841e8b786f8493d29f6ef.png</url></resource></object>
+    <object id="1" type="label" x="-15735.894744753463" y="-9004.053742022545" r="34.84294407491024" s="4.122201957221971" class="strong">
+      <textfield>
+        <x>-292.25</x>
+        <y>-95</y>
+        <text><![CDATA[- Registrarse
+- Subir las fotos
+- Redactar una breve descripción del alojamiento
+- Registrar la ubicación y marcarla en Google Maps. 
+- Seleccionar las comodidades generales que se ofrecen 
+- Agregar videos en Vimeo o Youtube.]]></text>
+        <w>584.55</w>
+        <h>190</h>
+        <annotations>r0-14 { align: left; }
+r14-32 { align: left; }
+r32-81 { align: left; }
+r81-134 { align: left; }
+r134-190 { align: left; }
+r190-226 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="76_3275186" type="image" x="-16080.76134015197" y="-10182.970940161444" r="35.358528565033765" s="8.025627686803078">
+      <source w="48" h="48">294017283.png<url>294017283.png</url>
+      </source>
+      <sourceUrl>1351466332_People.png</sourceUrl>
+    <resource><id>
+        294017283
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/2/8/1e1f6239fc0d73c07538df13ba62b6cc83ec9.png</url></resource></object>
+    <object id="2" type="label" x="-14940.452645226405" y="-9389.342924366783" r="34.84294407491024" s="6.524414635699263" class="head">
+      <textfield>
+        <x>-177.8</x>
+        <y>-34.65</y>
+        <text><![CDATA[Registrar información básica del hospedaje]]></text>
+        <w>355.6</w>
+        <h>69.3</h>
+        <annotations>r0-42 { align: right; }</annotations>
+      </textfield>
+    </object>
+    <object id="10_3132628" type="labelwithplaceholder" x="-23027.385790464712" y="13739.869388076651" r="0" s="5.668654150206224" class="strong">
+      <placeholder text="Click to add text" x="-85.95" y="-17.5" align="center" width="171.9"/>
+    </object>
+    <object id="77_3275186" type="image" x="-21269.151399800943" y="-13781.540132700657" r="35.35852856503379" s="8.025627686803068">
+      <source w="48" h="48">294017283.png<url>294017283.png</url>
+      </source>
+      <sourceUrl>1351466332_People.png</sourceUrl>
+    <resource><id>
+        294017283
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/2/8/1e1f6239fc0d73c07538df13ba62b6cc83ec9.png</url></resource></object>
+    <object id="11_3132628" type="label" x="-20005.449795667846" y="-12888.830308523186" r="34.84294407491023" s="6.524414635699262" class="head">
+      <textfield>
+        <x>-191</x>
+        <y>-34.65</y>
+        <text><![CDATA[Registrar la cuenta bancaria en donde se recibirán los pagos]]></text>
+        <w>382.05</w>
+        <h>69.3</h>
+        <annotations>r0-60 { align: right; }</annotations>
+      </textfield>
+    </object>
+    <object id="8" type="button" x="-3240.153378745182" y="115.6818535497057" r="0" s="4.8401735947990945" class="circle">
+      <type>circle</type>
+      <size>
+        <w>2342.575218546395</w>
+        <h>2342.575218546395</h>
+      </size>
+    </object>
+    <object id="32_3275186" type="image" x="-3326.4055336220717" y="-979.5390786107546" r="0" s="20.237727318703477">
+      <source w="128" h="128">293873529.png<url>293873529.png</url>
+      </source>
+      <sourceUrl>1351459704_ktip.png</sourceUrl>
+    <resource><id>
+        293873529
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/6/6/40d66817b2120aaf1ccee48de27a0b641f432.png</url></resource></object>
+    <object id="3_3275186" type="label" x="-3357.078541337674" y="2068.411222723761" r="0" s="13.275801662670869" class="strong">
+      <textfield>
+        <x>-293.6</x>
+        <y>-79.5</y>
+        <text><![CDATA[Consiste en crear una página web para reservaciones de alojamientos turísticos online, que sea moderna, atractiva, popular y fácil de usar, en el que sean los mismos hospedajes quienes registren su información y gestionen sus propios anuncios.]]></text>
+        <w>587.25</w>
+        <h>159</h>
+        <annotations>r0-243 { color: #000; }
+r0-243 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="4_3275186" type="label" x="-3327.049428235186" y="-3048.5503979159757" r="0" s="18.586122327739215" class="head">
+      <textfield>
+        <x>-190</x>
+        <y>-18.3</y>
+        <text><![CDATA[¿ De qué se trata nuestra idea ?]]></text>
+        <w>380.05</w>
+        <h>36.65</h>
+        <annotations>r0-32 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="12_3275186" type="label" x="-16557.71879600527" y="-8600.878735899292" r="34.84294407491025" s="15.835851038863913" class="strong">
+      <textfield autoSize="true">
+        <x>-8.05</x>
+        <y>-17.5</y>
+        <text><![CDATA[+]]></text>
+        <annotations>r0-1 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="13_3275186" type="label" x="-15737.818627384519" y="-8030.176999658232" r="34.84294407491025" s="15.835851038863913" class="strong">
+      <textfield autoSize="true">
+        <x>-8.05</x>
+        <y>-17.5</y>
+        <text><![CDATA[+]]></text>
+        <annotations>r0-1 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="46_3317874" type="button" x="-26256.705839194612" y="-16890.700457244453" r="35.012800886421324" s="4.86235348703877" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>798.5989492119089</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="26_3275186" type="image" x="-27847.542804585653" y="-16883.508274255506" r="35.01280088642136" s="2.0957751588426268">
+      <source w="128" h="128">293854175.png<url>293854175.png</url>
+      </source>
+      <sourceUrl>1351458687_schedule.png</sourceUrl>
+    <resource><id>
+        293854175
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/0/b/0709dd61c7134bf087d32d1e8d4778945a8f4.png</url></resource></object>
+    <object id="27_3275186" type="image" x="-27542.514648572607" y="-17314.982398390275" r="35.012800886421374" s="3.514722905727522">
+      <source w="64" h="64">293856635.png<url>293856635.png</url>
+      </source>
+      <sourceUrl>1351458883_tag_64.png</sourceUrl>
+    <resource><id>
+        293856635
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/9/6/c9ddf416fdd25c62fbd6f125f628be1f25603.png</url></resource></object>
+    <object id="28_3275186" type="image" x="-27230.491705615143" y="-17760.451151364956" r="35.01280088642134" s="2.261950384874147">
+      <source w="128" h="128">293858621.png<url>293858621.png</url>
+      </source>
+      <sourceUrl>1351458948_bedroom.png</sourceUrl>
+    <resource><id>
+        293858621
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/7/7/cacb813c7ba0471ed901bb0c1cc96cc1e8188.png</url></resource></object>
+    <object id="21_3275186" type="label" x="-25349.879975225816" y="-17152.879589730826" r="35.01280088642134" s="6.94549206504058" class="head">
+      <textfield autoSize="true">
+        <x>-172.6</x>
+        <y>-18.3</y>
+        <text><![CDATA[Registrar una oferta]]></text>
+        <w>345.2</w>
+        <h>36.65</h>
+        <annotations>r0-20 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="23_3275186" type="label" x="-26249.87912482437" y="-16430.212112141813" r="35.012800886421374" s="3.5863516353151814" class="strong">
+      <textfield>
+        <x>-355.15</x>
+        <y>-172.5</y>
+        <text><![CDATA[- Escribir un título (Ej.: "Hab. doble estándar con desayuno incluido")
+- Seleccionar el tipo de habitación
+- Seleccionar las comodidades y servicios incluidos en la oferta
+- Indicar las condiciones especiales (Ej.: "No se  incluyen bebidas alcohólicas")
+- Seleccionar las habitaciones disponibles por noche para la oferta y el mín. y máx. de noches por reservación
+-Indicar el tipo de tarifa (Ej.: "Persona por noche o hab. por noche")
+- Indicar el costo de la tarifa en temp. alta y temp. baja
+- Indicar los días de temp. alta
+- Indicar el rango de fechas para la validez de la oferta]]></text>
+        <w>710.35</w>
+        <h>345</h>
+        <annotations>r0-72 { align: left; }
+r72-108 { align: left; }
+r108-173 { align: left; }
+r173-255 { align: left; }
+r255-366 { align: left; }
+r366-437 { align: left; }
+r437-496 { align: left; }
+r496-529 { align: left; }
+r529-586 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="24_3275186" type="labelwithplaceholder" x="-26565.391463753298" y="-16195.473634900614" r="35.01280088642134" s="1.5906015731109062" class="head">
+      <placeholder text="Click to add text" x="-99.2" y="-18.3" align="center" width="198.4"/>
+    </object>
+    <object id="29_3275186" type="label" x="-27382.425211173017" y="-17543.462241065037" r="35.01280088642132" s="8.554637004567999" class="strong">
+      <textfield autoSize="true">
+        <x>-8.05</x>
+        <y>-17.5</y>
+        <text><![CDATA[+]]></text>
+        <annotations>r0-1 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="30_3275186" type="label" x="-27701.112233138945" y="-17088.6134136436" r="35.01280088642132" s="8.554637004567999" class="strong">
+      <textfield autoSize="true">
+        <x>-8.05</x>
+        <y>-17.5</y>
+        <text><![CDATA[+]]></text>
+        <annotations>r0-1 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="31_3275186" type="shape" x="-3214.85" y="44918.15" r="90.31171313653664" s="14.57968498964382" class="line3">
+      <geom type="arrow">
+        <sp>-63.57163175968062 0</sp>
+        <ep>63.57163175968063 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="3_3317874" type="button" x="-39067.652518496514" y="12901.779374663369" r="0" s="9.560025217031104" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>463.5904120473986</w>
+        <h>256.5528192970934</h>
+      </size>
+    </object>
+    <object id="2_4427924" type="button" x="-3164.65" y="10584.1" r="89.81728127369654" s="4.233158988358549" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>930.1775147928994</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="36_3275186" type="label" x="-2472.133652614396" y="9168.723895432675" r="89.81728127369654" s="18.465939490987452" class="head">
+      <textfield autoSize="true">
+        <x>-12.2</x>
+        <y>-18.3</y>
+        <text><![CDATA[2.]]></text>
+        <annotations>r0-2 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="40_3275186" type="image" x="-3459.190831195673" y="10515.617707060957" r="89.81728127369654" s="9.315309242538365">
+      <source w="128" h="128">294015819.png<url>294015819.png</url>
+      </source>
+      <sourceUrl>1351466238_kuser.png</sourceUrl>
+    <resource><id>
+        294015819
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/4/3/9ecfb27f5d2cf8eaad7941932037a54cb6fb0.png</url></resource></object>
+    <object id="3_4427924" type="button" x="-3199.15" y="16983.449999999997" r="89.81728127369654" s="4.231795961414453" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>938.6594803805665</w>
+        <h>591.5340565001338</h>
+      </size>
+    </object>
+    <object id="42_3275186" type="image" x="-3782.829223102647" y="16121.57840016973" r="89.81728127369654" s="3.895305622588707">
+      <source w="128" h="128">294025529.png<url>294025529.png</url>
+      </source>
+      <sourceUrl>1351466647_Search.png</sourceUrl>
+    <resource><id>
+        294025529
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/5/4/5195118c9e74d0aae577da65a2b047445a3fe.png</url></resource></object>
+    <object id="43_3275186" type="image" x="-3777.9397039676323" y="17642.13101487633" r="89.81728127369654" s="3.895305622588707">
+      <source w="128" h="128">294026401.png<url>294026401.png</url>
+      </source>
+      <sourceUrl>1351466758_beach_chair.png</sourceUrl>
+    <resource><id>
+        294026401
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/3/c/3ee4bd6ef64eb0114d6e69125b3464d33495e.png</url></resource></object>
+    <object id="38_3275186" type="label" x="-3138.5325917597997" y="16910.753359898532" r="89.81728127369654" s="4.70303619648867" class="strong">
+      <textfield>
+        <x>-306.35</x>
+        <y>-64</y>
+        <text><![CDATA[El usuario escribe la ubicación a donde quiere ir, este sería el criterio básico de búsqueda. De forma opcional, puede seleccionar la cantidad de huéspedes y las fechas de la estadía]]></text>
+        <w>612.7</w>
+        <h>128</h>
+        <annotations>r0-182 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="39_3275186" type="label" x="-2456.3887167362946" y="17328.20162172759" r="89.81728127369654" s="6.524414635699261" class="head">
+      <textfield autoSize="true">
+        <x>-203</x>
+        <y>-18.3</y>
+        <text><![CDATA[Buscar un lugar para quedarse]]></text>
+        <w>406</w>
+        <h>36.65</h>
+        <annotations>r0-29 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="44_3275186" type="shape" x="-3104.3" y="38200.350000000006" r="90.31171313653664" s="14.579684989643821" class="line3">
+      <geom type="arrow">
+        <sp>-63.57163175968062 0</sp>
+        <ep>63.57163175968063 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="4_4427924" type="button" x="-3232.75" y="23058.35" r="89.81728127369654" s="3.6740098151550953" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>1087.0967741935483</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="17_4427924" type="image" x="-4030.5" y="22913.34999999999" r="90.31171313653664" s="4.698624393652456">
+      <source w="128" h="128">304104879.png<url>304104879.png</url>
+      </source>
+      <sourceUrl>1351467458_options.png</sourceUrl>
+    <resource><id>
+        304104879
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/7/d/b508e292b88ac3ac7de6518aacfce23a14ade.png</url></resource></object>
+    <object id="46_3275186" type="label" x="-3310.9197273059417" y="22917.370479259884" r="90.31171313653664" s="4.049038678718727" class="strong">
+      <textfield>
+        <x>-334.5</x>
+        <y>-110.5</y>
+        <text><![CDATA[La página muestra una lista de alojamientos con sus respectivas ofertas de acuerdo a los criterios de la búsqueda. Además, será posible filtrar de forma dinámica por distintos criterios: tipo de alojamiento, servicios incluidos, comodidades, ubicación, etc.
+
+A continuación, el usuario consulta la oferta de su preferencia y hace click en reservar]]></text>
+        <w>669</w>
+        <h>221</h>
+        <annotations>r0-258 { align: left; }
+r259-347 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="5_4427924" type="button" x="-3265.1066037126584" y="29022.053304094916" r="90.31171313653664" s="4.891050436100575" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>871.2408582893792</w>
+        <h>558.205505621131</h>
+      </size>
+    </object>
+    <object id="54_3275186" type="image" x="-4114.806579074143" y="30013.427421362303" r="90.31171313653664" s="4.028334300909361">
+      <source w="128" h="128">294056889.png<url>294056889.png</url>
+      </source>
+      <sourceUrl>1351468133_document.png</sourceUrl>
+    <resource><id>
+        294056889
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/3/6/acb681375c947766c14adb444654f99d3ae1d.png</url></resource></object>
+    <object id="47_3275186" type="label" x="-2534.7551392595014" y="23643.008621848392" r="89.81728127369654" s="5.786490869177498" class="head">
+      <textfield autoSize="true">
+        <x>-158</x>
+        <y>-18.3</y>
+        <text><![CDATA[Escoger la mejor oferta]]></text>
+        <w>316</w>
+        <h>36.65</h>
+        <annotations>r0-23 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="52_3275186" type="image" x="-4102.3088627818415" y="27805.35185695217" r="90.31171313653664" s="4.727260390611408">
+      <source w="128" h="128">294054131.png<url>294054131.png</url>
+      </source>
+      <sourceUrl>1351467979_mastercard.png</sourceUrl>
+    <resource><id>
+        294054131
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/8/4/2/e40cb9d73cb2e58c8f719f0adb41df076b387.png</url></resource></object>
+    <object id="53_3275186" type="image" x="-4104.879537486259" y="28263.01141346889" r="90.31171313653664" s="4.727260390611408">
+      <source w="128" h="128">294054133.png<url>294054133.png</url>
+      </source>
+      <sourceUrl>1351467972_visa.png</sourceUrl>
+    <resource><id>
+        294054133
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/b/7/411534bdc40727b9ffc1809cfc0db13bfb065.png</url></resource></object>
+    <object id="49_3275186" type="label" x="-3181.9971947053436" y="28899.328905666596" r="90.31171313653664" s="4.0767893608632795" class="strong">
+      <textfield>
+        <x>-347.85</x>
+        <y>-157</y>
+        <text><![CDATA[El usuario ya registrado hace click en reservar.
+
+Una vez completados los datos necesarios, el usuario selecciona el tipo de pago (débito o crédito), se ejecuta el pago electrónico y se emite la reservación.
+
+Antes de reservar, el usuario puede ponerse en contacto con el hospedaje a través de un servicio de mensajes monitoreados (para evitar intercambiar datos de contacto) para responder cualquier duda.]]></text>
+        <w>695.7</w>
+        <h>314</h>
+        <annotations>r0-49 { align: left; }
+r50-208 { align: left; }
+r209-406 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="50_3275186" type="label" x="-2244.9201554065558" y="29582.132067993025" r="90.31171313653664" s="8.212320905668825" class="head">
+      <textfield autoSize="true">
+        <x>-169.15</x>
+        <y>-18.3</y>
+        <text><![CDATA[Se procesa la reservación]]></text>
+        <w>338.35</w>
+        <h>36.65</h>
+        <annotations>r0-25 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="56_3275186" type="shape" x="-3073.8999999999996" y="32265.85" r="90.31171313653664" s="14.57968498964382" class="line3">
+      <geom type="arrow">
+        <sp>-63.57163175968062 0</sp>
+        <ep>63.57163175968063 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="57_3275186" type="shape" x="-3076.7" y="25858.2" r="90.31171313653664" s="14.57968498964382" class="line3">
+      <geom type="arrow">
+        <sp>-63.57163175968062 0</sp>
+        <ep>63.57163175968063 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="58_3275186" type="shape" x="-4105.765636646163" y="29171.427491030656" r="90.31171313653664" s="6.594978389638376" class="line3">
+      <geom type="arrow">
+        <sp>-58.8 0</sp>
+        <ep>58.8 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="6_4427924" type="button" x="-3270.5499999999997" y="35377.85" r="90.31171313653664" s="4.72243268482989" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>797.5609756097562</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="63_3275186" type="image" x="-4001.145946728639" y="35970.879738431926" r="90.31171313653664" s="4.133844648289869">
+      <source w="128" h="128">294071999.png<url>294071999.png</url>
+      </source>
+      <sourceUrl>1351468797_08.png</sourceUrl>
+    <resource><id>
+        294071999
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/f/3/2c3312fba93725427cd0da887e14468ca756a.png</url></resource></object>
+    <object id="7_4427924" type="button" x="-3304" y="41570.05" r="90.31171313653664" s="6.0384042898864" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>752.2483697055379</w>
+        <h>564.1862772791543</h>
+      </size>
+    </object>
+    <object id="72_3275186" type="image" x="-3792.681563570984" y="42612.54653189923" r="90.31171313653664" s="6.262182680193002">
+      <source w="128" h="128">294074741.png<url>294074741.png</url>
+      </source>
+      <sourceUrl>1351466892_hotel.png</sourceUrl>
+    <resource><id>
+        294074741
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/f/4/006d5be580e43abd0eb823e091f1ad3d29ac6.png</url></resource></object>
+    <object id="60_3275186" type="label" x="-3118.232559628619" y="35243.93655512856" r="90.31171313653664" s="4.057899295700919" class="strong">
+      <textfield>
+        <x>-328.15</x>
+        <y>-110.5</y>
+        <text><![CDATA[El pago de la reservación es recibido, se realizan los cobros por comisión correspondientes y se genera la factura. 
+
+En este punto, todavía no se efectúa el pago al hospedaje, para asegurar que el huésped reciba el servicio. 24 horas después del checkin, si el huésped no reporta ningún inconveniente, se genera la factura y se transfiere el pago correspondiente.]]></text>
+        <w>656.35</w>
+        <h>221</h>
+        <annotations>r0-117 { align: left; }
+r118-364 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="61_3275186" type="label" x="-2346.3554870284443" y="35786.33177807071" r="90.31171313653664" s="5.838763278331842" class="head">
+      <textfield autoSize="true">
+        <x>-183.15</x>
+        <y>-18.3</y>
+        <text><![CDATA[Se recibe el dinero del pago]]></text>
+        <w>366.35</w>
+        <h>36.65</h>
+        <annotations>r0-28 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="64_3275186" type="image" x="-3993.487726740008" y="34545.34921680129" r="90.31171313653664" s="2.9527461773499066">
+      <source w="128" h="128">294072005.png<url>294072005.png</url>
+      </source>
+      <sourceUrl>1351468782_coins.png</sourceUrl>
+    <resource><id>
+        294072005
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/a/5/f75954422a017daa9ab96bc4af881c9ea2a69.png</url></resource></object>
+    <object id="65_3275186" type="shape" x="-3043.65" y="13533.5" r="89.81728127369654" s="14.57968498964382" class="line3">
+      <geom type="arrow">
+        <sp>-63.57163175968062 0</sp>
+        <ep>63.57163175968063 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="67_3275186" type="label" x="-3024.7230524744264" y="41233.12821303732" r="90.31171313653664" s="4.225617544963676" class="strong">
+      <textfield>
+        <x>-307.7</x>
+        <y>-48.5</y>
+        <text><![CDATA[El huésped se presenta en el hospedaje en la fecha correspondiente con la reservación, para así disfrutar de su alojamiento vacacional]]></text>
+        <w>615.45</w>
+        <h>97</h>
+        <annotations>r0-134 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="68_3275186" type="label" x="-2407.8281791093905" y="41904.938620732995" r="90.31171313653664" s="5.915864562949154" class="head">
+      <textfield>
+        <x>-142.55</x>
+        <y>-34.65</y>
+        <text><![CDATA[El huésped disfruta del hospedaje]]></text>
+        <w>285.15</w>
+        <h>69.3</h>
+        <annotations>r0-33 { align: right; }</annotations>
+      </textfield>
+    </object>
+    <object id="69_3275186" type="image" x="-3779.109986653676" y="40110.563950745156" r="90.31171313653664" s="4.752708797213462">
+      <source w="128" h="128">294015819.png<url>294015819.png</url>
+      </source>
+      <sourceUrl>1351466238_kuser.png</sourceUrl>
+    <resource><id>
+        294015819
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/4/3/9ecfb27f5d2cf8eaad7941932037a54cb6fb0.png</url></resource></object>
+    <object id="73_3275186" type="image" x="-3784.8031466408447" y="41164.434364383" r="90.31171313653664" s="3.1949911633637806">
+      <source w="128" h="128">294074745.png<url>294074745.png</url>
+      </source>
+      <sourceUrl>1351468133_document.png</sourceUrl>
+    <resource><id>
+        294074745
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/e/f/d5f59d6a678b71ba708b42f4613e412eadd1c.png</url></resource></object>
+    <object id="74_3275186" type="label" x="-3782.032134889141" y="40684.801104594466" r="90.31171313653664" s="18.096620701167748" class="head">
+      <textfield autoSize="true">
+        <x>-8.8</x>
+        <y>-18.3</y>
+        <text><![CDATA[+]]></text>
+        <annotations>r0-1 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="75_3275186" type="shape" x="-3788.893208770508" y="41812.27023570441" r="90.31171313653664" s="4.640606095328309" class="line3">
+      <geom type="arrow">
+        <sp>-54.1335093085904 0</sp>
+        <ep>54.1335093085904 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="16_3275186" type="label" x="-20681.931615574857" y="-12685.184016543075" r="34.84294407491024" s="5.668654150206226" class="strong">
+      <textfield>
+        <x>-228.75</x>
+        <y>-33</y>
+        <text><![CDATA[Todos los pagos por cada reservación serán realizados vía transferencia electrónica]]></text>
+        <w>457.55</w>
+        <h>66</h>
+        <annotations>r0-83 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="78_3275186" type="image" x="-26844.490578514564" y="-18311.011763323073" r="35.012800886421324" s="8.369400282166149">
+      <source w="48" h="48">294017283.png<url>294017283.png</url>
+      </source>
+      <sourceUrl>1351466332_People.png</sourceUrl>
+    <resource><id>
+        294017283
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/2/8/1e1f6239fc0d73c07538df13ba62b6cc83ec9.png</url></resource></object>
+    <object id="79_3275186" type="image" x="-2461.409064822501" y="15737.683723780407" r="89.81728127369654" s="3.3947919980096013">
+      <source w="128" h="128">294015819.png<url>294015819.png</url>
+      </source>
+      <sourceUrl>1351466238_kuser.png</sourceUrl>
+    <resource><id>
+        294015819
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/4/3/9ecfb27f5d2cf8eaad7941932037a54cb6fb0.png</url></resource></object>
+    <object id="80_3275186" type="image" x="-2530.866205892367" y="21917.732096918717" r="89.81728127369654" s="3.3947919980096017">
+      <source w="128" h="128">294015819.png<url>294015819.png</url>
+      </source>
+      <sourceUrl>1351466238_kuser.png</sourceUrl>
+    <resource><id>
+        294015819
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/4/3/9ecfb27f5d2cf8eaad7941932037a54cb6fb0.png</url></resource></object>
+    <object id="81_3275186" type="image" x="-2235.762049024712" y="27868.054498157104" r="90.31171313653664" s="3.3947919980096057">
+      <source w="128" h="128">294015819.png<url>294015819.png</url>
+      </source>
+      <sourceUrl>1351466238_kuser.png</sourceUrl>
+    <resource><id>
+        294015819
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/4/3/9ecfb27f5d2cf8eaad7941932037a54cb6fb0.png</url></resource></object>
+    <object id="82_3275186" type="image" x="-2367.7939092246015" y="40246.51526635216" r="90.31171313653664" s="3.3947919980096115">
+      <source w="128" h="128">294015819.png<url>294015819.png</url>
+      </source>
+      <sourceUrl>1351466238_kuser.png</sourceUrl>
+    <resource><id>
+        294015819
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/4/3/9ecfb27f5d2cf8eaad7941932037a54cb6fb0.png</url></resource></object>
+    <object id="83_3275186" type="shape" x="-3040.95" y="19725.949999999997" r="89.81728127369654" s="14.57968498964382" class="line3">
+      <geom type="arrow">
+        <sp>-63.57163175968062 0</sp>
+        <ep>63.57163175968063 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="0_3317874" type="button" x="4195.43332149629" y="17576.19101984053" r="0" s="9.86120729544236" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>395.2580550777474</w>
+        <h>253.99064071451423</h>
+      </size>
+    </object>
+    <object id="1_3317874" type="labelwithplaceholder" x="4009.739214955329" y="17318.301241098376" r="0" s="4.0965240765300726" class="strong">
+      <placeholder text="Click to add text" x="-85.95" y="-17.5" align="center" width="171.9"/>
+    </object>
+    <object id="11_4427924" type="button" x="-3137.1499999999996" y="47775.200000000004" r="90.31171313653664" s="4.915257387180779" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>798.0997624703087</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="2_3317874" type="label" x="-3143.2" y="47699.1" r="90.31171313653664" s="22.64369295812514" class="head">
+      <textfield autoSize="true">
+        <x>-99.2</x>
+        <y>-18.3</y>
+        <text><![CDATA[FIN!]]></text>
+        <w>198.4</w>
+        <h>36.65</h>
+        <annotations>r0-4 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="43_3317874" type="button" x="-10938.6" y="-5664.95" r="34.84294407491023" s="4.918817305713132" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>798.1395348837209</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="6_3317874" type="image" x="-11267.847363618097" y="-6503.974076322265" r="34.84294407491023" s="8.771551345912869">
+      <source w="48" h="48">294100437.png<url>294100437.png</url>
+      </source>
+      <sourceUrl>1351466332_People.png</sourceUrl>
+    <resource><id>
+        294100437
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/c/e/9deb110a0f6605bf3ca6f8cec472b4303e438.png</url></resource></object>
+    <object id="8_3317874" type="image" x="-10407.211414854759" y="-5905.101815949027" r="34.84294407491022" s="7.874689857936782">
+      <source w="128" h="128">294102353.png<url>294102353.png</url>
+      </source>
+      <sourceUrl>1351466892_hotel.png</sourceUrl>
+    <resource><id>
+        294102353
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/d/9/c568c9b85a90baeac87358b5bb3578ff8836d.png</url></resource></object>
+    <object id="4_3317874" type="labelwithplaceholder" x="-39533.984318994866" y="12639.516460279172" r="0" s="3.971407587375512" class="strong">
+      <placeholder text="Click to add text" x="-85.95" y="-17.5" align="center" width="171.9"/>
+    </object>
+    <object id="5_3317874" type="label" x="-11277.475988666842" y="-5338.964882645344" r="34.84294407491023" s="8.000038919800707" class="head">
+      <textfield>
+        <x>-180.45</x>
+        <y>-34.65</y>
+        <text><![CDATA[Lo que debe hacer el dueño o administrador del hospedaje]]></text>
+        <w>360.9</w>
+        <h>69.3</h>
+        <annotations>r0-56 { align: right; }</annotations>
+      </textfield>
+    </object>
+    <object id="10_3317874" type="shape" x="-3102.3" y="7225.2" r="89.81728127369654" s="14.57968498964382" class="line3">
+      <geom type="arrow">
+        <sp>-63.57163175968062 0</sp>
+        <ep>63.57163175968063 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="11_3317874" type="button" x="-15733.35" y="11590.15" r="0" s="10.041108308792062" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>467.0694070556974</w>
+        <h>290.16701377105545</h>
+      </size>
+    </object>
+    <object id="15_4427924" type="button" x="-32295.55" y="-20999.9" r="34.84294407491023" s="5.918945347653871" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>798.3572895277207</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="15_3317874" type="image" x="-31736.949999999997" y="-19013.449999999986" r="35.012800886421275" s="5.9226149356938596">
+      <source w="80" h="80">294125371.png<url>294125371.png</url>
+      </source>
+      <sourceUrl>1351471231_graph_add.png</sourceUrl>
+    <resource><id>
+        294125371
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/7/1/c8227f50f0413930c0b99b973a34aa9e25b75.png</url></resource></object>
+    <object id="12_3317874" type="label" x="-32411.249999999996" y="-20940.949999999997" r="34.84294407491023" s="4.1712582151096145" class="strong">
+      <textfield>
+        <x>-406.9</x>
+        <y>-219</y>
+        <text><![CDATA[En este punto, las ofertas registradas ya son visibles al público, sin tener que realizar cobros. Los ingresos vendrán de un porcentaje de comisión por cada reservación lograda.
+
+Se podrán registrar cualquier cantidad de ofertas, y también un mismo usuario registrado podrá gestionar varios alojamientos.
+
+Estos usuarios que son propietarios o administradores de hospedajes, dispondrán de herramientas de gestión administrativas y estadísticas, como un valor agregado al servicio.
+
+La idea siempre es innovar y generar valor en el servicio ofrecido, para mantener el interés de los hospedajes en manejar sus reservaciones a través de la página.]]></text>
+        <w>813.8</w>
+        <h>438</h>
+        <annotations>r0-178 { align: left; }
+r179-305 { align: left; }
+r306-481 { align: left; }
+r482-644 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="13_3317874" type="label" x="-31273.549999999996" y="-21824.7" r="35.0128008864213" s="5.839761501153455" class="head">
+      <textfield>
+        <x>-241.25</x>
+        <y>-34.65</y>
+        <text><![CDATA[El hospedaje está listo para comenzar a incrementar sus ventas]]></text>
+        <w>482.55</w>
+        <h>69.3</h>
+        <annotations>r0-62 { align: right; }</annotations>
+      </textfield>
+    </object>
+    <object id="14_3317874" type="image" x="-32791.350000000006" y="-22881.299999999992" r="35.01280088642129" s="8.02562768680307">
+      <source w="48" h="48">294017283.png<url>294017283.png</url>
+      </source>
+      <sourceUrl>1351466332_People.png</sourceUrl>
+    <resource><id>
+        294017283
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/2/8/1e1f6239fc0d73c07538df13ba62b6cc83ec9.png</url></resource></object>
+    <object id="17_3317874" type="labelwithplaceholder" x="-3048.0791136714834" y="9788.991840506971" r="89.81728127369654" s="3.3887505794215675" class="strong">
+      <placeholder text="Click to add text" x="-85.95" y="-17.5" align="center" width="171.9"/>
+    </object>
+    <object id="18_3317874" type="label" x="-2581.864282455708" y="10839.992889274883" r="89.81728127369654" s="6.826329438219506" class="head">
+      <textfield autoSize="true">
+        <x>-220.55</x>
+        <y>-18.3</y>
+        <text><![CDATA[Lo que harían los vacacionistas]]></text>
+        <w>441.1</w>
+        <h>36.65</h>
+        <annotations>r0-31 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="31_3317874" type="button" x="7511.6" y="-3973.45" r="-22.62817022905519" s="7.71959641218368" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>812.5347390846697</w>
+        <h>688.5538017781781</h>
+      </size>
+    </object>
+    <object id="49_3317874" type="image" x="7851.441372525609" y="-2525.5735915376667" r="-22.628170229055204" s="12.90357571394839">
+      <source w="128" h="128">294354447.png<url>294354447.png</url>
+      </source>
+      <sourceUrl>1351481665_interrogation.png</sourceUrl>
+    <resource><id>
+        294354447
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/2/3/b8101ed1ad85d5fd44307f2dbec08b424ba57.png</url></resource></object>
+    <object id="21_3317874" type="label" x="7136.0541284826495" y="-4268.040729958893" r="-22.62817022905519" s="7.638552050541243" class="strong">
+      <textfield>
+        <x>-344.85</x>
+        <y>-64</y>
+        <text><![CDATA[Porque actualmente no existe una página de reservas turísticas online en Venezuela, con fuerte presencia en internet, que implemente las nuevas tendencias del comercio electrónico a través de la web 2.0]]></text>
+        <w>689.7</w>
+        <h>128</h>
+        <annotations>r0-202 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="22_3317874" type="label" x="6560.657300285175" y="-5736.596223794271" r="-22.6281702290552" s="13.275801662670892" class="head">
+      <textfield autoSize="true">
+        <x>-99.2</x>
+        <y>-18.3</y>
+        <text><![CDATA[¿ Por qué ?]]></text>
+        <w>198.4</w>
+        <h>36.65</h>
+        <annotations>r0-11 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="23_3317874" type="shape" x="-13310.95" y="-7266.75" r="-145.19556752905385" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-53.62651680055852 0</sp>
+        <ep>53.62651680055852 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="27_3317874" type="shape" x="11251.6" y="-5967.7" r="-22.62817034760613" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-57.21296858748631 0</sp>
+        <ep>57.21296858748631 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="30_3317874" type="shape" x="-18049.2" y="-10749.1" r="-145.19556752905385" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-53.62651680055852 0</sp>
+        <ep>53.62651680055852 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="34_3317874" type="shape" x="-23716.05" y="-14906.9" r="-145.19556752905385" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-53.62651680055852 0</sp>
+        <ep>53.62651680055852 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="55_3317874" type="button" x="15746.553722559527" y="-7672.745375102491" r="-22.6281702290552" s="11.369208578254762" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>757.6695123521852</w>
+        <h>568.2521342641389</h>
+      </size>
+    </object>
+    <object id="53_3317874" type="image" x="16569.060230148338" y="-5700.296448125999" r="-22.628170229055225" s="19.602417222019582">
+      <source w="128" h="128">294361885.png<url>294361885.png</url>
+      </source>
+      <sourceUrl>1351459158_sleep_hotel.png</sourceUrl>
+    <resource><id>
+        294361885
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/c/2/fcaf20512ed06537d69a1e9b6cb847de030d8.png</url></resource></object>
+    <object id="47_3317874" type="label" x="15794.750775380015" y="-7800.398917388893" r="-22.628170229055204" s="9.721793518870667" class="strong">
+      <textfield>
+        <x>-331.05</x>
+        <y>-95</y>
+        <text><![CDATA[ 
+Actualmente para las personas que viajan o desean viajar por Venezuela, les es difícil encontrar una página web en donde puedan encontrar ofertas de alojamientos turísticos en la región que desean permanecer por unos días, y que además vaya de la mano con los últimas ventajas y servicios que ofrece la web 2.0]]></text>
+        <w>662.15</w>
+        <h>190</h>
+        <annotations>r0-2 { align: center; }
+r2-312 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="54_3317874" type="button" x="25340.271493212316" y="-11409.768007142358" r="-22.628170229055208" s="7.387027179058446" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>1088.0112786624416</w>
+        <h>810.1407832924092</h>
+      </size>
+    </object>
+    <object id="0_4427924" type="image" x="24984.64999999999" y="-8790.300000000005" r="-22.628170229055222" s="12.088500089257451">
+      <source w="128" h="128">304048635.png<url>304048635.png</url>
+      </source>
+      <sourceUrl>1351953901_advertising.png</sourceUrl>
+    <resource><id>
+        304048635
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/0/6/a4a81d82270be2afe93709a628171eb828cf7.png</url></resource></object>
+    <object id="1_4427924" type="image" x="27406.7" y="-9800.100000000004" r="-22.62817022905521" s="7.874689857936784">
+      <source w="128" h="128">294102353.png<url>294102353.png</url>
+      </source>
+      <sourceUrl>1351466892_hotel.png</sourceUrl>
+    <resource><id>
+        294102353
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/d/9/c568c9b85a90baeac87358b5bb3578ff8836d.png</url></resource></object>
+    <object id="48_3317874" type="label" x="25331.483712315927" y="-11405.575180360145" r="-22.62817022905521" s="13.275801662670897" class="strong">
+      <textfield>
+        <x>-308.9</x>
+        <y>-110.5</y>
+        <text><![CDATA[No existe una pág. web de reservaciones turísticas online como booking.com o airbnb.com en donde puedan publicar sus ofertas y tener presencia en internet.
+
+Dependen de agencias de viajes, operadores turísticos, publicidades costosas y una que otra página web, lo que no le ofrece mayor presencia en internet.]]></text>
+        <w>617.85</w>
+        <h>221</h>
+        <annotations>r0-156 { align: center; }
+r157-309 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="50_3317874" type="label" x="24602.798555289068" y="-13155.623795594647" r="-22.628170229055225" s="13.275801662670897" class="head">
+      <textfield>
+        <x>-276</x>
+        <y>-34.65</y>
+        <text><![CDATA[¿ Cuál es la necesidad de los hospedajes turísticos ?]]></text>
+        <w>552</w>
+        <h>69.3</h>
+        <annotations>r0-53 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="51_3317874" type="label" x="15277.35159047455" y="-9042.142711096925" r="-22.62817022905518" s="13.275801662670881" class="head">
+      <textfield>
+        <x>-276</x>
+        <y>-34.65</y>
+        <text><![CDATA[¿ Cuál es la necesidad de quienes buscan alojamientos vacacionales ?]]></text>
+        <w>552</w>
+        <h>69.3</h>
+        <annotations>r0-68 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="52_3317874" type="shape" x="20368.54065457377" y="-9697.2755397854" r="-22.62817034760613" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-57.21296858748631 0</sp>
+        <ep>57.21296858748631 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="12_4427924" type="shape" x="-8881.6" y="-4207.3" r="-145.19556752905385" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-53.62651680055852 0</sp>
+        <ep>53.62651680055852 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="14_4427924" type="shape" x="-29488.910119934084" y="-19078.693030012564" r="-145.19556752905385" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-53.62651680055852 0</sp>
+        <ep>53.62651680055852 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="16_4427924" type="label" x="-11717.449999999997" y="-6761.899999999999" r="34.84294407491023" s="18.465939490987452" class="head">
+      <textfield autoSize="true">
+        <x>-12.2</x>
+        <y>-18.3</y>
+        <text><![CDATA[1.]]></text>
+        <annotations>r0-2 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="18_4427924" type="shape" x="3361.25" y="-2635.7" r="-22.62817034760613" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-57.21296858748631 0</sp>
+        <ep>57.21296858748631 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="19_4427924" type="shape" x="29999.65" y="-13762.199999999999" r="-22.62817034760613" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-57.21296858748631 0</sp>
+        <ep>57.21296858748631 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="20_4427924" type="button" x="34939.41124257358" y="-15375.02225802011" r="-22.628170229055186" s="7.4663536834136455" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>1127.1151977851662</w>
+        <h>845.336398338875</h>
+      </size>
+    </object>
+    <object id="30_4427924" type="image" x="46529.2" y="-18547.999999999996" r="0" s="14.36246652559494">
+      <source w="128" h="127">304174475.png<url>304174475.png</url>
+      </source>
+      <sourceUrl>1351962013_target-dart.png</sourceUrl>
+    <resource><id>
+        304174475
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/e/e/5fb570d1a493dd28e777b012cc7f2871a89a7.png</url></resource></object>
+    <object id="21_4427924" type="label" x="34065.786589285824" y="-18100.35038001539" r="-22.62817022905521" s="13.275801662670903" class="head">
+      <textfield>
+        <x>-276</x>
+        <y>-18.3</y>
+        <text><![CDATA[¿ Cuáles son los números ?]]></text>
+        <w>552</w>
+        <h>36.65</h>
+        <annotations>r0-26 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="22_4427924" type="label" x="35211.4142779837" y="-15352.737924279438" r="-22.628170229055208" s="8.837994108064242" class="strong">
+      <textfield>
+        <x>-452.05</x>
+        <y>-265.5</y>
+        <text><![CDATA[De 150 encuestas enviadas a posadas y hoteles, 70 aprox. respondieron.
+
+De estas encuestas, pudimos obtener la siguiente información:
+
+- Todos los que respondieron, están dispuestos trabajar con este modelo de negocio
+
+- Un gran porcentaje está dispuesto a pagar entre 10% y 15% de comisión por reservación
+
+- El promedio de facturación al año es de BsF. 1.900.000 (Los Roques tiene la facturación más alta, alrededor de BsF 7.000.000 al año por posada)
+
+- Según el INE, trimestralmente en Venezuela se desplazan 5.000.000 de personas, 11% de éstas alojándose en hoteles y posadas 
+
+- Según Conatel, actualmente existen en Venezuela 12,1 millones de usuarios de internet.]]></text>
+        <w>904.15</w>
+        <h>531</h>
+        <annotations>r0-71 { align: center; }
+r72-134 { align: center; }
+r135-218 { align: center; }
+r219-307 { align: center; }
+r308-454 { align: center; }
+r455-582 { align: center; }
+r583-671 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="23_4427924" type="shape" x="40249.8" y="-18115.35" r="-22.62817034760613" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-57.21296858748631 0</sp>
+        <ep>57.21296858748631 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="24_4427924" type="button" x="57970.819612807776" y="-26329.891267750812" r="-22.628170229055204" s="11.440872006957074" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>1203.4252691993465</w>
+        <h>706.798413761681</h>
+      </size>
+    </object>
+    <object id="31_4427924" type="image" x="58712.3" y="-24800.250000000004" r="-22.628170229055208" s="28.150434390166083">
+      <source w="128" h="128">304176047.png<url>304176047.png</url>
+      </source>
+      <sourceUrl>1351962084_Briefcase.png</sourceUrl>
+    <resource><id>
+        304176047
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/c/a/6c17f4a5e17f4cd329d938d7dbb393035ed01.png</url></resource></object>
+    <object id="25_4427924" type="label" x="57193.6" y="-27729.549999999985" r="-22.6281702290552" s="26.02057125883497" class="head">
+      <textfield>
+        <x>-276</x>
+        <y>-18.3</y>
+        <text><![CDATA[¿ Cómo sería el modelo de negocio ?]]></text>
+        <w>552</w>
+        <h>36.65</h>
+        <annotations>r0-35 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="26_4427924" type="button" x="45476.87683496414" y="-20296.253485062716" r="-22.62817022905519" s="7.466353683413645" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>1260.4697693876665</w>
+        <h>789.6194578427858</h>
+      </size>
+    </object>
+    <object id="27_4427924" type="label" x="44385.867124504686" y="-22251.150033760958" r="-22.628170229055208" s="13.275801662670903" class="head">
+      <textfield>
+        <x>-276</x>
+        <y>-18.3</y>
+        <text><![CDATA[¿ Cuáles son los objetivos ?]]></text>
+        <w>552</w>
+        <h>36.65</h>
+        <annotations>r0-28 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="28_4427924" type="label" x="45175.12176085083" y="-20244.215963756622" r="-22.628170229055204" s="9.721793518870667" class="strong">
+      <textfield>
+        <x>-417.35</x>
+        <y>-126</y>
+        <text><![CDATA[- Ser la página web líder en reservaciones de alojamientos turísticos en Venezuela, con la mejor oferta de hospedajes vacacionales.
+
+- Cambiar el modelo de negocio tradicional de los hoteles y posadas, tal y como ha sucedido en otros países, en donde el 90% de las reservaciones efectuadas de cada hotel se logran a través de internet.
+
+- Buscar expandir el negocio en países de América Latina]]></text>
+        <w>834.7</w>
+        <h>252</h>
+        <annotations>r0-132 { align: center; }
+r133-336 { align: center; }
+r337-393 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="29_4427924" type="shape" x="50692.7" y="-22757.85" r="-22.62817034760613" s="18.46593949098746" class="line3">
+      <geom type="arrow">
+        <sp>-57.21296858748631 0</sp>
+        <ep>57.21296858748631 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+  </zui-table>
+  <path>
+    <s>
+      <eagle o="8"/>
+    </s>
+    <s>
+      <eagle o="31_3317874"/>
+    </s>
+    <s>
+      <eagle o="55_3317874"/>
+    </s>
+    <s>
+      <eagle o="54_3317874"/>
+    </s>
+    <s>
+      <eagle o="20_4427924"/>
+    </s>
+    <s>
+      <eagle o="26_4427924"/>
+    </s>
+    <s>
+      <eagle o="24_4427924"/>
+    </s>
+    <s>
+      <eagle o="43_3317874"/>
+    </s>
+    <s>
+      <eagle o="44_3317874"/>
+    </s>
+    <s>
+      <eagle o="45_3317874"/>
+    </s>
+    <s>
+      <eagle o="46_3317874"/>
+    </s>
+    <s>
+      <eagle o="15_4427924"/>
+    </s>
+    <s>
+      <eagle o="2_4427924"/>
+    </s>
+    <s>
+      <eagle o="3_4427924"/>
+    </s>
+    <s>
+      <eagle o="4_4427924"/>
+    </s>
+    <s>
+      <eagle o="5_4427924"/>
+    </s>
+    <s>
+      <eagle o="6_4427924"/>
+    </s>
+    <s>
+      <eagle o="7_4427924"/>
+    </s>
+    <s>
+      <eagle o="11_4427924"/>
+    </s>
+  </path>
+  <style type="text/css"><![CDATA[
+@font-face
+{
+	src: url('PTSans.swf');
+	fontFamily: strong;
+}
+
+@font-face
+{
+	src: url('OpenSans-Bold.swf');
+	fontFamily: head;
+}
+
+@font-face
+{
+	src: url('CrimsonText.swf');
+	fontFamily: body;
+}
+
+background
+{
+	gradStart: #808080;
+	gradEnd: #808080;
+}
+
+text
+{
+	padding: 1.2;
+}
+
+text.title
+{
+	fontFamily: head;
+	color: #fff808;
+}
+
+text.subtitle
+{
+	fontFamily: strong;
+	color: #fff;
+}
+
+text.body
+{
+	fontFamily: body;
+	color: #fff;
+}
+
+frame.circle
+{
+	borderColor: #999;
+	gradEndColor: #333;
+	gradStartColor: #333;
+	borderThickness: 0;
+}
+
+frame.bracket
+{
+	borderColor: #fff;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #fff;
+	thickness: 7;
+	borderThickness: 0;
+}
+
+frame.rectangle
+{
+	borderColor: #fff;
+	gradEndColor: #000;
+	gradStartColor: #000;
+	borderThickness: 0;
+	radius: 0;
+}
+
+arrow
+{
+	borderColor: #fff;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+	borderThickness: -1;
+}
+
+line
+{
+	color: #fff808;
+}
+
+line-arrow.style1
+{
+	gradStartColor: #fff;
+	gradEndColor: #fff;
+	color: #fff;
+}
+
+line-arrow.style2
+{
+	gradStartColor: #c5c3c3;
+	gradEndColor: #c5c3c3;
+	color: #c5c3c3;
+}
+
+line-arrow.style3
+{
+	gradStartColor: #fff808;
+	gradEndColor: #fff808;
+	color: #fff808;
+}
+
+line-arrow.style4
+{
+	gradStartColor: #333;
+	gradEndColor: #333;
+	color: #333;
+}
+
+line-arrow.style5
+{
+	gradStartColor: #000;
+	gradEndColor: #000;
+	color: #000;
+}
+
+circle
+{
+	borderAlpha: 1;
+	lockTintAlpha: 0.6;
+	thickness: 100;
+	radius: 0;
+}
+
+shape
+{
+	gradStartAlpha: 0.7;
+	borderAlpha: 1;
+	lockTintAlpha: 0.6;
+	thickness: 100;
+	gradEndAlpha: 0.8;
+	radius: 0;
+}
+
+shape.style1
+{
+	borderColor: #fff;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+	borderThickness: 0;
+}
+
+shape.style2
+{
+	borderColor: #c5c3c3;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #c5c3c3;
+	borderThickness: 0;
+}
+
+shape.style3
+{
+	borderColor: #fff808;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+	borderThickness: 0;
+}
+
+shape.style4
+{
+	borderColor: #333;
+	gradEndColor: #333;
+	gradStartColor: #333;
+	borderThickness: 0;
+}
+
+shape.style5
+{
+	borderColor: #000;
+	gradEndColor: #000;
+	gradStartColor: #000;
+	borderThickness: 0;
+}
+
+free-line
+{
+	color: #fff808;
+}
+
+free-marker
+{
+	alpha: 0.3;
+	color: #ffff0d;
+}
+
+grid
+{
+	color: #ddd;
+}
+
+ZCircle
+{
+	gradStartAlpha: 1;
+	borderAlpha: 1;
+	lockTintAlpha: 0;
+	thickness: 100;
+	gradEndAlpha: 1;
+	radius: 0;
+}
+
+ZPoly
+{
+	gradStartAlpha: 1;
+	borderAlpha: 1;
+	lockTintAlpha: 0;
+	thickness: 100;
+	gradEndAlpha: 1;
+	radius: 0;
+}
+
+Background
+{
+	gradStart: #fff;
+	gradEnd: #fff;
+}
+
+ZLabel
+{
+	padding: 1.2;
+}
+
+ZLabel.head
+{
+	fontFamily: head;
+	color: #004f75;
+}
+
+.line5
+{
+	gradStartColor: #333;
+	gradEndColor: #333;
+	color: #333;
+}
+
+.poly5
+{
+	borderColor: #333;
+	color: #fff;
+	gradStartColor: #fff;
+	borderThickness: 9;
+	gradEndColor: #fff;
+}
+
+ZLabel.strong
+{
+	fontFamily: strong;
+	color: #318bff;
+}
+
+.line1
+{
+	gradStartColor: #3fc0ff;
+	gradEndColor: #3fc0ff;
+	color: #3fc0ff;
+}
+
+.poly1
+{
+	borderColor: #3fc0ff;
+	color: #fff;
+	gradStartColor: #fff;
+	borderThickness: 9;
+	gradEndColor: #fff;
+}
+
+ZLabel.body
+{
+	fontFamily: body;
+	color: #333;
+}
+
+ZFrame.circle
+{
+	borderColor: #004f75;
+	gradEndColor: #004f75;
+	gradStartColor: #004f75;
+	thickness: 10;
+	borderThickness: 0;
+}
+
+.line4
+{
+	gradStartColor: #ffbe00;
+	gradEndColor: #ffbe00;
+	color: #ffbe00;
+}
+
+.poly4
+{
+	borderColor: #004f75;
+	color: #fff;
+	gradStartColor: #004f75;
+	borderThickness: 0;
+	gradEndColor: #004f75;
+}
+
+ZFrame.bracket
+{
+	color: #fff;
+}
+
+.line2
+{
+	borderColor: #fff;
+	color: #f00;
+	gradStartColor: #f00;
+	gradEndColor: #f00;
+}
+
+.poly2
+{
+	borderColor: #3fc0ff;
+	color: #fff;
+	gradStartColor: #3fc0ff;
+	borderThickness: 0;
+	gradEndColor: #3fc0ff;
+}
+
+ZFrame.roundrect
+{
+	color: #fff;
+}
+
+ZArrow
+{
+	borderColor: #fff;
+	gradEndColor: #333;
+	lockTintAlpha: 0;
+	borderThickness: 0;
+	gradStartColor: #333;
+}
+
+.line3
+{
+	gradStartColor: #004f75;
+	gradEndColor: #004f75;
+	color: #004f75;
+}
+
+.poly3
+{
+	borderColor: #004f75;
+	color: #fff;
+	gradStartColor: #fff;
+	borderThickness: 9;
+	gradEndColor: #fff;
+}
+
+ZLine
+{
+	lockTintAlpha: 0;
+	color: #333;
+}
+
+ZCurveLine
+{
+	color: #333;
+}
+
+ZMarker
+{
+	alpha: 0.3;
+	color: #00e1ff;
+}
+
+Grid
+{
+	color: #b8b8b8;
+}
+
+ZPath
+{
+	color: #40abe6;
+	thickness: 3;
+	alpha: 1;
+	textColor: #fff;
+}
+
+ZPath Ball.mid
+{
+	radius: 8;
+	alpha: .5;
+	fillColor: #40abe6;
+}
+
+ZPath Ball.base
+{
+	radius: 12;
+	alpha: 1;
+	fillColor: #40abe6;
+}
+
+]]></style>
+  <hash>-6412ca94</hash>
+<sync><oid>fspyze1iwonu</oid><hash>-6412ca94</hash></sync><config>Fw13F4pkTRtwCUWnF4tx2mCdRDnYOUwTInxixaP+oKKkFYKgBKASMxAxnJH9/OdDGWrejoAovGppOa5GLBDd6L9yJJUySnJSe9wGw7c3cL0bV9HwCnz6uVEc/qsHwlT24AkH6LIueGMFaYVWc085/9W/l1Bgjxp5CoeKKSe0yRwWJk5K57NBG+NZK8hxoqQ8gAefLBFNLfLDrKTmmqa0H0GjE4xEfNQ/mCEYt7YoHREI3icRzL0ruBI5g5wJYOMAqpX4O0Aj6tjWv886kC7pb0aCj67iQfb0mYShsbvE+a9/YWDisBAV5PGCixM9vvYwAzA8+o+R0jOilZGQRFtuVw==</config></zuiprezi>

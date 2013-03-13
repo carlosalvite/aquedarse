@@ -1,0 +1,93 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');dojo.require('dijit.form.FilteringSelect');dojo.require('dijit.form.SimpleTextarea');</script>
+    <div id="_title_div">
+        <spring:message code="label.cuentabancaria" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.update" var="title_msg"/>
+        <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+        <spring:url value="/cuentabancaria/${cuentaBancaria.id}" var="form_url"/>
+        <form:form action="${form_url}" method="PUT" modelAttribute="cuentaBancaria">
+            <form:errors cssClass="errors" delimiter="&lt;p/&gt;"/>
+            <div id="roo_cuentaBancaria_banco">
+                <c:if test="${not empty bancoes}">
+                    <label for="_banco_id">Banco:</label>
+                    <form:select cssStyle="width:250px" id="_banco_id" path="banco">
+                        <form:options itemValue="id" items="${bancoes}"/>
+                    </form:select>
+                    <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_banco_id', widgetType: 'dijit.form.FilteringSelect', widgetAttrs : {hasDownArrow : true}})); </script>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_numeroCuenta">
+                <label for="_numeroCuenta_id">Numero Cuenta:</label>
+                <form:input cssStyle="width:250px" id="_numeroCuenta_id" maxlength="20" path="numeroCuenta" size="0"/>
+                <br/>
+                <form:errors cssClass="errors" id="_numeroCuenta_error_id" path="numeroCuenta"/>
+                <spring:message arguments="Numero Cuenta" code="field.invalid" var="field_invalid"/>
+                <spring:message code="field.required" var="field_required"/>
+                <spring:message argumentSeparator="," arguments="Numero Cuenta,(${field_required})" code="field.simple.validation" var="field_validation"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_numeroCuenta_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${field_validation}', invalidMessage: '${field_invalid}', required : true}})); </script>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_titularCuenta">
+                <label for="_titularCuenta_id">Titular Cuenta:</label>
+                <form:textarea cssStyle="width:250px" id="_titularCuenta_id" path="titularCuenta"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_titularCuenta_id', widgetType: 'dijit.form.SimpleTextarea', widgetAttrs: {}})); </script>
+                <br/>
+                <form:errors cssClass="errors" id="_titularCuenta_error_id" path="titularCuenta"/>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_ciRif">
+                <label for="_ciRif_id">Ci Rif:</label>
+                <form:input cssStyle="width:250px" id="_ciRif_id" maxlength="10" path="ciRif" size="0"/>
+                <br/>
+                <form:errors cssClass="errors" id="_ciRif_error_id" path="ciRif"/>
+                <spring:message arguments="Ci Rif" code="field.invalid" var="field_invalid"/>
+                <spring:message code="field.required" var="field_required"/>
+                <spring:message argumentSeparator="," arguments="Ci Rif,(${field_required})" code="field.simple.validation" var="field_validation"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_ciRif_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${field_validation}', invalidMessage: '${field_invalid}', required : true}})); </script>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_correoElectronico">
+                <label for="_correoElectronico_id">Correo Electronico:</label>
+                <form:textarea cssStyle="width:250px" id="_correoElectronico_id" path="correoElectronico"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_correoElectronico_id', widgetType: 'dijit.form.SimpleTextarea', widgetAttrs: {}})); </script>
+                <br/>
+                <form:errors cssClass="errors" id="_correoElectronico_error_id" path="correoElectronico"/>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_tipoCiRif">
+                <c:if test="${not empty tipocirifs}">
+                    <label for="_tipoCiRif_id">Tipo Ci Rif:</label>
+                    <form:select cssStyle="width:250px" id="_tipoCiRif_id" path="tipoCiRif">
+                        <form:options itemValue="id" items="${tipocirifs}"/>
+                    </form:select>
+                    <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_tipoCiRif_id', widgetType: 'dijit.form.FilteringSelect', widgetAttrs : {hasDownArrow : true}})); </script>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_alojamiento">
+                <c:if test="${not empty alojamientoes}">
+                    <label for="_alojamiento_id">Alojamiento:</label>
+                    <form:select cssStyle="width:250px" id="_alojamiento_id" path="alojamiento">
+                        <form:options itemValue="id" items="${alojamientoes}"/>
+                    </form:select>
+                    <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_alojamiento_id', widgetType: 'dijit.form.FilteringSelect', widgetAttrs : {hasDownArrow : true}})); </script>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_activa">
+                <label for="_activa_id">Activa:</label>
+                <form:checkbox id="_activa_id" path="activa"/>
+            </div>
+            <br/>
+            <div class="submit" id="roo_cuentaBancaria_submit">
+                <spring:message code="button.update" var="update_button"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ValidateAllDecoration({elementId:'proceed', event:'onclick'}));</script>
+                <input id="proceed" type="submit" value="${update_button}"/>
+            </div>
+            <form:hidden id="_id_id" path="id"/>
+            <form:hidden id="_version_id" path="version"/>
+        </form:form>
+    </div>
+</div>

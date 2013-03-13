@@ -1,0 +1,692 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <style>
+        /*TODO: Mover a .css*/
+        .ui-datepicker .ui-datepicker-calendar .ui-state-highlight a {
+            background: #743620 none; /* a color that fits the widget theme */
+            color: white; /* a color that is readeable with the color above */
+            
+        }
+        
+    </style>
+    <div id="_title_div">
+        <spring:message code="label.publicacion" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.create" var="title_msg"/>
+        <spring:url value="/publicacion/registrarpublicacion" var="form_url"/>
+        <h1><c:out value="${nombreAlojamiento}"></c:out></h1>
+        <h2>Registrar nueva publicacion</h2>
+        <form:form action="${form_url}" method="POST" modelAttribute="publicacion" id="publicacionForm">
+            <form:errors cssClass="errors" delimiter="&lt;p/&gt;"/>
+            <br/>
+            <h3>Caracteristicas</h3>
+            <div id="roo_publicacion_titulo">
+                <label for="_titulo_id">Titulo</label>
+                <form:input cssStyle="width:350px" id="_titulo_id" path="titulo" maxlength="100"/><b style="color: red"> *</b>
+                <br/>
+                <label>&#160;</label>
+                <i>Ej.: "Habitacion doble estandar con desayuno incluido" o "3 dias y 2 noches para dos personas todo incluido"</i>
+                <br/>
+                <form:errors cssClass="errors" id="_titulo_error_id" path="titulo"/>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tipoHabitacion">
+                <c:if test="${not empty tipohabitacions}">
+                    <label for="_tipoHabitacion_id">Tipo de Habitacion</label>
+                    <form:select data-placeholder="Seleccionar una opcion" class="chzn-select" cssStyle="width:200px" id="_tipoHabitacion_id" path="tipoHabitacion">
+                        <form:option value="" selected="selected">Seleccionar una opcion</form:option>
+                        <form:options itemValue="id" items="${tipohabitacions}"/>
+                    </form:select><b style="color: red"> *</b>
+                    <script type="text/javascript"> 
+                    $(document).ready(function() {
+	             		//$('#_tipoHabitacion_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+	             		//$("#_tipoHabitacion_id").trigger("liszt:updated");
+                    	/*$("#_tipoHabitacion_id").chosen().change(function(){
+                 			//$("#_tipoHabitacion_id").trigger("liszt:updated");
+                 			alert('TIPO' + $('#_tipoHabitacion_id').val())
+                        });*/
+                    })
+                    //$("#_tipoHabitacion_id").trigger("liszt:updated");
+                    
+	             	</script>
+                    <form:errors cssClass="errors" id="_tipoHabitacion_error_id" path="tipoHabitacion"/>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_publicacion_cantidadPersonas">
+                <label for="_cantidadPersonas_id">Cantidad de personas:</label>
+                <form:select data-placeholder="Seleccionar una opcion" class="chzn-select" tabindex="2" cssStyle="width:60px" id="_cantidadPersonas_id" maxlength="30" path="cantidadPersonas" size="0">
+                	 <form:option value="" selected="selected">--</form:option>
+                	 <form:options items="${cantidadPersonasList}"/>
+                </form:select><b style="color: red"> *</b>
+                <br/>
+                <form:errors cssClass="errors" id="_cantidadPersonas_error_id" path="cantidadPersonas"/>
+                <script type="text/javascript">
+                	//$('#_cantidadPersonas_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+                	$('#_cantidadPersonas_id').change(function(){
+                		if($("#_temporadas_id").is(':checked')) {  
+                        	//$('#_tarifaTemporadaBaja_id_input, #_tarifaTemporadaAlta_idInput').formatCurrency({region:'es-VE'});
+                        	calcularPrecioAlta($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaAlta_idInput').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                        	calcularPrecioBaja($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaBaja_id_input').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                            
+                        }
+                        else {
+                        	//$('#_tarifaTemporadaBaja_id_input').formatCurrency({region:'es-VE'});
+                        	calcularPrecioBaja($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaBaja_id_input').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                        }
+                	});
+                </script>
+            </div>
+            <br/>
+            <div id="roo_publicacion_serviciosIncluidos">
+                <c:if test="${not empty serviciosincluidoses}">
+                    <label for="_serviciosIncluidos_id">Servicios Incluidos</label>
+                    <form:select data-placeholder="Selecciona una o varias opciones" cssStyle="width:350px" id="_serviciosIncluidos_id" path="serviciosIncluidos">
+                        <form:options itemValue="id" items="${serviciosincluidoses}"/>
+                    </form:select>
+                    <script type="text/javascript"> 
+		             $('#_serviciosIncluidos_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+		             </script>
+                </c:if>
+            </div>
+            <br/>
+             <div id="roo_publicacion_serviciosIncluidosAdicionales">
+	             <label for="_serviciosIncluidosAdicionales_id">Otros Servicios Adicionales:</label>
+	             <form:select data-placeholder="Selecciona una o varias opciones" cssStyle="width:350px; " id="_serviciosIncluidosAdicionales_id"  multiple="multiple" path="serviciosIncluidosAdicionalesTrans">
+	                 <form:options items="${serviciosincluidosadicionaleses}"/>
+	             </form:select><a id="aServiciosAdicionalesId" href="javascript: abrirCrearServicioAdicionalDialog()">Agregar nuevo servicio</a>
+	             <script type="text/javascript"> 
+	             $('#_serviciosIncluidosAdicionales_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+	             </script>
+            </div>
+            <br/>
+            
+             
+            <div id="roo_publicacion_comodidades">
+                <c:if test="${not empty comodidadeses}">
+                    <label for="_comodidades_id">Comodidades</label>
+                    <form:select data-placeholder="Seleccionar una o varias opciones" cssStyle="width:350px" id="_comodidades_id" path="comodidades">
+                        <form:options itemValue="id" items="${comodidadeses}"/>
+                    </form:select>
+                    <script type="text/javascript"> 
+		             $('#_comodidades_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+		             </script>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_publicacion_comodidadesAdicionales">
+                    <label for="_comodidadesAdicionales_id">Otras comodidades:</label>
+                    <form:select data-placeholder="Seleccionar una o varias opciones" cssStyle="width:350px; " id="_comodidadesAdicionales_id" multiple="multiple" path="comodidadesAdicionalesTrans">
+                        <form:options items="${comodidadesadicionaleses}"/>
+                    </form:select><a id="aComodidadId" href="javascript: abrirCrearComodidadAdicionalDialog()">Agregar nueva comodidad</a>
+                    <script type="text/javascript"> 
+                    $("#_comodidadesAdicionales_id").chosen({no_results_text: "No se encontraron resultados que coincidan con "}); 
+                    
+                    </script>
+            </div>
+            <br/>
+            <div id="roo_publicacion_condicionesEspeciales">
+                <label for="_condicionesEspeciales_id">Condiciones Especiales</label>
+                <form:textarea cssStyle="width:350px; height:80px" id="_condicionesEspeciales_id" path="condicionesEspeciales"/>
+                <label>&#160;</label>
+                <i>Ej.: "No se incluyen bebidas alcoholicas"</i>
+                <br/>
+                <form:errors cssClass="errors" id="_condicionesEspeciales_error_id" path="condicionesEspeciales"/>
+            </div>
+            <br/>
+            <div id="roo_publicacion_habitacionesDisponibles">
+                <label for="_habitacionesDisponibles_id">Habitaciones Disponibles para la publicacion</label>
+                <form:select data-placeholder="Seleccionar una opcion" class="chzn-select" tabindex="2" cssStyle="width:60px" id="_habitacionesDisponibles_id" maxlength="4" path="habitacionesDisponibles" size="0">
+                	<form:option value="" selected="selected">--</form:option>
+                	<form:options items="${cantidadHabitacionesList}" />
+                </form:select><b style="color: red"> *</b>
+                <br/>
+                <form:errors cssClass="errors" id="_habitacionesDisponibles_error_id" path="habitacionesDisponibles"/>
+                <script type="text/javascript"> 
+             		//$('#_habitacionesDisponibles_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+             	</script>
+            </div>
+            <br/>
+            <div id="roo_publicacion_minimoNoches">
+                <label for="_minimoNoches_id">Minimo de Noches por reservacion</label>
+                <form:select data-placeholder="Seleccionar una opcion" class="chzn-select" tabindex="2" cssStyle="width:60px" id="_minimoNoches_id" maxlength="30" path="minimoNoches" size="0">
+                	<form:option value="" selected="selected">--</form:option>
+                	<form:options items="${cantidadNochesMinList}" />
+                </form:select><b style="color: red"> *</b>
+                <br/>
+                <form:errors cssClass="errors" id="_minimoNoches_error_id" path="minimoNoches"/>
+                <script type="text/javascript">
+                	//$('#_minimoNoches_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+                	$('#_minimoNoches_id').change(function(){
+                		if($("#_temporadas_id").is(':checked')) {  
+                        	//$('#_tarifaTemporadaBaja_id_input, #_tarifaTemporadaAlta_idInput').formatCurrency({region:'es-VE'});
+                        	calcularPrecioAlta($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaAlta_idInput').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                        	calcularPrecioBaja($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaBaja_id_input').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                            
+                        }
+                        else {
+                        	//$('#_tarifaTemporadaBaja_id_input').formatCurrency({region:'es-VE'});
+                        	calcularPrecioBaja($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaBaja_id_input').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                        }
+                	});
+                </script>
+            </div>
+            <br/>
+            <div id="roo_publicacion_maximoNoches">
+                <label for="_maximoNoches_id">Maximo de Noches por reservacion</label>
+                <form:select data-placeholder="Seleccionar una opcion" class="chzn-select" tabindex="2" cssStyle="width:60px" id="_maximoNoches_id" maxlength="30" path="maximoNoches" size="0">
+                	<form:option value="" selected="selected">--</form:option>
+                	<form:options  items="${cantidadNochesMaxList}"/>
+                </form:select><b style="color: red"> *</b>
+                <br/>
+                <form:errors cssClass="errors" id="_maximoNoches_error_id" path="maximoNoches"/>
+                <script type="text/javascript">
+                	//$('#_maximoNoches_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+               	</script>
+            </div>
+            <br/>
+            <div id="roo_publicacion_tipoTarifa">
+                <c:if test="${not empty tipotarifas}">
+                    <label for="_tipoTarifa_id">Tipo de Tarifa</label>
+                    <form:select data-placeholder="Seleccionar una opcion" class="chzn-select" tabindex="2" cssStyle="width:250px" id="_tipoTarifa_id" path="tipoTarifa">
+                        <form:option value="" selected="selected">Seleccionar una opcion</form:option>
+                        <form:options itemValue="id" items="${tipotarifas}"/>
+                    </form:select><b style="color: red"> *</b>
+                    <form:errors cssClass="errors" id="_tipoTarifa_error_id" path="tipoTarifa"/>
+                    <script type="text/javascript"> 
+	             	//$('#_tipoTarifa_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+	             	</script>
+	             	<script type="text/javascript">
+	             	//$('#_tipoTarifa_id').chosen({no_results_text: "No se encontraron resultados que coincidan con "});
+	             	
+                	$('#_tipoTarifa_id').change(function(){
+                		if($("#_temporadas_id").is(':checked')) {  
+                        	//$('#_tarifaTemporadaBaja_id_input, #_tarifaTemporadaAlta_idInput').formatCurrency({region:'es-VE'});
+                        	calcularPrecioAlta($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaAlta_idInput').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                        	calcularPrecioBaja($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaBaja_id_input').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                            
+                        }
+                        else {
+                        	//$('#_tarifaTemporadaBaja_id_input').formatCurrency({region:'es-VE'});
+                        	calcularPrecioBaja($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaBaja_id_input').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                        }
+                	});
+                </script>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_publicacion_horaCheckIn">
+                <label for="_horaCheckIn_id">Hora de Check-In</label>
+                <form:input readonly="true"  id="_horaCheckIn_id" path="horaCheckIn" cssStyle="width:100px"/><b style="color: red"> *</b>
+                <br/>
+                <form:errors cssClass="errors" id="_horaCheckIn_error_id" path="horaCheckIn"/>
+            </div>
+            <br/>
+            <div id="roo_publicacion_horaCheckOut">
+                <label for="_horaCheckOut_id">Hora de Check-Out</label>
+                <form:input readonly="true" id="_horaCheckOut_id" maxlength="30" path="horaCheckOut" cssStyle="width:100px"/><b style="color: red"> *</b>
+                <br/>
+                <form:errors cssClass="errors" id="_horaCheckOut_error_id" path="horaCheckOut"/>
+            </div>
+            <br/>
+            <div id="roo_publicacion_temporadas">
+                <label for="_temporadas_id">Con Temporadas altas y temporadas bajas ? </label>
+               <form:checkbox id="_temporadas_id" path="temporadas"/> 
+            </div>
+            <br/>
+            
+            <script type="text/javascript">
+                <![CDATA[
+                    $(document).ready(function(){
+                        $('#fechasTemporadaAlta').multiDatesPicker().datepicker('disable');
+                        //Escondemos y aparecemos 
+                        showTemporadas();
+                        $("#_temporadas_id").click(function() {  
+                         	showTemporadas();
+                    	}); 
+                    });
+                    
+                    function showTemporadas(){
+                    	if($("#_temporadas_id").is(':checked')) {  
+                            $('#roo_publicacion_tarifaTemporadaAlta').show();
+                            $('#_tarifaTemporadaBaja_id').text("Precio en Temporada Baja");
+                            if(($('#fechaDesdeX').val()!="")&&($('#fechaHastaX').val()!="")){
+                                if($("#_temporadas_id").is(':checked')) {
+                                    $('#fechasTemporadaAlta').multiDatesPicker().datepicker('destroy');
+                                    
+                                    $('#fechasTemporadaAlta').multiDatesPicker({
+                                        minDate: new Date(fechaDesdeEnglish),
+                                        maxDate: new Date(fechaHastaEnglish)
+                                    });
+                                    $('#fechasTemporadaAlta').multiDatesPicker().datepicker('enable');
+                                }
+                                
+                            }
+                            $('.temporadaBajaH4').show();
+                            $('#temporadaAltaPVPDiv').show();
+                            $('#temporadaAltaDivPagosAlojamiento').show();
+                        } else {  
+                            
+                            $('#roo_publicacion_tarifaTemporadaAlta').hide();
+                            $('#_tarifaTemporadaBaja_id').text("Precio");
+                            $('#fechasTemporadaAlta').multiDatesPicker().datepicker('disable');
+                            
+                            $('.temporadaBajaH4').hide();
+                            $('#temporadaAltaPVPDiv').hide();
+                            $('#temporadaAltaDivPagosAlojamiento').hide();
+                        }  
+                    } 	
+                ]]>
+            </script>
+            <h3>Precio de Venta al Publico (P.V.P.)</h3>
+            <h4 class="temporadaBajaH4">Temporada Baja</h4>
+            <div id="roo_publicacion_tarifaTemporadaBaja">
+                <label for="_tarifaTemporadaBaja_id" id="_tarifaTemporadaBaja_id">Precio en Temporada Baja</label>
+                <form:input cssStyle="width:100px" id="_tarifaTemporadaBaja_id_input" maxlength="30" path="tarifaTemporadaBajaStr" /><b style="color: red"> *</b>
+                <br/>
+                <form:errors cssClass="errors" id="_tarifaTemporadaBaja_error_id" path="tarifaTemporadaBajaStr"/>
+            </div>
+            <br/>
+            <div>
+				<label id="totalTarifaIdL">Precio final para un min. de noches y personas</label>
+				<b id="totalTarifaIdb">BsF -,--</b>
+			</div>
+			<br/>
+			<div>
+				<label>Comision aquedarse.com</label>
+				<b id="comisionAquedarseIdb">BsF -,--</b>
+			</div>
+			<br/>
+			<div>
+				<label>Precio de Venta al Publico (P.V.P.)</label>
+				<b id="pvpIdb">BsF -,--</b>
+			</div>
+            <br/>
+            <br/>
+            <div id="temporadaAltaPVPDiv">
+            	<h4>Temporada Alta</h4>
+            	<div id="roo_publicacion_tarifaTemporadaAlta">
+	                <label for="_tarifaTemporadaAlta_id" id="_tarifaTemporadaAlta_id">Precio en Temporada Alta</label>
+	                <form:input cssStyle="width:100px" id="_tarifaTemporadaAlta_idInput" maxlength="30" path="tarifaTemporadaAltaStr" /><b style="color: red"> *</b>
+	                <br/>
+	                <form:errors cssClass="errors" id="_tarifaTemporadaAlta_error_id" path="tarifaTemporadaAltaStr"/>
+	            </div>
+	            <br/>
+	            <div>
+					<label id="totalTarifaAltaIdL">Precio final para un min. de noches y personas</label>
+					<b id="totalTarifaAltaIdb">BsF -,--</b>
+				</div>
+				<br/>
+				<div>
+					<label>Comision aquedarse.com</label>
+					<b id="comisionAquedarseAltaIdb">BsF -,--</b>
+				</div>
+				<br/>
+				<div>
+					<label>Precio de Venta al Publico (P.V.P.)</label>
+					<b id="pvpAltaIdb">BsF -,--</b>
+				</div>
+	            <br/>
+            </div>
+            
+            <h3>Pagos para el alojamiento</h3>
+            <h4 class="temporadaBajaH4">Temporada Baja</h4>
+			<div>
+				<label id="totalTarifa2IdL">Precio final para un min. de noches y personas</label>
+				<b id="totalTarifa2Idb">BsF -,--</b>
+			</div>
+			<br/>
+			<div>
+				<label id="comisionPlataformaPagoIdLabel">Comision de la plataforma de pagos electronicos</label>
+				<b id="comisionPlataformaPagoIdb">BsF -,--</b>
+			</div>
+			<br/>
+			<div>
+				<label id="pagoTotalHospedajeIdLabel">Pago total a recibir</label>
+				<b id="pagoTotalHospedajeIdb">BsF -,--</b>
+			</div>
+			<br/>
+			<div id="temporadaAltaDivPagosAlojamiento">
+			<h4>Temporada Alta</h4>
+				<div>
+					<label id="totalTarifa2AltaIdL">Precio final para un min. de noches y personas</label>
+					<b id="totalTarifa2AltaIdb">BsF -,--</b>
+				</div>
+				<br/>
+				<div>
+					<label id="comisionPlataformaPagoIdLabel">Comision de la plataforma de pagos electronicos</label>
+					<b id="comisionPlataformaPagoAltaIdb">BsF -,--</b>
+				</div>
+				<br/>
+				<div>
+					<label id="pagoTotalHospedajeIdLabel">Pago total a recibir</label>
+					<b id="pagoTotalHospedajeAltaIdb">BsF -,--</b>
+				</div>
+				<br/>
+			</div>
+			
+			
+            <spring:url value="/publicacion/calcularMontosAjax" var="calcular_montos_url">
+            </spring:url>
+            <script type="text/javascript">
+                <![CDATA[
+                //Inicializamos el widget que formatea las tarifas a BsF
+				$(document).ready(function()
+                    {
+						
+                        $('#_tarifaTemporadaBaja_id_input, #_tarifaTemporadaAlta_idInput').blur(function()
+                        {
+                            if($("#_temporadas_id").is(':checked')) {  
+                            	$('#_tarifaTemporadaBaja_id_input, #_tarifaTemporadaAlta_idInput').formatCurrency({region:'es-VE'});
+                            	calcularPrecioAlta($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaAlta_idInput').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                            	calcularPrecioBaja($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaBaja_id_input').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                                
+                            }
+                            else {
+                            	$('#_tarifaTemporadaBaja_id_input').formatCurrency({region:'es-VE'});
+                            	calcularPrecioBaja($('#_tipoTarifa_id option:selected').val(), $('#_tarifaTemporadaBaja_id_input').val(), $('#_minimoNoches_id option:selected').val(), $('#_cantidadPersonas_id option:selected').val());
+                            }
+                         });
+                       
+                    });
+				
+                function calcularPrecioBaja(_tipoTarifaSelected, _tarifa, _noches, _personas){
+                	//Seteamos las etiquetas de las personas y las noches
+                	$("#totalTarifaIdL, #totalTarifa2IdL").text("Precio final para minimo " + $('#_minimoNoches_id option:selected').val() + " noche(s) y " + $('#_cantidadPersonas_id option:selected').val() + " persona(s)");
+                    
+                    var tipoTarifaSelected = _tipoTarifaSelected;
+                    var tarifa =  _tarifa;
+                    var noches = _noches;
+                    var personas = _personas;
+                    
+                    $.getJSON('${calcular_montos_url}?tipoTarifaId='+tipoTarifaSelected+'&tarifa='+tarifa+'&noches='+noches+'&personas='+personas, function(data) {
+                    	  $.each(data, function(key, val) {
+                    		  if(key=='tarifaTotal'){
+                    			  $('#totalTarifaIdb, #totalTarifa2Idb').text(val);
+                    			  //TODO: region dinamica
+                    			  $('#totalTarifaIdb, #totalTarifa2Idb').formatCurrency({region:'es-VE'});
+                    		  }
+                    		  if(key=='comisionTotalAquedarse'){
+                    			  $('#comisionAquedarseIdb').text(val);
+                    			  //TODO: region dinamica
+                    			  $('#comisionAquedarseIdb').formatCurrency({region:'es-VE'});
+                    		  }
+                    		  if(key=='pvp'){
+                    			  $('#pvpIdb').text(val); 
+                    			  $('#pvpIdb').formatCurrency({region:'es-VE'});
+                    		  }
+                    		  if(key=='comisionTotalPagoElectronico'){
+                    			  $('#comisionPlataformaPagoIdb').text(val); 
+                    			  $('#comisionPlataformaPagoIdb').formatCurrency({region:'es-VE'});
+                    		  }
+                    		  if(key=='pagoTotalHospedaje'){
+                    			  $('#pagoTotalHospedajeIdb').text(val); 
+                    			  $('#pagoTotalHospedajeIdb').formatCurrency({region:'es-VE'});
+                    		  }
+                    	    //alert("key " + key + " val " +val);
+                    	  });
+
+                    	});		
+                }
+                
+                function calcularPrecioAlta(_tipoTarifaSelected, _tarifa, _noches, _personas){
+                	//Seteamos las etiquetas de las personas y las noches
+                	$("#totalTarifaIdL, #totalTarifa2IdL").text("Precio final para minimo " + $('#_minimoNoches_id option:selected').val() + " noche(s) y " + $('#_cantidadPersonas_id option:selected').val() + " persona(s)");
+                    
+                    var tipoTarifaSelected = _tipoTarifaSelected;
+                    var tarifa =  _tarifa;
+                    var noches = _noches;
+                    var personas = _personas;
+                    
+                    $.getJSON('${calcular_montos_url}?tipoTarifaId='+tipoTarifaSelected+'&tarifa='+tarifa+'&noches='+noches+'&personas='+personas, function(data) {
+                    	  $.each(data, function(key, val) {
+                    		  if(key=='tarifaTotal'){
+                    			  $('#totalTarifaAltaIdb, #totalTarifa2AltaIdb').text(val);
+                    			  //TODO: region dinamica
+                    			  $('#totalTarifaAltaIdb, #totalTarifa2AltaIdb').formatCurrency({region:'es-VE'});
+                    		  }
+                    		  if(key=='comisionTotalAquedarse'){
+                    			  $('#comisionAquedarseAltaIdb').text(val);
+                    			  //TODO: region dinamica
+                    			  $('#comisionAquedarseAltaIdb').formatCurrency({region:'es-VE'});
+                    		  }
+                    		  if(key=='pvp'){
+                    			  $('#pvpAltaIdb').text(val); 
+                    			  $('#pvpAltaIdb').formatCurrency({region:'es-VE'});
+                    		  }
+                    		  if(key=='comisionTotalPagoElectronico'){
+                    			  $('#comisionPlataformaPagoAltaIdb').text(val); 
+                    			  $('#comisionPlataformaPagoAltaIdb').formatCurrency({region:'es-VE'});
+                    		  }
+                    		  if(key=='pagoTotalHospedaje'){
+                    			  $('#pagoTotalHospedajeAltaIdb').text(val); 
+                    			  $('#pagoTotalHospedajeAltaIdb').formatCurrency({region:'es-VE'});
+                    		  }
+                    	    //alert("key " + key + " val " +val);
+                    	  });
+
+                    	});		
+                }
+                ]]>
+            </script>
+            <input hidden="true" id="fechasTemporadaAltaForm" name="fechasTemporadaAltaArray"></input>
+            
+            <!-- Campos para fecha desde y fecha hasta. El valor lo asigna el codigo javascript de abajo -->
+            <form:hidden id="fechaDesdeDef"  path="fechaDesde"  />
+            <form:hidden id="fechaHastaDef"  path="fechaHasta" />
+            </form:form>
+            
+            <spring:url value="/publicacion/asignarFechaDesde" var="asignar_fecha_desde_url"/>
+            <h3>Validez de la publicacion</h3>
+            <form id="fechaDesdeForm" action="${asignar_fecha_desde_url}">
+                <div id="roo_publicacion_fechaDesde">
+                    <label for="_fechaDesde_id">Valido desde</label>
+                    <input readonly="true" style="width:100px" id="_fechaDesde_id" maxlength="30" name="fechaDesde" /><b style="color: red"> *</b>
+                    <input hidden="true" id="fechaHastaX" name="fechaHastaX"></input>
+                    <script type="text/javascript">
+                        <![CDATA[
+                        var fechaDesdeEnglish = "";
+                        //Inicializamos el datepicker de fecha desde con formato esp
+                        $("#_fechaDesde_id").datepicker($.datepicker.regional['es']);
+                    
+                        $('#_fechaDesde_id').change(function() {
+                                $('#fechaDesdeX').val($('#_fechaDesde_id').val());
+                                $.ajax({type:'GET', url: '${asignar_fecha_desde_url}', data:$('#fechaDesdeForm').serialize(), success: function(response) {
+                                    //Verificamos si hubo algun error de validacion
+                                    if (response["error"]=="true"){
+                                        alert(response["mensajeError"]);
+                                        $('#fechaDesdeX').val("");
+                                        $("#_fechaDesde_id").val("");
+                                    //No hubo error
+                                    }else{
+                                        fechaDesdeEnglish = response["fechaDesdeEnglish"];
+                                        //Seteamos las fechas minimas y maximas del multidatepicker
+                                        if($("#_temporadas_id").is(':checked')) {
+                                                $('#fechasTemporadaAlta').multiDatesPicker().datepicker('destroy');
+                                                
+                                                $('#fechasTemporadaAlta').multiDatesPicker({
+                                                    minDate: new Date(response["fechaDesdeEnglish"]),
+                                                    maxDate: new Date(fechaHastaEnglish)
+                                                });
+                                                $('#fechasTemporadaAlta').multiDatesPicker().datepicker('enable');
+                                            }
+                                         //Seteamos el input:hidden de fechaDesde
+                                         $("#fechaDesdeDef").val($("#_fechaDesde_id").val());
+                                    }
+                                    
+                                }});
+                        });
+                        
+                        
+                    ]]>
+                    </script>
+                </div>
+                <br/>
+            </form>
+            <spring:url value="/publicacion/asignarFechaHasta" var="asignar_fecha_hasta_url"/>
+            
+            <form id="fechaHastaForm" action="${asignar_fecha_hasta_url}">    
+                <div id="roo_publicacion_fechaHasta">
+                    <label for="_fechaHasta_id">Valido Hasta</label>
+                    <input readonly="true" style="width:100px" id="_fechaHasta_id" maxlength="30" name="fechaHasta" /><b style="color: red"> *</b>
+                    <input hidden="true" id="fechaDesdeX" name="fechaDesdeX"></input>
+                    <script type="text/javascript">
+                        <![CDATA[
+                        var fechaHastaEnglish = "";
+                        $("#_fechaHasta_id").datepicker($.datepicker.regional['es']);
+
+                        $('#_fechaHasta_id').change(function() {
+                                $('#fechaHastaX').val($('#_fechaHasta_id').val());
+                                $.ajax({type:'GET', url: '${asignar_fecha_hasta_url}', data:$('#fechaHastaForm').serialize(), success: function(response) {
+                                        //Verificamos si hubo algun error de validacion
+                                        if (response!=null){
+                                            if (response["error"]!=null){
+                                                if (response["error"]=="true"){
+                                                    alert(response["mensajeError"]);
+                                                    $('#_fechaHasta_id').val("");
+                                                    $('#fechaHastaX').val("");
+                                                }
+                                            }  
+                                            else{
+                                                fechaHastaEnglish = response["fechaHastaEnglish"];
+                                                if($("#_temporadas_id").is(':checked')) {
+                                                    $( "#fechasTemporadaAlta" ).multiDatesPicker().datepicker('destroy');
+                                                    
+                                                    $( "#fechasTemporadaAlta" ).multiDatesPicker({
+                                                        minDate: new Date(fechaDesdeEnglish),
+                                                        maxDate: new Date(response["fechaHastaEnglish"])
+                                                    });
+                                                    $('#fechasTemporadaAlta').multiDatesPicker().datepicker('enable');
+                                                }
+                                                //Seteamos el input:hidden de fechaHasta
+                                                $("#fechaHastaDef").val($("#_fechaHasta_id").val());
+                                            }
+                                        }
+                                }});
+                        });
+                        ]]>
+                    </script>
+                </div>
+                <br/>
+            </form>
+            
+            <!-- Modal para errores -->
+            <div id="dialogError" title="Error">
+	            <p id="dialogErrorP"></p>
+	        </div>
+            
+            <!-- Modal Form Servicios Adcionales -->
+            <div id="serviciosAdicionalesDiv" title="Nuevo servicio adicional">
+			    <form id="serviciosAdicionalesForm">
+			        Nombre del servicio
+			        <input type="text" name="nombreServicio" style="width: 180px" id="nombreServicioAdicionalId" class="text ui-widget-content ui-corner-all" />
+			    </form>
+			</div>
+			<spring:url value="/serviciosincluidosadicionales/crearservicioincluidoadicional" var="crearServicioAdicionalUrl"/>
+            <script type="text/javascript">
+             //Dialog form
+             $( "#serviciosAdicionalesDiv" ).dialog({
+                 autoOpen: false,
+                 height: 160,
+                 width: 350,
+                 modal: true,
+                 resizable: false,
+                 buttons: {
+                     "Aceptar": function() {
+                    	$('#_serviciosIncluidosAdicionales_id').append('<option selected="true" value="'+$('#nombreServicioAdicionalId').val()+'">'+$("#nombreServicioAdicionalId").val()+'</option>');
+                    	$("#_serviciosIncluidosAdicionales_id").trigger("liszt:updated");	 
+                     	$( this ).dialog( "close" );
+	                 },
+	                 "Cancelar": function() {
+	                     $( this ).dialog( "close" );
+	                 }
+             	},
+	             close: function() {
+	             }
+	         }); 
+             $( "#serviciosAdicionalesDiv" ).dialog({ position: { my: "left top", at: "left bottom", of: "#aServiciosAdicionalesId" } }); 
+             
+             
+             //Funcion boton agregar servicio adicional
+             function abrirCrearServicioAdicionalDialog(){
+            	 $( "#serviciosAdicionalesDiv" ).dialog( "open" );	 
+             }
+             </script>
+			
+			<!-- Modal Form Comodidades Adcionales -->
+            <div id="comodidadesAdicionalesDiv" title="Nueva Comodidad Adicional">
+			    <form id="comodidadesAdicionalesForm">
+			        Nombre de la comodidad
+			        <input type="text" name="nombreComodidad" style="width: 180px" id="nombreComodidadAdicionalId" class="text ui-widget-content ui-corner-all" />
+			    </form>
+			</div>
+			<spring:url value="/comodidadesadicionales/crearcomodidadadicional" var="crearComodidadAdicionalUrl"/>
+            
+            <script type="text/javascript">
+             //Dialog form
+             $( "#comodidadesAdicionalesDiv" ).dialog({
+                 autoOpen: false,
+                 height: 160,
+                 width: 350,
+                 modal: true,
+                 resizable: false,
+                 buttons: {
+                     "Aceptar": function() {
+                    	 $('#_comodidadesAdicionales_id').append('<option selected="true">'+$("#nombreComodidadAdicionalId").val()+'</option>');
+                    	 $("#_comodidadesAdicionales_id").trigger("liszt:updated");	 
+                     $( this ).dialog( "close" );
+	                 },
+	                 "Cancelar": function() {
+	                     $( this ).dialog( "close" );
+	                 }
+	             },
+	             close: function() {
+	             }
+	         }); 
+             $( "#comodidadesAdicionalesDiv" ).dialog({ position: { my: "left top", at: "left bottom", of: "#aComodidadId" } });  
+             
+             //Funcion boton agregar servicio adicional
+             function abrirCrearComodidadAdicionalDialog(){
+            	 $( "#comodidadesAdicionalesDiv" ).dialog( "open" );	 
+             }
+             </script>
+			<h3>Seleccionar dias de temporada alta</h3>
+            <div id="MultidatePickerX" >
+                <!--TODO: ver como posicionar el multidatepicker sin usar px-->
+                <div  id="fechasTemporadaAlta" type="text" style="margin-left: 265px"></div>
+            </div>
+                                        
+            <script>
+                <![CDATA[
+                
+                $(document).ready(function() {
+                
+                });
+                //Inicializamos los timepicker
+                $("#_horaCheckIn_id, #_horaCheckOut_id").timePicker({
+                  show24Hours: true,
+                  step: 30});
+                //Hacemos get de todas las fechas de la temporada alta, lo metemos en un form y hacemos submit del form
+                function enviarFormulario(){
+                    var dates = $('#fechasTemporadaAlta').multiDatesPicker('getDates');
+                    $('#fechasTemporadaAltaForm').val(dates);
+                    $('#publicacionForm').submit(); 
+                }
+                
+                //Funcion para poder obtener los items seleccionados de los chosen via ajax
+               /* $(function(){  
+    				$('.chzn-select').chosen({disable_search_threshold: 10}) .change(
+    				function() {
+    					var selectedValue = $(this).find('option:selected').val();
+    					$(this).parent().parent().find('option[value="'+ selectedValue +'"]:not(:selected)').attr('disabled','disabled');
+    					$('.chzn-select').trigger("liszt:updated");
+    				});
+                });*/
+                ]]>
+            </script>     
+    </div>
+    
+    <div id="roo_publicacion_submit">
+        <input id="proceed" type="button" value="Siguiente" onclick="enviarFormulario()"/>
+    </div>
+    
+</div>

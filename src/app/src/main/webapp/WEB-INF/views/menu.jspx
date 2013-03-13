@@ -1,0 +1,560 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" id="menu" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <ul id="roo_menu">
+
+        <li id="web_mvc_jsp_alojamiento_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_alojamiento_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_alojamiento_menu_item">
+                    <spring:url value="/alojamiento/form" var="web_mvc_jsp_create_alojamiento_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_alojamiento_menu_item_url}">
+                        <spring:message code="label.alojamiento" var="label_alojamiento"/>
+                        <spring:message arguments="${label_alojamiento}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_alojamiento_menu_item">
+                    <spring:url value="/alojamiento?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_alojamiento_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_alojamiento_menu_item_url}">
+                        <spring:message code="label.alojamientoes" var="label_alojamientoes"/>
+                        <spring:message arguments="${label_alojamientoes}" code="global.menu.list"/>
+                    </a>
+                </li>
+                <li id="finder_findalojamientoesbynombre_menu_item">
+                    <spring:url value="/alojamiento/find/ByNombre/form" var="finder_findalojamientoesbynombre_menu_item_url"/>
+                    <a href="${finder_findalojamientoesbynombre_menu_item_url}">
+                        <spring:message code="label.nombre" var="label_nombre"/>
+                        <spring:message arguments="${label_nombre}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_estado_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_estado_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_estado_menu_item">
+                    <spring:url value="/estado/form" var="web_mvc_jsp_create_estado_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_estado_menu_item_url}">
+                        <spring:message code="label.estado" var="label_estado"/>
+                        <spring:message arguments="${label_estado}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_estado_menu_item">
+                    <spring:url value="/estado?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_estado_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_estado_menu_item_url}">
+                        <spring:message code="label.estadoes" var="label_estadoes"/>
+                        <spring:message arguments="${label_estadoes}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_parroquia_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_parroquia_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_parroquia_menu_item">
+                    <spring:url value="/parroquia/form" var="web_mvc_jsp_create_parroquia_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_parroquia_menu_item_url}">
+                        <spring:message code="label.parroquia" var="label_parroquia"/>
+                        <spring:message arguments="${label_parroquia}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_parroquia_menu_item">
+                    <spring:url value="/parroquia?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_parroquia_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_parroquia_menu_item_url}">
+                        <spring:message code="label.parroquias" var="label_parroquias"/>
+                        <spring:message arguments="${label_parroquias}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_municipio_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_municipio_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_municipio_menu_item">
+                    <spring:url value="/municipio/form" var="web_mvc_jsp_create_municipio_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_municipio_menu_item_url}">
+                        <spring:message code="label.municipio" var="label_municipio"/>
+                        <spring:message arguments="${label_municipio}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_municipio_menu_item">
+                    <spring:url value="/municipio?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_municipio_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_municipio_menu_item_url}">
+                        <spring:message code="label.municipios" var="label_municipios"/>
+                        <spring:message arguments="${label_municipios}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_ubicacion_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_ubicacion_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_ubicacion_menu_item">
+                    <spring:url value="/ubicacion/form" var="web_mvc_jsp_create_ubicacion_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_ubicacion_menu_item_url}">
+                        <spring:message code="label.ubicacion" var="label_ubicacion"/>
+                        <spring:message arguments="${label_ubicacion}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_ubicacion_menu_item">
+                    <spring:url value="/ubicacion?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_ubicacion_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_ubicacion_menu_item_url}">
+                        <spring:message code="label.ubicacions" var="label_ubicacions"/>
+                        <spring:message arguments="${label_ubicacions}" code="global.menu.list"/>
+                    </a>
+                </li>
+                <li id="finder_findubicacionsbynombrelike_menu_item">
+                    <spring:url value="/ubicacion/find/ByNombreLike/form" var="finder_findubicacionsbynombrelike_menu_item_url"/>
+                    <a href="${finder_findubicacionsbynombrelike_menu_item_url}">
+                        <spring:message code="label.nombrelike" var="label_nombrelike"/>
+                        <spring:message arguments="${label_nombrelike}" code="global.menu.find"/>
+                    </a>
+                </li>
+                <li id="finder_findubicacionsbynombre_menu_item">
+                    <spring:url value="/ubicacion/find/ByNombre/form" var="finder_findubicacionsbynombre_menu_item_url"/>
+                    <a href="${finder_findubicacionsbynombre_menu_item_url}">
+                        <spring:message code="label.nombre" var="label_nombre"/>
+                        <spring:message arguments="${label_nombre}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_tipoalojamiento_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_tipoalojamiento_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_tipoalojamiento_menu_item">
+                    <spring:url value="/tipoalojamiento/form" var="web_mvc_jsp_create_tipoalojamiento_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_tipoalojamiento_menu_item_url}">
+                        <spring:message code="label.tipoalojamiento" var="label_tipoalojamiento"/>
+                        <spring:message arguments="${label_tipoalojamiento}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_tipoalojamiento_menu_item">
+                    <spring:url value="/tipoalojamiento?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_tipoalojamiento_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_tipoalojamiento_menu_item_url}">
+                        <spring:message code="label.tipoalojamientoes" var="label_tipoalojamientoes"/>
+                        <spring:message arguments="${label_tipoalojamientoes}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_comodidadgeneral_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_comodidadgeneral_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_comodidadgeneral_menu_item">
+                    <spring:url value="/comodidadgeneral/form" var="web_mvc_jsp_create_comodidadgeneral_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_comodidadgeneral_menu_item_url}">
+                        <spring:message code="label.comodidadgeneral" var="label_comodidadgeneral"/>
+                        <spring:message arguments="${label_comodidadgeneral}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_comodidadgeneral_menu_item">
+                    <spring:url value="/comodidadgeneral?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_comodidadgeneral_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_comodidadgeneral_menu_item_url}">
+                        <spring:message code="label.comodidadgenerals" var="label_comodidadgenerals"/>
+                        <spring:message arguments="${label_comodidadgenerals}" code="global.menu.list"/>
+                    </a>
+                </li>
+                <li id="finder_findcomodidadgeneralsbynombrelike_menu_item">
+                    <spring:url value="/comodidadgeneral/find/ByNombreLike/form" var="finder_findcomodidadgeneralsbynombrelike_menu_item_url"/>
+                    <a href="${finder_findcomodidadgeneralsbynombrelike_menu_item_url}">
+                        <spring:message code="label.nombrelike" var="label_nombrelike"/>
+                        <spring:message arguments="${label_nombrelike}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_imagen_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_imagen_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_imagen_menu_item">
+                    <spring:url value="/imagen/form" var="web_mvc_jsp_create_imagen_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_imagen_menu_item_url}">
+                        <spring:message code="label.imagen" var="label_imagen"/>
+                        <spring:message arguments="${label_imagen}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_imagen_menu_item">
+                    <spring:url value="/imagen?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_imagen_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_imagen_menu_item_url}">
+                        <spring:message code="label.imagens" var="label_imagens"/>
+                        <spring:message arguments="${label_imagens}" code="global.menu.list"/>
+                    </a>
+                </li>
+                <li id="finder_findimagensbyalojamiento_menu_item">
+                    <spring:url value="/imagen/find/ByAlojamiento/form" var="finder_findimagensbyalojamiento_menu_item_url"/>
+                    <a href="${finder_findimagensbyalojamiento_menu_item_url}">
+                        <spring:message code="label.alojamiento" var="label_alojamiento"/>
+                        <spring:message arguments="${label_alojamiento}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_cuentabancaria_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_cuentabancaria_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_cuentabancaria_menu_item">
+                    <spring:url value="/cuentabancaria/form" var="web_mvc_jsp_create_cuentabancaria_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_cuentabancaria_menu_item_url}">
+                        <spring:message code="label.cuentabancaria" var="label_cuentabancaria"/>
+                        <spring:message arguments="${label_cuentabancaria}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_cuentabancaria_menu_item">
+                    <spring:url value="/cuentabancaria?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_cuentabancaria_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_cuentabancaria_menu_item_url}">
+                        <spring:message code="label.cuentabancarias" var="label_cuentabancarias"/>
+                        <spring:message arguments="${label_cuentabancarias}" code="global.menu.list"/>
+                    </a>
+                </li>
+                <li id="finder_findcuentabancariasbyalojamiento_menu_item">
+                    <spring:url value="/cuentabancaria/find/ByAlojamiento/form" var="finder_findcuentabancariasbyalojamiento_menu_item_url"/>
+                    <a href="${finder_findcuentabancariasbyalojamiento_menu_item_url}">
+                        <spring:message code="label.alojamiento" var="label_alojamiento"/>
+                        <spring:message arguments="${label_alojamiento}" code="global.menu.find"/>
+                    </a>
+                </li>
+                <li id="finder_findcuentabancariasbyalojamientoandactiva_menu_item">
+                    <spring:url value="/cuentabancaria/find/ByAlojamientoAndActiva/form" var="finder_findcuentabancariasbyalojamientoandactiva_menu_item_url"/>
+                    <a href="${finder_findcuentabancariasbyalojamientoandactiva_menu_item_url}">
+                        <spring:message code="label.alojamientoandactiva" var="label_alojamientoandactiva"/>
+                        <spring:message arguments="${label_alojamientoandactiva}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_tipocirif_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_tipocirif_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_tipocirif_menu_item">
+                    <spring:url value="/tipocirif/form" var="web_mvc_jsp_create_tipocirif_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_tipocirif_menu_item_url}">
+                        <spring:message code="label.tipocirif" var="label_tipocirif"/>
+                        <spring:message arguments="${label_tipocirif}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_tipocirif_menu_item">
+                    <spring:url value="/tipocirif?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_tipocirif_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_tipocirif_menu_item_url}">
+                        <spring:message code="label.tipocirifs" var="label_tipocirifs"/>
+                        <spring:message arguments="${label_tipocirifs}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_publicacion_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_publicacion_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_publicacion_menu_item">
+                    <spring:url value="/publicacion/form" var="web_mvc_jsp_create_publicacion_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_publicacion_menu_item_url}">
+                        <spring:message code="label.publicacion" var="label_publicacion"/>
+                        <spring:message arguments="${label_publicacion}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_publicacion_menu_item">
+                    <spring:url value="/publicacion?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_publicacion_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_publicacion_menu_item_url}">
+                        <spring:message code="label.publicacions" var="label_publicacions"/>
+                        <spring:message arguments="${label_publicacions}" code="global.menu.list"/>
+                    </a>
+                </li>
+            <li id="finder_findpublicacionsbyalojamiento_menu_item">
+                    <spring:url value="/publicacion/find/ByAlojamiento/form" var="finder_findpublicacionsbyalojamiento_menu_item_url"/>
+                    <a href="${finder_findpublicacionsbyalojamiento_menu_item_url}">
+                        <spring:message code="label.alojamiento" var="label_alojamiento"/>
+                        <spring:message arguments="${label_alojamiento}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_serviciosincluidos_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_serviciosincluidos_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_serviciosincluidos_menu_item">
+                    <spring:url value="/serviciosincluidos/form" var="web_mvc_jsp_create_serviciosincluidos_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_serviciosincluidos_menu_item_url}">
+                        <spring:message code="label.serviciosincluidos" var="label_serviciosincluidos"/>
+                        <spring:message arguments="${label_serviciosincluidos}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_serviciosincluidos_menu_item">
+                    <spring:url value="/serviciosincluidos?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_serviciosincluidos_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_serviciosincluidos_menu_item_url}">
+                        <spring:message code="label.serviciosincluidoses" var="label_serviciosincluidoses"/>
+                        <spring:message arguments="${label_serviciosincluidoses}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_tipohabitacion_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_tipohabitacion_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_tipohabitacion_menu_item">
+                    <spring:url value="/tipohabitacion/form" var="web_mvc_jsp_create_tipohabitacion_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_tipohabitacion_menu_item_url}">
+                        <spring:message code="label.tipohabitacion" var="label_tipohabitacion"/>
+                        <spring:message arguments="${label_tipohabitacion}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_tipohabitacion_menu_item">
+                    <spring:url value="/tipohabitacion?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_tipohabitacion_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_tipohabitacion_menu_item_url}">
+                        <spring:message code="label.tipohabitacions" var="label_tipohabitacions"/>
+                        <spring:message arguments="${label_tipohabitacions}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_tipotarifa_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_tipotarifa_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_tipotarifa_menu_item">
+                    <spring:url value="/tipotarifa/form" var="web_mvc_jsp_create_tipotarifa_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_tipotarifa_menu_item_url}">
+                        <spring:message code="label.tipotarifa" var="label_tipotarifa"/>
+                        <spring:message arguments="${label_tipotarifa}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_tipotarifa_menu_item">
+                    <spring:url value="/tipotarifa?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_tipotarifa_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_tipotarifa_menu_item_url}">
+                        <spring:message code="label.tipotarifas" var="label_tipotarifas"/>
+                        <spring:message arguments="${label_tipotarifas}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_comodidades_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_comodidades_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_comodidades_menu_item">
+                    <spring:url value="/comodidades/form" var="web_mvc_jsp_create_comodidades_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_comodidades_menu_item_url}">
+                        <spring:message code="label.comodidades" var="label_comodidades"/>
+                        <spring:message arguments="${label_comodidades}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_comodidades_menu_item">
+                    <spring:url value="/comodidades?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_comodidades_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_comodidades_menu_item_url}">
+                        <spring:message code="label.comodidadeses" var="label_comodidadeses"/>
+                        <spring:message arguments="${label_comodidadeses}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_fechatemporadaalta_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_fechatemporadaalta_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_fechatemporadaalta_menu_item">
+                    <spring:url value="/fechatemporadaalta/form" var="web_mvc_jsp_create_fechatemporadaalta_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_fechatemporadaalta_menu_item_url}">
+                        <spring:message code="label.fechatemporadaalta" var="label_fechatemporadaalta"/>
+                        <spring:message arguments="${label_fechatemporadaalta}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_fechatemporadaalta_menu_item">
+                    <spring:url value="/fechatemporadaalta?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_fechatemporadaalta_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_fechatemporadaalta_menu_item_url}">
+                        <spring:message code="label.fechatemporadaaltas" var="label_fechatemporadaaltas"/>
+                        <spring:message arguments="${label_fechatemporadaaltas}" code="global.menu.list"/>
+                    </a>
+                </li>
+                <li id="finder_findfechatemporadaaltasbyfecha_menu_item">
+                    <spring:url value="/fechatemporadaalta/find/ByFecha/form" var="finder_findfechatemporadaaltasbyfecha_menu_item_url"/>
+                    <a href="${finder_findfechatemporadaaltasbyfecha_menu_item_url}">
+                        <spring:message code="label.fecha" var="label_fecha"/>
+                        <spring:message arguments="${label_fecha}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_archivoadjuntodirectorio_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_archivoadjuntodirectorio_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_archivoadjuntodirectorio_menu_item">
+                    <spring:url value="/archivoadjuntodirectorio/form" var="web_mvc_jsp_create_archivoadjuntodirectorio_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_archivoadjuntodirectorio_menu_item_url}">
+                        <spring:message code="label.archivoadjuntodirectorio" var="label_archivoadjuntodirectorio"/>
+                        <spring:message arguments="${label_archivoadjuntodirectorio}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_archivoadjuntodirectorio_menu_item">
+                    <spring:url value="/archivoadjuntodirectorio?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_archivoadjuntodirectorio_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_archivoadjuntodirectorio_menu_item_url}">
+                        <spring:message code="label.archivoadjuntodirectorios" var="label_archivoadjuntodirectorios"/>
+                        <spring:message arguments="${label_archivoadjuntodirectorios}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="web_mvc_jsp_configuracion_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_configuracion_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_configuracion_menu_item">
+                    <spring:url value="/configuracion/form" var="web_mvc_jsp_create_configuracion_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_configuracion_menu_item_url}">
+                        <spring:message code="label.configuracion" var="label_configuracion"/>
+                        <spring:message arguments="${label_configuracion}" code="global.menu.new"/>
+                    </a>
+                </li>
+                <li id="web_mvc_jsp_list_configuracion_menu_item">
+                    <spring:url value="/configuracion?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_configuracion_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_configuracion_menu_item_url}">
+                        <spring:message code="label.configuracions" var="label_configuracions"/>
+                        <spring:message arguments="${label_configuracions}" code="global.menu.list"/>
+                    </a>
+                </li>
+                <li id="finder_findconfiguracionsbyclave_menu_item">
+                    <spring:url value="/configuracion/find/ByClave/form" var="finder_findconfiguracionsbyclave_menu_item_url"/>
+                    <a href="${finder_findconfiguracionsbyclave_menu_item_url}">
+                        <spring:message code="label.clave" var="label_clave"/>
+                        <spring:message arguments="${label_clave}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+            <li id="web_mvc_jsp_comodidadesadicionales_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_comodidadesadicionales_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_comodidadesadicionales_menu_item">
+                    <spring:url value="/comodidadesadicionales/form" var="web_mvc_jsp_create_comodidadesadicionales_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_comodidadesadicionales_menu_item_url}">
+                        <spring:message code="label.comodidadesadicionales" var="label_comodidadesadicionales"/>
+                        <spring:message arguments="${label_comodidadesadicionales}" code="global.menu.new"/>
+                    </a>
+                </li>
+            <li id="web_mvc_jsp_list_comodidadesadicionales_menu_item">
+                    <spring:url value="/comodidadesadicionales?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_comodidadesadicionales_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_comodidadesadicionales_menu_item_url}">
+                        <spring:message code="label.comodidadesadicionaleses" var="label_comodidadesadicionaleses"/>
+                        <spring:message arguments="${label_comodidadesadicionaleses}" code="global.menu.list"/>
+                    </a>
+                </li>
+            <li id="finder_findcomodidadesadicionalesesbynombrelike_menu_item">
+                    <spring:url value="/comodidadesadicionales/find/ByNombreLike/form" var="finder_findcomodidadesadicionalesesbynombrelike_menu_item_url"/>
+                    <a href="${finder_findcomodidadesadicionalesesbynombrelike_menu_item_url}">
+                        <spring:message code="label.nombrelike" var="label_nombrelike"/>
+                        <spring:message arguments="${label_nombrelike}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    <li id="web_mvc_jsp_banco_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_banco_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_banco_menu_item">
+                    <spring:url value="/banco/form" var="web_mvc_jsp_create_banco_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_banco_menu_item_url}">
+                        <spring:message code="label.banco" var="label_banco"/>
+                        <spring:message arguments="${label_banco}" code="global.menu.new"/>
+                    </a>
+                </li>
+            <li id="web_mvc_jsp_list_banco_menu_item">
+                    <spring:url value="/banco?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_banco_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_banco_menu_item_url}">
+                        <spring:message code="label.bancoes" var="label_bancoes"/>
+                        <spring:message arguments="${label_bancoes}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    <li id="web_mvc_jsp_serviciosincluidosadicionales_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_serviciosincluidosadicionales_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_serviciosincluidosadicionales_menu_item">
+                    <spring:url value="/serviciosincluidosadicionales/form" var="web_mvc_jsp_create_serviciosincluidosadicionales_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_serviciosincluidosadicionales_menu_item_url}">
+                        <spring:message code="label.serviciosincluidosadicionales" var="label_serviciosincluidosadicionales"/>
+                        <spring:message arguments="${label_serviciosincluidosadicionales}" code="global.menu.new"/>
+                    </a>
+                </li>
+            <li id="web_mvc_jsp_list_serviciosincluidosadicionales_menu_item">
+                    <spring:url value="/serviciosincluidosadicionales?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_serviciosincluidosadicionales_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_serviciosincluidosadicionales_menu_item_url}">
+                        <spring:message code="label.serviciosincluidosadicionaleses" var="label_serviciosincluidosadicionaleses"/>
+                        <spring:message arguments="${label_serviciosincluidosadicionaleses}" code="global.menu.list"/>
+                    </a>
+                </li>
+            <li id="finder_findserviciosincluidosadicionalesesbynombrelike_menu_item">
+                    <spring:url value="/serviciosincluidosadicionales/find/ByNombreLike/form" var="finder_findserviciosincluidosadicionalesesbynombrelike_menu_item_url"/>
+                    <a href="${finder_findserviciosincluidosadicionalesesbynombrelike_menu_item_url}">
+                        <spring:message code="label.nombrelike" var="label_nombrelike"/>
+                        <spring:message arguments="${label_nombrelike}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    <li id="web_mvc_jsp_comodidadgeneraladicional_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_comodidadgeneraladicional_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_comodidadgeneraladicional_menu_item">
+                    <spring:url value="/comodidadgeneraladicional/form" var="web_mvc_jsp_create_comodidadgeneraladicional_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_comodidadgeneraladicional_menu_item_url}">
+                        <spring:message code="label.comodidadgeneraladicional" var="label_comodidadgeneraladicional"/>
+                        <spring:message arguments="${label_comodidadgeneraladicional}" code="global.menu.new"/>
+                    </a>
+                </li>
+            <li id="web_mvc_jsp_list_comodidadgeneraladicional_menu_item">
+                    <spring:url value="/comodidadgeneraladicional?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_comodidadgeneraladicional_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_comodidadgeneraladicional_menu_item_url}">
+                        <spring:message code="label.comodidadgeneraladicionals" var="label_comodidadgeneraladicionals"/>
+                        <spring:message arguments="${label_comodidadgeneraladicionals}" code="global.menu.list"/>
+                    </a>
+                </li>
+            <li id="finder_findcomodidadgeneraladicionalsbynombrelike_menu_item">
+                    <spring:url value="/comodidadgeneraladicional/find/ByNombreLike/form" var="finder_findcomodidadgeneraladicionalsbynombrelike_menu_item_url"/>
+                    <a href="${finder_findcomodidadgeneraladicionalsbynombrelike_menu_item_url}">
+                        <spring:message code="label.nombrelike" var="label_nombrelike"/>
+                        <spring:message arguments="${label_nombrelike}" code="global.menu.find"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+            </div>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:BpmnDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bpmn="http://stp.eclipse.org/bpmn" xmi:id="_UNSNQa9_EeGnx420TC8RGQ" iD="_UNSNQK9_EeGnx420TC8RGQ">
+  <artifacts xmi:type="bpmn:TextAnnotation" xmi:id="_abICobQsEeGT058Pw2Mzug" iD="_abICoLQsEeGT058Pw2Mzug" name="Se incluyen comodidades/servicios ppales para filtrar busqueda"/>
+  <pools xmi:type="bpmn:Pool" xmi:id="_UOS54a9_EeGnx420TC8RGQ" iD="_UOS54K9_EeGnx420TC8RGQ" name="hospedaje">
+    <artifacts xmi:type="bpmn:TextAnnotation" xmi:id="_6zpekbQrEeGT058Pw2Mzug" iD="_6zpekLQrEeGT058Pw2Mzug" name="Evaluar si es práctico tener mas de una cuenta registrada"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_eYeO4a9_EeGnx420TC8RGQ" iD="_eYeO4K9_EeGnx420TC8RGQ" outgoingEdges="_4LOl0a-AEeGnx420TC8RGQ" activityType="EventStartEmpty"/>
+    <vertices xmi:type="bpmn:SubProcess" xmi:id="_4LIfMa-AEeGnx420TC8RGQ" iD="_4LIfMK-AEeGnx420TC8RGQ" outgoingEdges="_LOOVoa-BEeGnx420TC8RGQ" incomingEdges="_4LOl0a-AEeGnx420TC8RGQ" name="Iniciar sesión" activityType="SubProcess">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#__5rfQa-AEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_LOLSUa-BEeGnx420TC8RGQ" iD="_LOLSUK-BEeGnx420TC8RGQ" outgoingEdges="_K80Y8LJoEeG0W9cW8315ag" incomingEdges="_LOOVoa-BEeGnx420TC8RGQ" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_L5k_wa-BEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_NMjDga-BEeGnx420TC8RGQ" iD="_NMjDgK-BEeGnx420TC8RGQ" outgoingEdges="__UNlQa-BEeGnx420TC8RGQ" incomingEdges="_K80Y8LJoEeG0W9cW8315ag" name="Registrar alojamiento" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_S0gxka-BEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_-e01Ya-BEeGnx420TC8RGQ" iD="_-e01YK-BEeGnx420TC8RGQ" outgoingEdges="__v7Q4a-BEeGnx420TC8RGQ" incomingEdges="__UNlQa-BEeGnx420TC8RGQ" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_-e4fwa-BEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="__v4Nka-BEeGnx420TC8RGQ" iD="__v4NkK-BEeGnx420TC8RGQ" outgoingEdges="_Rld2AbJqEeG0W9cW8315ag" incomingEdges="__v7Q4a-BEeGnx420TC8RGQ" name="Registrar datos en el formulario de información general del alojamiento" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_KXr5wa-CEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Ufcz8a-CEeGnx420TC8RGQ" iD="_Ufcz8K-CEeGnx420TC8RGQ" outgoingEdges="_HZHvga-FEeGnx420TC8RGQ" incomingEdges="_iIi74bJsEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_UffQMa-CEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_ofJcka-CEeGnx420TC8RGQ" iD="_ofJckK-CEeGnx420TC8RGQ" outgoingEdges="_XlwLoa-EEeGnx420TC8RGQ" incomingEdges="_1QirAbJtEeG0W9cW8315ag" name="Seleccionar registrar habitación" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_7hhhUK-CEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_XltvYa-EEeGnx420TC8RGQ" iD="_XltvYK-EEeGnx420TC8RGQ" outgoingEdges="_Y88BAa-EEeGnx420TC8RGQ" incomingEdges="_XlwLoa-EEeGnx420TC8RGQ" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_YORkMa-EEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Y849sa-EEeGnx420TC8RGQ" iD="_Y849sK-EEeGnx420TC8RGQ" outgoingEdges="_315uQbJuEeG0W9cW8315ag" incomingEdges="_Y88BAa-EEeGnx420TC8RGQ" name="Llenar formulario de registro de información de la habitacion y cargar única foto" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_8HlYIbJpEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_1U0cka-EEeGnx420TC8RGQ" iD="_1U0ckK-EEeGnx420TC8RGQ" incomingEdges="_1qomAbJtEeG0W9cW8315ag" name="Seleccionar registrar oferta especial"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_HZEsMa-FEeGnx420TC8RGQ" iD="_HZEsMK-FEeGnx420TC8RGQ" outgoingEdges="_oz7OwbJsEeG0W9cW8315ag" incomingEdges="_HZHvga-FEeGnx420TC8RGQ" name="Visualizar pantalla de consulta general del alojamiento" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_RJ0b0bJqEeG0W9cW8315ag" iD="_RJ0b0LJqEeG0W9cW8315ag" outgoingEdges="_TAZi8bJqEeG0W9cW8315ag" incomingEdges="_Rld2AbJqEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_RJ3fIbJqEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_TAV4kbJqEeG0W9cW8315ag" iD="_TAV4kLJqEeG0W9cW8315ag" outgoingEdges="_iIi74bJsEeG0W9cW8315ag" incomingEdges="_TAZi8bJqEeG0W9cW8315ag" name="Subir fotos" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_ZSo9EbJqEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_oz29UbJsEeG0W9cW8315ag" iD="_oz29ULJsEeG0W9cW8315ag" outgoingEdges="_CvlfgbJtEeG0W9cW8315ag" incomingEdges="_oz7OwbJsEeG0W9cW8315ag _M_-xQbJtEeG0W9cW8315ag" name="Seleccionar registrar cuentas para recibir pagos" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_7Gm78bJsEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_CXBOgbJtEeG0W9cW8315ag" iD="_CXBOgLJtEeG0W9cW8315ag" outgoingEdges="_DZgmQbJtEeG0W9cW8315ag" incomingEdges="_CvlfgbJtEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_CXER0bJtEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_DZdi8bJtEeG0W9cW8315ag" iD="_DZdi8LJtEeG0W9cW8315ag" outgoingEdges="_hy3KUbJtEeG0W9cW8315ag" incomingEdges="_DZgmQbJtEeG0W9cW8315ag" name="Registrar cuenta bancaria" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_QHeGobJtEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_JcmxILJtEeG0W9cW8315ag" iD="_JcmKELJtEeG0W9cW8315ag" outgoingEdges="_M_-xQbJtEeG0W9cW8315ag _1QirAbJtEeG0W9cW8315ag _1qomAbJtEeG0W9cW8315ag" incomingEdges="_vi-EMbJtEeG0W9cW8315ag" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_harT0bJtEeG0W9cW8315ag" iD="_harT0LJtEeG0W9cW8315ag" outgoingEdges="_iywhEbJtEeG0W9cW8315ag" incomingEdges="_hy3KUbJtEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_hatwEbJtEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_iys2sbJtEeG0W9cW8315ag" iD="_iys2sLJtEeG0W9cW8315ag" outgoingEdges="_vi-EMbJtEeG0W9cW8315ag" incomingEdges="_iywhEbJtEeG0W9cW8315ag" name="Visualizar datos de la cuenta registrada" activityType="Task"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_3eALobJuEeG0W9cW8315ag" iD="_3eALoLJuEeG0W9cW8315ag" outgoingEdges="_4WONEbJuEeG0W9cW8315ag" incomingEdges="_315uQbJuEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_3eDO8bJuEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_4WLJwbJuEeG0W9cW8315ag" iD="_4WLJwLJuEeG0W9cW8315ag" outgoingEdges="_OtiF8bJyEeG0W9cW8315ag" incomingEdges="_4WONEbJuEeG0W9cW8315ag" name="Visualizar información registrada y foto" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_9RP8obJuEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_OX07sbJyEeG0W9cW8315ag" iD="_OX07sLJyEeG0W9cW8315ag" outgoingEdges="_PTR3ULJyEeG0W9cW8315ag" incomingEdges="_OtiF8bJyEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_OX3_AbJyEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_PTO0AbJyEeG0W9cW8315ag" iD="_PTO0ALJyEeG0W9cW8315ag" outgoingEdges="_20qEAbQsEeGT058Pw2Mzug" incomingEdges="_PTR3ULJyEeG0W9cW8315ag" name="Registrar tarifa y cantidades disponibles" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_U8QSAbJyEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_20lykbQsEeGT058Pw2Mzug" iD="_20lykLQsEeGT058Pw2Mzug" incomingEdges="_20qEAbQsEeGT058Pw2Mzug" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_3w4bsLQsEeGT058Pw2Mzug"/>
+    </vertices>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_4LOl0a-AEeGnx420TC8RGQ" iD="_4LOl0K-AEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_LOOVoa-BEeGnx420TC8RGQ" iD="_LOOVoK-BEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="__UNlQa-BEeGnx420TC8RGQ" iD="__UNlQK-BEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="__v7Q4a-BEeGnx420TC8RGQ" iD="__v7Q4K-BEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_XlwLoa-EEeGnx420TC8RGQ" iD="_XlwLoK-EEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Y88BAa-EEeGnx420TC8RGQ" iD="_Y88BAK-EEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_HZHvga-FEeGnx420TC8RGQ" iD="_HZHvgK-FEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_K80Y8LJoEeG0W9cW8315ag" iD="_K8zx4LJoEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Rld2AbJqEeG0W9cW8315ag" iD="_Rld2ALJqEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_TAZi8bJqEeG0W9cW8315ag" iD="_TAZi8LJqEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_iIi74bJsEeG0W9cW8315ag" iD="_iIi74LJsEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_oz7OwbJsEeG0W9cW8315ag" iD="_oz7OwLJsEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_CvlfgbJtEeG0W9cW8315ag" iD="_CvlfgLJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_DZgmQbJtEeG0W9cW8315ag" iD="_DZgmQLJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_M_-xQbJtEeG0W9cW8315ag" iD="_M_-xQLJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_hy3KUbJtEeG0W9cW8315ag" iD="_hy3KULJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_iywhEbJtEeG0W9cW8315ag" iD="_iywhELJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_vi-EMbJtEeG0W9cW8315ag" iD="_vi-EMLJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_1QirAbJtEeG0W9cW8315ag" iD="_1QirALJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_1qomAbJtEeG0W9cW8315ag" iD="_1qomALJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_315uQbJuEeG0W9cW8315ag" iD="_315uQLJuEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_4WONEbJuEeG0W9cW8315ag" iD="_4WONELJuEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_OtiF8bJyEeG0W9cW8315ag" iD="_OtiF8LJyEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_PTR3ULJyEeG0W9cW8315ag" iD="_PTRQQLJyEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_20qEAbQsEeGT058Pw2Mzug" iD="_20qEALQsEeGT058Pw2Mzug"/>
+  </pools>
+  <pools xmi:type="bpmn:Pool" xmi:id="_ak52oa9_EeGnx420TC8RGQ" iD="_ak52oK9_EeGnx420TC8RGQ" name="Sistema">
+    <vertices xmi:type="bpmn:Activity" xmi:id="_9h2sQa-AEeGnx420TC8RGQ" iD="_9h2sQK-AEeGnx420TC8RGQ" outgoingEdges="_A_U4sa-BEeGnx420TC8RGQ" activityType="EventStartMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#__5rfQa-AEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_A_R1Ya-BEeGnx420TC8RGQ" iD="_A_R1YK-BEeGnx420TC8RGQ" outgoingEdges="_SEMu8a-BEeGnx420TC8RGQ" incomingEdges="_A_U4sa-BEeGnx420TC8RGQ" name="Mostrar dashboard ppal con lista de los alojamientos registrados" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_L5k_wa-BEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_SEJroa-BEeGnx420TC8RGQ" iD="_SEJroK-BEeGnx420TC8RGQ" outgoingEdges="_UI2uUa-BEeGnx420TC8RGQ" incomingEdges="_SEMu8a-BEeGnx420TC8RGQ" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_S0gxka-BEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_UIzD8a-BEeGnx420TC8RGQ" iD="_UIzD8K-BEeGnx420TC8RGQ" outgoingEdges="_MJpmoa-CEeGnx420TC8RGQ" incomingEdges="_UI2uUa-BEeGnx420TC8RGQ" name="Muestra el formulario para registrar la información general del alojamiento" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_-e4fwa-BEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_KXnoUa-CEeGnx420TC8RGQ" iD="_KXnoUK-CEeGnx420TC8RGQ" outgoingEdges="_Mkl9IbJqEeG0W9cW8315ag" incomingEdges="_MJpmoa-CEeGnx420TC8RGQ" activityType="EventIntermediateMessage" looping="false">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_KXr5wa-CEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Mw83Ma-CEeGnx420TC8RGQ" iD="_Mw83MK-CEeGnx420TC8RGQ" outgoingEdges="_6dvlIbJsEeG0W9cW8315ag" incomingEdges="_g6J2IbJsEeG0W9cW8315ag" name="Mostrar la pantalla de consulta con la información general cargada y fotos del alojamiento" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_UffQMa-CEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_5Le3AK-CEeGnx420TC8RGQ" iD="_5LeP8K-CEeGnx420TC8RGQ" outgoingEdges="_6KtfYa-CEeGnx420TC8RGQ" incomingEdges="_yPvzgbJtEeG0W9cW8315ag" activityType="GatewayEventBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_6KpN8a-CEeGnx420TC8RGQ" iD="_6KpN8K-CEeGnx420TC8RGQ" outgoingEdges="_8QrtYa-CEeGnx420TC8RGQ" incomingEdges="_6KtfYa-CEeGnx420TC8RGQ" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_7hhhUK-CEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_8QoqEa-CEeGnx420TC8RGQ" iD="_8QoqEK-CEeGnx420TC8RGQ" outgoingEdges="_9Ac50bJpEeG0W9cW8315ag" incomingEdges="_8QrtYa-CEeGnx420TC8RGQ" name="Mostrar formulario de registro registro de información de la habitación " activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_YORkMa-EEeGnx420TC8RGQ"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_8HgfobJpEeG0W9cW8315ag" iD="_8HgfoLJpEeG0W9cW8315ag" outgoingEdges="_972LEbJpEeG0W9cW8315ag" incomingEdges="_9Ac50bJpEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_8HlYIbJpEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_97ygsbJpEeG0W9cW8315ag" iD="_97ygsLJpEeG0W9cW8315ag" outgoingEdges="_94fi0bJuEeG0W9cW8315ag" incomingEdges="_972LEbJpEeG0W9cW8315ag" name="Mostrar información registrada de la habitación y foto" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_3eDO8bJuEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Mki50bJqEeG0W9cW8315ag" iD="_Mki50LJqEeG0W9cW8315ag" outgoingEdges="_aFtYwbJqEeG0W9cW8315ag" incomingEdges="_Mkl9IbJqEeG0W9cW8315ag" name="Mostrar formulario para carga de fotos" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_RJ3fIbJqEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_ZSl5wbJqEeG0W9cW8315ag" iD="_ZSl5wLJqEeG0W9cW8315ag" outgoingEdges="_g6J2IbJsEeG0W9cW8315ag" incomingEdges="_aFtYwbJqEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_ZSo9EbJqEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_6dsh0bJsEeG0W9cW8315ag" iD="_6dsh0LJsEeG0W9cW8315ag" outgoingEdges="_8E1ewbJsEeG0W9cW8315ag" incomingEdges="_6dvlIbJsEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_7Gm78bJsEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_8EybcbJsEeG0W9cW8315ag" iD="_8EybcLJsEeG0W9cW8315ag" outgoingEdges="_RVIMkbJtEeG0W9cW8315ag" incomingEdges="_8E1ewbJsEeG0W9cW8315ag" name="Mostrar formulario para registrar cuenta bancaria" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_CXER0bJtEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_QHbDUbJtEeG0W9cW8315ag" iD="_QHbDULJtEeG0W9cW8315ag" outgoingEdges="_ZULt0bJtEeG0W9cW8315ag" incomingEdges="_RVIMkbJtEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_QHeGobJtEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_ZUIqgbJtEeG0W9cW8315ag" iD="_ZUIqgLJtEeG0W9cW8315ag" outgoingEdges="_yPvzgbJtEeG0W9cW8315ag" incomingEdges="_ZULt0bJtEeG0W9cW8315ag" name="Mostrar datos de la cuenta registrada" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_hatwEbJtEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_9RM5UbJuEeG0W9cW8315ag" iD="_9RM5ULJuEeG0W9cW8315ag" outgoingEdges="_-3wAYbJuEeG0W9cW8315ag" incomingEdges="_94fi0bJuEeG0W9cW8315ag" activityType="EventIntermediateMessage">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_9RP8obJuEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_-3s9EbJuEeG0W9cW8315ag" iD="_-3s9ELJuEeG0W9cW8315ag" outgoingEdges="_XdQPIbJyEeG0W9cW8315ag" incomingEdges="_-3wAYbJuEeG0W9cW8315ag" name="Mostrar pantalla con formulario para registrar tarifa, cantidades disponibles y con la información de los rangos de cobros de fee" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_OX3_AbJyEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_U8N1wbJyEeG0W9cW8315ag" iD="_U8N1wLJyEeG0W9cW8315ag" outgoingEdges="_YHSDkbJyEeG0W9cW8315ag" incomingEdges="_XdQPIbJyEeG0W9cW8315ag" activityType="EventIntermediateMessage" looping="false">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_U8QSAbJyEeG0W9cW8315ag"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_YHPAQbJyEeG0W9cW8315ag" iD="_YHPAQLJyEeG0W9cW8315ag" incomingEdges="_YHSDkbJyEeG0W9cW8315ag" name="Mostrar formulario para registrar los dias de temporada alta" activityType="Task">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_3w4bsLQsEeGT058Pw2Mzug"/>
+    </vertices>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_A_U4sa-BEeGnx420TC8RGQ" iD="_A_U4sK-BEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_SEMu8a-BEeGnx420TC8RGQ" iD="_SEMu8K-BEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_UI2uUa-BEeGnx420TC8RGQ" iD="_UI2uUK-BEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_MJpmoa-CEeGnx420TC8RGQ" iD="_MJpmoK-CEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_6KtfYa-CEeGnx420TC8RGQ" iD="_6KtfYK-CEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_8QrtYa-CEeGnx420TC8RGQ" iD="_8QrtYK-CEeGnx420TC8RGQ"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_9Ac50bJpEeG0W9cW8315ag" iD="_9Ac50LJpEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_972LEbJpEeG0W9cW8315ag" iD="_972LELJpEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Mkl9IbJqEeG0W9cW8315ag" iD="_Mkl9ILJqEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_aFtYwbJqEeG0W9cW8315ag" iD="_aFtYwLJqEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_g6J2IbJsEeG0W9cW8315ag" iD="_g6J2ILJsEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_6dvlIbJsEeG0W9cW8315ag" iD="_6dvlILJsEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_8E1ewbJsEeG0W9cW8315ag" iD="_8E1ewLJsEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_RVIMkbJtEeG0W9cW8315ag" iD="_RVIMkLJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_ZULt0bJtEeG0W9cW8315ag" iD="_ZULt0LJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_yPvzgbJtEeG0W9cW8315ag" iD="_yPvzgLJtEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_94fi0bJuEeG0W9cW8315ag" iD="_94fi0LJuEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_-3wAYbJuEeG0W9cW8315ag" iD="_-3wAYLJuEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_XdQPIbJyEeG0W9cW8315ag" iD="_XdQPILJyEeG0W9cW8315ag"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_YHSDkbJyEeG0W9cW8315ag" iD="_YHSDkLJyEeG0W9cW8315ag"/>
+  </pools>
+  <pools xmi:type="bpmn:Pool" xmi:id="_HPeysa-CEeGnx420TC8RGQ" iD="_HPeysK-CEeGnx420TC8RGQ" name="Administrador"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="__5rfQa-AEeGnx420TC8RGQ" iD="__5rfQK-AEeGnx420TC8RGQ" source="_4LIfMa-AEeGnx420TC8RGQ" target="_9h2sQa-AEeGnx420TC8RGQ"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_L5k_wa-BEeGnx420TC8RGQ" iD="_L5k_wK-BEeGnx420TC8RGQ" source="_A_R1Ya-BEeGnx420TC8RGQ" target="_LOLSUa-BEeGnx420TC8RGQ"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_S0gxka-BEeGnx420TC8RGQ" iD="_S0gxkK-BEeGnx420TC8RGQ" source="_NMjDga-BEeGnx420TC8RGQ" target="_SEJroa-BEeGnx420TC8RGQ"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_-e4fwa-BEeGnx420TC8RGQ" iD="_-e4fwK-BEeGnx420TC8RGQ" source="_UIzD8a-BEeGnx420TC8RGQ" target="_-e01Ya-BEeGnx420TC8RGQ"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_KXr5wa-CEeGnx420TC8RGQ" iD="_KXr5wK-CEeGnx420TC8RGQ" source="__v4Nka-BEeGnx420TC8RGQ" target="_KXnoUa-CEeGnx420TC8RGQ"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_UffQMa-CEeGnx420TC8RGQ" iD="_UffQMK-CEeGnx420TC8RGQ" source="_Mw83Ma-CEeGnx420TC8RGQ" target="_Ufcz8a-CEeGnx420TC8RGQ"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_7hhhUK-CEeGnx420TC8RGQ" iD="_7hg6QK-CEeGnx420TC8RGQ" source="_ofJcka-CEeGnx420TC8RGQ" target="_6KpN8a-CEeGnx420TC8RGQ"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_YORkMa-EEeGnx420TC8RGQ" iD="_YORkMK-EEeGnx420TC8RGQ" source="_8QoqEa-CEeGnx420TC8RGQ" target="_XltvYa-EEeGnx420TC8RGQ"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_8HlYIbJpEeG0W9cW8315ag" iD="_8HlYILJpEeG0W9cW8315ag" source="_Y849sa-EEeGnx420TC8RGQ" target="_8HgfobJpEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_RJ3fIbJqEeG0W9cW8315ag" iD="_RJ3fILJqEeG0W9cW8315ag" source="_Mki50bJqEeG0W9cW8315ag" target="_RJ0b0bJqEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_ZSo9EbJqEeG0W9cW8315ag" iD="_ZSo9ELJqEeG0W9cW8315ag" source="_TAV4kbJqEeG0W9cW8315ag" target="_ZSl5wbJqEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_7Gm78bJsEeG0W9cW8315ag" iD="_7Gm78LJsEeG0W9cW8315ag" source="_oz29UbJsEeG0W9cW8315ag" target="_6dsh0bJsEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_CXER0bJtEeG0W9cW8315ag" iD="_CXER0LJtEeG0W9cW8315ag" source="_8EybcbJsEeG0W9cW8315ag" target="_CXBOgbJtEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_QHeGobJtEeG0W9cW8315ag" iD="_QHeGoLJtEeG0W9cW8315ag" source="_DZdi8bJtEeG0W9cW8315ag" target="_QHbDUbJtEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_hatwEbJtEeG0W9cW8315ag" iD="_hatwELJtEeG0W9cW8315ag" source="_ZUIqgbJtEeG0W9cW8315ag" target="_harT0bJtEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_3eDO8bJuEeG0W9cW8315ag" iD="_3eDO8LJuEeG0W9cW8315ag" source="_97ygsbJpEeG0W9cW8315ag" target="_3eALobJuEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_9RP8obJuEeG0W9cW8315ag" iD="_9RP8oLJuEeG0W9cW8315ag" source="_4WLJwbJuEeG0W9cW8315ag" target="_9RM5UbJuEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_OX3_AbJyEeG0W9cW8315ag" iD="_OX3_ALJyEeG0W9cW8315ag" source="_-3s9EbJuEeG0W9cW8315ag" target="_OX07sbJyEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_U8QSAbJyEeG0W9cW8315ag" iD="_U8QSALJyEeG0W9cW8315ag" source="_PTO0AbJyEeG0W9cW8315ag" target="_U8N1wbJyEeG0W9cW8315ag"/>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_3w4bsLQsEeGT058Pw2Mzug" iD="_3w30oLQsEeGT058Pw2Mzug" source="_YHPAQbJyEeG0W9cW8315ag" target="_20lykbQsEeGT058Pw2Mzug"/>
+</bpmn:BpmnDiagram>

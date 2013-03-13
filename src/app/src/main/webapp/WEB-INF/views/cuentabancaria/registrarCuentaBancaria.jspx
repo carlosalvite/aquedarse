@@ -1,0 +1,66 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');dojo.require('dijit.form.SimpleTextarea');</script>
+    <div id="_title_div">
+        <spring:message code="label.cuentabancaria" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.create" var="title_msg"/>
+        <script type="text/javascript">
+            Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); 
+        
+            $(function() {
+                $( document ).tooltip();
+            });
+    
+        </script>        
+        <spring:url value="/cuentabancaria" var="form_url"/>
+        <form:form action="${form_url}" method="POST" modelAttribute="cuentaBancaria">
+            <form:errors cssClass="errors" delimiter="&lt;p/&gt;"/>
+            <div id="roo_cuentaBancaria_banco">
+                <c:if test="${not empty bancoes}">
+                    <label for="_banco_id">Banco:</label>
+                    <form:select cssStyle="width:297px" id="_banco_id" path="banco">
+                        <form:options itemValue="id" items="${bancoes}"/>
+                    </form:select>
+                    <script type="text/javascript">//Spring.addDecoration(new Spring.ElementDecoration({elementId : '_banco_id', widgetType: 'dijit.form.FilteringSelect', widgetAttrs : {hasDownArrow : true}})); </script>
+                </c:if>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_numeroCuenta">
+                <label for="_numeroCuenta_id">Numero de cuenta:</label>
+                <form:input cssStyle="width:300px" id="_numeroCuenta_id" path="numeroCuenta" maxlength="20" title="Please provide your firstname."/>
+                <br/>
+                <form:errors cssClass="errors" id="_numeroCuenta_error_id" path="numeroCuenta"/>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_titularCuenta">
+                <label for="_titularCuenta_id">Titular de la cuenta:</label>
+                <form:input cssStyle="width:300px" id="_titularCuenta_id" path="titularCuenta" maxlength="50"/>
+                <br/>
+                <form:errors cssClass="errors" id="_titularCuenta_error_id" path="titularCuenta"/>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_ciRif">
+                <label for="_ciRif_id">C.I. o R.I.F.:</label>
+                <form:select cssStyle="width:50px" id="_tipoCiRif_id" path="tipoCiRif">
+                        <form:options itemValue="id" items="${tipocirifs}"/>
+                    </form:select>
+                <form:input cssStyle="width:245px; margin-left:5px;" id="_ciRif_id" maxlength="10" path="ciRif" size="0"/>
+                <br/>
+                <form:errors cssClass="errors" id="_ciRif_error_id" path="ciRif"/>
+            </div>
+            <br/>
+            <div id="roo_cuentaBancaria_correoElectronico">
+                <label for="_correoElectronico_id">Correo electronico:</label>
+                <form:input cssStyle="width:300px" id="_correoElectronico_id" path="correoElectronico" maxlength="40"/>
+                <br/>
+                <form:errors cssClass="errors" id="_correoElectronico_error_id" path="correoElectronico"/>
+            </div>
+            <br/>
+            <div class="submit" id="roo_cuentaBancaria_submit">
+                <spring:message code="button.save" var="save_button"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ValidateAllDecoration({elementId:'proceed', event:'onclick'}));</script>
+                <input id="proceed" type="submit" value="${save_button}"/>
+            </div>
+        </form:form>
+    </div>
+</div>
