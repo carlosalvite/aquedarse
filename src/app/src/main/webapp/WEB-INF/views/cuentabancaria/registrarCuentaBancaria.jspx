@@ -1,17 +1,14 @@
 <div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
     <jsp:output omit-xml-declaration="yes"/>
-    <script type="text/javascript">dojo.require('dijit.TitlePane');dojo.require('dijit.form.SimpleTextarea');</script>
-    <div id="_title_div">
-        <spring:message code="label.cuentabancaria" var="entity_label"/>
-        <spring:message arguments="${entity_label}" code="entity.create" var="title_msg"/>
         <script type="text/javascript">
-            Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); 
-        
             $(function() {
                 $( document ).tooltip();
             });
     
-        </script>        
+        </script>    
+        
+        <h2>Registrar Cuenta Bancaria - ${alojamiento.nombre}</h2>
+        
         <spring:url value="/cuentabancaria" var="form_url"/>
         <form:form action="${form_url}" method="POST" modelAttribute="cuentaBancaria">
             <form:errors cssClass="errors" delimiter="&lt;p/&gt;"/>
@@ -62,5 +59,4 @@
                 <input id="proceed" type="submit" value="${save_button}"/>
             </div>
         </form:form>
-    </div>
 </div>

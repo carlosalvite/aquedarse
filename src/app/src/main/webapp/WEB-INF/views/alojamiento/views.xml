@@ -19,10 +19,13 @@
     <definition extends="default" name="alojamiento/registrarAlojamientoFotos">
         <put-attribute name="body" value="/WEB-INF/views/alojamiento/registrarAlojamientoFotos.jspx"/>
     </definition>
-    <definition extends="default" name="alojamiento/mostrar">
-        <put-attribute name="body" value="/WEB-INF/views/alojamiento/mostrar.jspx"/>
+    <definition extends="default" name="alojamiento/showRegistroPasoUno">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/showRegistroPasoUno.jspx"/>
     </definition>
     <definition extends="default" name="alojamiento/panelDeControl">
         <put-attribute name="body" value="/WEB-INF/views/alojamiento/panelDeControl.jspx"/>
+    </definition>
+    <definition extends="default" name="alojamiento/finWizard">
+        <put-attribute name="body" value="/WEB-INF/views/alojamiento/finWizard.jspx"/>
     </definition>
 </tiles-definitions>

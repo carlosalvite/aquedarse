@@ -9,13 +9,25 @@
         }
         
     </style>
-    <div id="_title_div">
-        <spring:message code="label.publicacion" var="entity_label"/>
-        <spring:message arguments="${entity_label}" code="entity.create" var="title_msg"/>
-        <spring:url value="/publicacion/registrarpublicacion" var="form_url"/>
-        <h1><c:out value="${nombreAlojamiento}"></c:out></h1>
-        <h2>Registrar nueva publicacion</h2>
-        <form:form action="${form_url}" method="POST" modelAttribute="publicacion" id="publicacionForm">
+    
+    <script type="text/javascript">
+        $(function() {
+            $( "#tabs" ).tabs();
+        });
+    </script>
+    
+    <spring:message code="label.publicacion" var="entity_label"/>
+    <spring:message arguments="${entity_label}" code="entity.create" var="title_msg"/>
+    <spring:url value="/publicacion/registrarpublicacion" var="form_url"/>
+    <h1><c:out value="${nombreAlojamiento}"></c:out></h1>
+    
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Nueva Publicación</a></li>
+        </ul>
+        <div id="tabs-1">
+        
+            <form:form action="${form_url}" method="POST" modelAttribute="publicacion" id="publicacionForm">
             <form:errors cssClass="errors" delimiter="&lt;p/&gt;"/>
             <br/>
             <h3>Caracteristicas</h3>
@@ -688,5 +700,14 @@
     <div id="roo_publicacion_submit">
         <input id="proceed" type="button" value="Siguiente" onclick="enviarFormulario()"/>
     </div>
+            
+            
+        </div>
+        
+    
+    
+    <div id="_title_div">
+        
+     </div>   
     
 </div>

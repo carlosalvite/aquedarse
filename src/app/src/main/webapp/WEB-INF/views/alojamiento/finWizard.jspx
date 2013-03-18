@@ -1,0 +1,12 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <h2>Felicidades!!!</h2>
+    <h3>El alojamiento ha sido registrado de forma satisfactoria</h3>
+    <spring:url value="/publicacion/registrarpublicacionform" var="registrar_publicacion_url">
+        <spring:param name="idAlojamiento" value="${alojamiento.id}"></spring:param>
+    </spring:url>
+    <spring:url value="/alojamiento/panelDeControl" var="panel_de_control_url">
+        <spring:param name="id" value="${alojamiento.id}"></spring:param>
+    </spring:url>
+    <h4>Ahora puedes registrar una <a href="${registrar_publicacion_url}">nueva publicación</a> o ir al <a href="${panel_de_control_url}">panel de control</a></h4>
+</div>

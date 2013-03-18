@@ -1,12 +1,10 @@
 <div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
     <jsp:output omit-xml-declaration="yes"/>
-    <script type="text/javascript">dojo.require('dijit.TitlePane');</script>
-    <div id="_title_div">
-        <spring:message code="label.alojamiento" var="entity_label"/>
-        <spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+    <script type="text/javascript">//dojo.require('dijit.TitlePane');</script>
+    
         <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
         <c:if test="${not empty alojamiento}">
-            <h3>Registrar Fotos - ${alojamiento.nombre}</h3>            
+            <h2>Cargar Imágenes - ${alojamiento.nombre}</h2>            
             <br/>
             
             <!-- Carga de imagenes -->
@@ -23,7 +21,7 @@
             </div>
             <div id="divImagen2" hidden="true">
                 <form id="imagenForm2" class="imagenForm" enctype="multipart/form-data">
-                    <label>Imagen 2:</label>
+                    <label>Segunda Imagen:</label>
                     <input id="imagenInput2" name="file" type="file" onchange="subirImagen('imagenForm2','linkId2','borrarLinkId2')"/><c:out value=" "/><a id="linkId2" class="fancybox fancybox.image" hidden="true">Visualizar</a><c:out value=" "/><a id="borrarLinkId2" name="borrarLink" hidden="true" href="javascript: borrarImagen('borrarLinkId2','linkId2','imagenInput2','borrarLinkId2')">Borrar</a>
                     <input name="idAlojamiento" value="${alojamiento.id}" hidden="true"></input>
                 </form>
@@ -31,7 +29,7 @@
             </div>
             <div id="divImagen3" hidden="true">
                 <form id="imagenForm3" class="imagenForm" enctype="multipart/form-data">
-                    <label>Imagen 3:</label>
+                    <label>Tercera Imagen:</label>
                     <input id="imagenInput3" name="file" type="file" onchange="subirImagen('imagenForm3','linkId3','borrarLinkId3')"/><c:out value=" "/><a id="linkId3" class="fancybox fancybox.image" hidden="true">Visualizar</a><c:out value=" "/><a id="borrarLinkId3" name="borrarLink" hidden="true" href="javascript: borrarImagen('borrarLinkId3','linkId3','imagenInput3','borrarLinkId3')">Borrar</a>
                     <input name="idAlojamiento" value="${alojamiento.id}" hidden="true"></input>
                 </form>
@@ -39,7 +37,7 @@
             </div>
             <div id="divImagen4" hidden="true">
                 <form id="imagenForm4" class="imagenForm" enctype="multipart/form-data">
-                    <label>Imagen 4:</label>
+                    <label>Cuarta Imagen:</label>
                     <input id="imagenInput4" name="file" type="file" onchange="subirImagen('imagenForm4','linkId4','borrarLinkId4')"/><c:out value=" "/><a id="linkId4" class="fancybox fancybox.image" hidden="true">Visualizar</a><c:out value=" "/><a id="borrarLinkId4" name="borrarLink" hidden="true" href="javascript: borrarImagen('borrarLinkId4','linkId4','imagenInput4','borrarLinkId4')">Borrar</a>
                     <input name="idAlojamiento" value="${alojamiento.id}" hidden="true"></input>
                 </form>
@@ -47,7 +45,7 @@
             </div>
             <div id="divImagen5" hidden="true">
                 <form id="imagenForm5" class="imagenForm" enctype="multipart/form-data">
-                    <label>Imagen 5:</label>
+                    <label>Última Imagen:</label>
                     <input id="imagenInput5" name="file" type="file" onchange="subirImagen('imagenForm5','linkId5','borrarLinkId5')"/><c:out value=" "/><a id="linkId5" class="fancybox fancybox.image" hidden="true">Visualizar</a><c:out value=" "/><a id="borrarLinkId5" name="borrarLink" hidden="true" href="javascript: borrarImagen('borrarLinkId5','linkId5','imagenInput5','borrarLinkId5')">Borrar</a>
                     <input name="idAlojamiento" value="${alojamiento.id}" hidden="true"></input>
                 </form>
@@ -56,12 +54,14 @@
             <br/>   
             
             <div class="submit" id="roo_alojamiento_continuar">     
+                <!-- Si estamos en el wizard, la siguiente pantalla debe ser registrar cuenta bancaria -->
                 
-                <spring:url value="/cuentabancaria/form" var="cuentabancaria_url">
-                    <spring:param name="id" value="${alojamiento.id}"/>
-                </spring:url>
-                <input type="button" value="Continuar" onclick="document.location='${cuentabancaria_url}'"/>
-                
+                <!--<c:if test="${estoyEnWizard eq true}">-->
+                    <spring:url value="/cuentabancaria/form" var="cuentabancaria_url">
+                        <spring:param name="id" value="${alojamiento.id}"/>
+                    </spring:url>
+                    <input type="button" value="Continuar" onclick="document.location='${cuentabancaria_url}'"/>
+                <!--</c:if>-->
             </div>
                         
             <!--<progress></progress>-->
@@ -181,5 +181,5 @@
         <c:if test="${empty alojamiento}">
             <spring:message arguments="${entity_label}" code="entity.not.found.single"/>
         </c:if>
-    </div>
+
 </div>

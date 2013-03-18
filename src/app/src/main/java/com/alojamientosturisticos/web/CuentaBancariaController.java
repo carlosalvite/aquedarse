@@ -23,7 +23,14 @@ import org.springframework.web.bind.support.SessionStatus;
 @SessionAttributes({"cuentaBancaria"})
 @Controller
 public class CuentaBancariaController {
-    
+    /**
+     * Realiza la persistencia de una cuenta bancaria
+     * @param cuentaBancaria
+     * @param result
+     * @param modelMap
+     * @param session
+     * @return 
+     */
     @RequestMapping(value = "/cuentabancaria", method = RequestMethod.POST)
     public String create(
             @Valid @ModelAttribute("cuentaBancaria") CuentaBancaria cuentaBancaria,             
@@ -61,11 +68,18 @@ public class CuentaBancariaController {
         cuentaBancaria.persist();
         
         session.setComplete();
-        //return "redirect:/cuentabancaria/" + cuentaBancaria.getId();
-        return "redirect:/alojamiento/mostrar/?id=" + cuentaBancaria.getAlojamiento().getId();
+        
+        return "redirect:/alojamiento/finWizard/?id=" + cuentaBancaria.getAlojamiento().getId();
+        
         
     }
     
+    /**
+     * Muestra el formulario para registrar una cuenta bancaria
+     * @param id
+     * @param modelMap
+     * @return 
+     */
     @RequestMapping(value = "/cuentabancaria/form", method = RequestMethod.GET)
     public String createForm(
             @RequestParam("id") long id,

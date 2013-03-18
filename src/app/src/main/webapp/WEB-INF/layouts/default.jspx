@@ -1,174 +1,192 @@
 <html 
- 	xmlns:jsp="http://java.sun.com/JSP/Page"
-	xmlns:c="http://java.sun.com/jsp/jstl/core"
-	xmlns:tiles="http://tiles.apache.org/tags-tiles"
-	xmlns:form="http://www.springframework.org/tags/form"
-	xmlns:spring="http://www.springframework.org/tags"
-	xmlns:roo="urn:jsptagdir:/WEB-INF/tags" >  
-	
-	<jsp:directive.page contentType="text/html;charset=UTF-8" />  
-		
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=8" />		
-		<spring:theme code="styleSheet" var="roo_css"/>	
-		<spring:url value="/${roo_css}" var="roo_css_url"/>
-		<spring:url value="/resources/dojo/dojo.js" var="dojo_url"/>
-		<spring:url value="/resources/dijit/themes/tundra/tundra.css" var="tundra_url"/>
-		<spring:url value="/resources/spring/Spring.js" var="spring_url"/>
-		<spring:url value="/resources/spring/Spring-Dojo.js" var="spring_dojo_url"/>	
-                <!-- Nuevos -->
-                <!-- jQueryUI -->
-                <spring:url value="/resources/jquery-ui-1.8.23.custom/js/jquery-1.8.0.min.js" var="jquery_url"/>
-                <spring:url value="/resources/jquery-ui-1.8.23.custom/js/jquery-ui-1.8.23.custom.min.js" var="jquery_ui_url"/>
-                <spring:url value="/resources/jquery-ui-1.8.23.custom/css/smoothness/jquery-ui-1.8.23.custom.css" var="jquery_ui_css_url"/>
-                
-                <!-- Intento de jQueryUI 1.9.2 -->
-                <!--<spring:url value="/resources/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js" var="jquery_url"/>
-                <spring:url value="/resources/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js" var="jquery_ui_url"/>
-                <spring:url value="/resources/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.css" var="jquery_ui_css_url"/>-->
-                
-                
-                <spring:url value="/resources/jquery-ui-1.8.23.custom/development-bundle/ui/jquery.ui.autocomplete.js" var="jquery_ui_autocomplete_url"/>
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns:tiles="http://tiles.apache.org/tags-tiles"
+    xmlns:form="http://www.springframework.org/tags/form"
+    xmlns:spring="http://www.springframework.org/tags"
+    xmlns:roo="urn:jsptagdir:/WEB-INF/tags" >  
 
-                <spring:url value="/resources/jquery-ui-1.8.23.custom/development-bundle/demos/demos.css" var="jquery_ui_autocomplete_css_url"/>
-                <spring:url value="/resources/jquery-ui-1.8.23.custom/development-bundle/themes/base/jquery.ui.all.css" var="jquery_ui_all_css_url"/>
-                <spring:url value="/resources/jquery-ui-1.8.23.custom/development-bundle/ui/i18n/jquery.ui.datepicker-es.js" var="jqueryuidatepickeres_url"/>
-                
-                <!-- FancyBox -->
-                <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/jquery.mousewheel-3.0.6.pack.js" var="fancybox_mouse_url"/>
-                <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/jquery.fancybox.css" var="fancybox_css_url"/>
-                <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/jquery.fancybox.pack.js" var="fancybox_url"/>
-                <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-buttons.css" var="fancybox_buttons_css_url"/>
-                <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-buttons.js" var="fancybox_buttons_url"/>
-                <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-media.js" var="fancybox_media_url"/>
-                <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-thumbs.css" var="fancybox_thumbs_css_url"/>
-                <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-thumbs.js" var="fancybox_thumbs_url"/>
-                <!-- SimpleCombo -->
-                <spring:url value="/resources/bennettmcelwee-Simple-Combo-8c4d455/jquery.simpleCombo.js" var="simple_combo_url"/>
-                <!-- MultidatePicker -->
-                <spring:url value="/resources/MultiDatesPicker-v1.6.1/jquery-ui.multidatespicker.js" var="multidate_picker_url"/>
-                <!-- JavaScriptDateFormat -->
-                <spring:url value="/resources/javascriptDateFormat/javascriptDateFormat.js" var="javascript_date_format_url"/>
-                <!-- TimePicker -->
-                <spring:url value="/resources/jquery-ui-timepicker-0.3.0/jquery.ui.timepicker.js" var="jquerytimepicker_url"/>
-                <spring:url value="/resources/jquery-ui-timepicker-0.3.0/jquery.ui.timepicker.css" var="jquerytimepickercss_url"/>
-                <!-- Slider -->
-                <spring:url value="/resources/slider/jquery-easing-1.3.pack.js" var="easing_pack_url"/>
-                <spring:url value="/resources/slider/jquery-easing-compatibility.1.2.pack.js" var="easing_compatibility_url"/>
-                <spring:url value="/resources/slider/coda-slider.1.1.1.pack.js" var="coda_url"/>       
-                <spring:url value="/resources/perifer-timePicker-b5195df/jquery.timePicker.js" var="jquerytimepicker_url"/>
-                <spring:url value="/resources/perifer-timePicker-b5195df/timePicker.css" var="jquerytimepickercss_url"/>
-                <!-- formatCurrency -->
-                <spring:url value="/resources/jquery.formatCurrency-1.4.0/jquery.formatCurrency-1.4.0.js" var="jqueryformatCurrency_url"/>
-                <spring:url value="/resources/jquery.formatCurrency-1.4.0/i18n/jquery.formatCurrency.es-VE.js" var="jqueryformatCurrencyBsf_url"/>
-                <!-- Chosen -->
-                <spring:url value="/resources/chosen/chosen.jquery.js" var="chosen_url"/>
-                <spring:url value="/resources/chosen/chosen.css" var="chosencss_url"/>
-                <!-- jLayout -->
-                <spring:url value="/resources/jlayout/lib/jlayout.border.js" var="jlayoutborder_url"/>
-                <spring:url value="/resources/jlayout/lib/jlayout.flexgrid.js" var="jlayoutflexgrid_url"/>
-                <spring:url value="/resources/jlayout/lib/jlayout.flow.js" var="jlayoutflow_url"/>
-                <spring:url value="/resources/jlayout/lib/jlayout.grid.js" var="jlayoutgrid_url"/>
-                <spring:url value="/resources/jlayout/lib/jquery.jlayout.js" var="jlayout_url"/>
-                <spring:url value="/resources/jlayout/lib/jquery.sizes.js" var="jlayoutsizes_url"/>
-                
+    <jsp:directive.page contentType="text/html;charset=UTF-8" />  
 
-		<spring:url value="/static/images/favicon.ico" var="favicon" />
-		<link rel="stylesheet" type="text/css" media="screen" href="${roo_css_url}"><!-- //required for FF3 and Opera --></link>
-		<link rel="stylesheet" type="text/css" href="${tundra_url}"><!-- //required for FF3 and Opera --></link>
-                <link rel="stylesheet" type="text/css" href="${jquery_ui_autocomplete_css_url}"><!-- //required for FF3 and Opera --></link>
-                <link rel="stylesheet" type="text/css" href="${jquery_ui_all_css_url}"><!-- //required for FF3 and Opera --></link>
-		<!-- Nuevos -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" />-->        
+        <spring:theme code="styleSheet" var="roo_css"/> 
+        <spring:url value="/${roo_css}" var="roo_css_url"/>
+        <spring:url value="/resources/dojo/dojo.js" var="dojo_url"/>
+        <spring:url value="/resources/dijit/themes/tundra/tundra.css" var="tundra_url"/>
+        <spring:url value="/resources/spring/Spring.js" var="spring_url"/>
+        <spring:url value="/resources/spring/Spring-Dojo.js" var="spring_dojo_url"/>
+        
+        <spring:url value="/resources/estilosAquedarse/aquedarseStyle.css" var="aquedarseStyle_url"/>
 
-                <!-- FancyBox -->
-                <link rel="stylesheet" type="text/css" href="${fancybox_css_url}" media="screen"><!-- //required for FF3 and Opera --></link>
-                <link rel="stylesheet" type="text/css" href="${fancybox_buttons_css_url}" media="screen"><!-- //required for FF3 and Opera --></link>
-                <link rel="stylesheet" type="text/css" href="${fancybox_thumbs_css_url}" media="screen"><!-- //required for FF3 and Opera --></link>
-                <!-- Timepicker -->
-                <link href="${jquerytimepickercss_url}" media="all" rel="stylesheet" type="text/css" ><!-- //required for FF3 and Opera --></link>
+        <!-- Nuevos -->
+        <!-- jQueryUI -->
+        <spring:url value="/resources/jquery-ui-1.8.23.custom/js/jquery-1.8.0.min.js" var="jquery_url"/>
+        <spring:url value="/resources/jquery-ui-1.8.23.custom/js/jquery-ui-1.8.23.custom.min.js" var="jquery_ui_url"/>
+        <spring:url value="/resources/jquery-ui-1.8.23.custom/css/smoothness/jquery-ui-1.8.23.custom.css" var="jquery_ui_css_url"/>
 
-                <link rel="stylesheet" type="text/css" href="${jquery_ui_css_url}"><!-- //required for FF3 and Opera --></link>
-                <link rel="stylesheet" type="text/css" href="${chosencss_url}"><!-- //required for FF3 and Opera --></link>
-				
-                <link rel="SHORTCUT ICON" href="${favicon}" />
-		<script type="text/javascript"><![CDATA[
-			function readCookie(name) {
-				var nameEQ = name + '=';
-				var ca = document.cookie.split(';');
-				for(var i=0;i < ca.length;i++) {
-					var c = ca[i];
-					while (c.charAt(0)==' ') c = c.substring(1,c.length);
-					if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-				}
-				return null;
-			}
-			var djConfig={locale:readCookie('locale')}; 
-		]]>
-		</script>
-		<script src="${dojo_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
-		<script src="${spring_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-		<script src="${spring_dojo_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-		<!-- Nuevos -->
-                <!-- jQueryUI -->
-                <script src="${jquery_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${jquery_ui_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${jquery_ui_autocomplete_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <!-- Intento de jQueryUI 1.9.2 -->
+        <!--<spring:url value="/resources/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js" var="jquery_url"/>
+        <spring:url value="/resources/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js" var="jquery_ui_url"/>
+        <spring:url value="/resources/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.css" var="jquery_ui_css_url"/>-->
 
-                <script src="${jqueryuidatepickeres_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <!-- SimpleCombo -->
-                <script src="${simple_combo_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+
+        <spring:url value="/resources/jquery-ui-1.8.23.custom/development-bundle/ui/jquery.ui.autocomplete.js" var="jquery_ui_autocomplete_url"/>
+
+        <!--<spring:url value="/resources/jquery-ui-1.8.23.custom/development-bundle/demos/demos.css" var="jquery_ui_autocomplete_css_url"/>-->
+        <spring:url value="/resources/jquery-ui-1.8.23.custom/development-bundle/themes/base/jquery.ui.all.css" var="jquery_ui_all_css_url"/>
+        <spring:url value="/resources/jquery-ui-1.8.23.custom/development-bundle/ui/i18n/jquery.ui.datepicker-es.js" var="jqueryuidatepickeres_url"/>
+
+        <!-- FancyBox -->
+        <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/jquery.mousewheel-3.0.6.pack.js" var="fancybox_mouse_url"/>
+        <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/jquery.fancybox.css" var="fancybox_css_url"/>
+        <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/jquery.fancybox.pack.js" var="fancybox_url"/>
+        <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-buttons.css" var="fancybox_buttons_css_url"/>
+        <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-buttons.js" var="fancybox_buttons_url"/>
+        <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-media.js" var="fancybox_media_url"/>
+        <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-thumbs.css" var="fancybox_thumbs_css_url"/>
+        <spring:url value="/resources/fancyapps-fancyBox-2bb0da9/source/helpers/jquery.fancybox-thumbs.js" var="fancybox_thumbs_url"/>
                 
-                <!-- FancyBox -->
-                <script src="${fancybox_mouse_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
-                <script src="${fancybox_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
-                <script src="${fancybox_buttons_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
-                <script src="${fancybox_media_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
-                <script src="${fancybox_thumbs_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
-                <!-- MultidatePicker -->
-                <script src="${multidate_picker_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
-                <!-- JavascriptDateFormat -->
-                <!--<script src="${javascript_date_format_url}" type="text/javascript" ></script>-->
-                <!-- Timepicker -->
-                <script src="${jquerytimepicker_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <!-- Slider -->
-                <script src="${easing_pack_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${easing_compatibility_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${coda_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                
-                <!-- formatCurrency -->
-                <script src="${jqueryformatCurrency_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${jqueryformatCurrencyBsf_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-				<!-- Chosen -->
-                <script src="${chosen_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-				<!-- jLayout -->
-                <script src="${jlayoutborder_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${jlayoutflexgrid_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${jlayoutflow_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${layoutgrid_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${jlayout_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                <script src="${jlayoutsizes_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
-                
-                <script language="JavaScript" type="text/javascript">dojo.require("dojo.parser");</script>
-		<spring:message code="application.name" var="app_name"/>
-		<title><spring:message code="welcome.h3" arguments="${app_name}" /></title>
-	</head>
-   	<body class="tundra spring">		
-   		<div id="wrapper">  
-	    	<div id="main">
-	    		<tiles:insertAttribute name="body" />
-			</div>
-		</div>
-	</body>
-        <script type="text/javascript">
-        <![CDATA[
-            $(function() {
-                    $( "input:submit, input:button, input:reset").button();
-                    
-                    $( "textarea" ).resizable({
-			handles: "se"
-		});
-                });
+        <!-- SimpleCombo -->
+        <spring:url value="/resources/bennettmcelwee-Simple-Combo-8c4d455/jquery.simpleCombo.js" var="simple_combo_url"/>
+        <!-- MultidatePicker -->
+        <spring:url value="/resources/MultiDatesPicker-v1.6.1/jquery-ui.multidatespicker.js" var="multidate_picker_url"/>
+        <!-- JavaScriptDateFormat -->
+        <spring:url value="/resources/javascriptDateFormat/javascriptDateFormat.js" var="javascript_date_format_url"/>
+        <!-- TimePicker -->
+        <spring:url value="/resources/jquery-ui-timepicker-0.3.0/jquery.ui.timepicker.js" var="jquerytimepicker_url"/>
+        <spring:url value="/resources/jquery-ui-timepicker-0.3.0/jquery.ui.timepicker.css" var="jquerytimepickercss_url"/>
+        <!-- Slider -->
+        <spring:url value="/resources/slider/jquery-easing-1.3.pack.js" var="easing_pack_url"/>
+        <spring:url value="/resources/slider/jquery-easing-compatibility.1.2.pack.js" var="easing_compatibility_url"/>
+        <spring:url value="/resources/slider/coda-slider.1.1.1.pack.js" var="coda_url"/>       
+        <spring:url value="/resources/perifer-timePicker-b5195df/jquery.timePicker.js" var="jquerytimepicker_url"/>
+        <spring:url value="/resources/perifer-timePicker-b5195df/timePicker.css" var="jquerytimepickercss_url"/>
+        <!-- formatCurrency -->
+        <spring:url value="/resources/jquery.formatCurrency-1.4.0/jquery.formatCurrency-1.4.0.js" var="jqueryformatCurrency_url"/>
+        <spring:url value="/resources/jquery.formatCurrency-1.4.0/i18n/jquery.formatCurrency.es-VE.js" var="jqueryformatCurrencyBsf_url"/>
+        <!-- Chosen -->
+        <spring:url value="/resources/chosen/chosen.jquery.js" var="chosen_url"/>
+        <spring:url value="/resources/chosen/chosen.css" var="chosencss_url"/>
+        <!-- jLayout -->
+        <spring:url value="/resources/jlayout/lib/jlayout.border.js" var="jlayoutborder_url"/>
+        <spring:url value="/resources/jlayout/lib/jlayout.flexgrid.js" var="jlayoutflexgrid_url"/>
+        <spring:url value="/resources/jlayout/lib/jlayout.flow.js" var="jlayoutflow_url"/>
+        <spring:url value="/resources/jlayout/lib/jlayout.grid.js" var="jlayoutgrid_url"/>
+        <spring:url value="/resources/jlayout/lib/jquery.jlayout.js" var="jlayout_url"/>
+        <spring:url value="/resources/jlayout/lib/jquery.sizes.js" var="jlayoutsizes_url"/>
+        
+        <!-- wofoo form  -->
+        <spring:url value="/resources/wofooForm/css/form.css" var="wofoo_form_css_url"/>
+        <spring:url value="/resources/wofooForm/css/structure.css" var="wofoo_form_structure_css_url"/>
+        
+        
+        <!-- ********* -->
+        
+        <spring:url value="/static/images/favicon.ico" var="favicon" />
+        <!--<link rel="stylesheet" type="text/css" media="screen" href="${roo_css_url}">--><!-- //required for FF3 and Opera --><!--</link>-->
+        <!--<link rel="stylesheet" type="text/css" href="${tundra_url}">--><!-- //required for FF3 and Opera --><!--</link>-->
+        <link rel="stylesheet" type="text/css" href="${jquery_ui_autocomplete_css_url}"><!-- //required for FF3 and Opera --></link>
+        <link rel="stylesheet" type="text/css" href="${jquery_ui_all_css_url}"><!-- //required for FF3 and Opera --></link>
+        
+        <!-- Nuevos -->
+        <link href="${jquerytimepickercss_url}" media="all" rel="stylesheet" type="text/css" ><!-- //required for FF3 and Opera --></link>
+        <!-- JqueryUI -->
+        <link rel="stylesheet" type="text/css" href="${jquery_ui_css_url}"></link>
+        <!-- JqueryChosen -->
+        <link rel="stylesheet" type="text/css" href="${chosencss_url}"></link>
+        <!-- FancyBox -->
+        <link rel="stylesheet" type="text/css" href="${fancybox_css_url}" media="screen"><!-- //required for FF3 and Opera --></link>
+        <link rel="stylesheet" type="text/css" href="${fancybox_buttons_css_url}" media="screen"><!-- //required for FF3 and Opera --></link>
+        <link rel="stylesheet" type="text/css" href="${fancybox_thumbs_css_url}" media="screen"><!-- //required for FF3 and Opera --></link>
+         
+        <!-- wofoo form -->
+        <link rel="stylesheet" type="text/css" href="${wofoo_form_css_url}" ><!-- //required for FF3 and Opera --></link>
+        <link rel="stylesheet" type="text/css" href="${wofoo_form_structure_css_url}" ><!-- //required for FF3 and Opera --></link>
+       
+        <!-- AquedarseStyle -->
+        <link rel="stylesheet" type="text/css" href="${aquedarseStyle_url}"></link>
+        
+        <link rel="SHORTCUT ICON" href="${favicon}" />
+        <script type="text/javascript"><![CDATA[
+            function readCookie(name) {
+                var nameEQ = name + '=';
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+            var djConfig={locale:readCookie('locale')}; 
         ]]>
         </script>
+        <script src="${dojo_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
+        <script src="${spring_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <script src="${spring_dojo_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <!-- Nuevos -->
+        <!-- jQueryUI -->
+        <script src="${jquery_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <script src="${jquery_ui_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <script src="${jquery_ui_autocomplete_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <script src="${jqueryuidatepickeres_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <!-- SimpleCombo -->
+        <script src="${simple_combo_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <!-- MultidatePicker -->
+        <script src="${multidate_picker_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
+        <!-- JavascriptDateFormat -->
+        <!--<script src="${javascript_date_format_url}" type="text/javascript" ></script>-->
+        <!-- Timepicker -->
+        <script src="${jquerytimepicker_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <!-- Slider -->
+        <script src="${easing_pack_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <script src="${easing_compatibility_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <script src="${coda_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <!-- formatCurrency -->
+        <script src="${jqueryformatCurrency_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <script src="${jqueryformatCurrencyBsf_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        <!-- Chosen -->
+        <script src="${chosen_url}" type="text/javascript"><!-- //required for FF3 and Opera --></script>
+        
+        <!-- FancyBox -->
+        <script src="${fancybox_mouse_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
+        <script src="${fancybox_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
+        <script src="${fancybox_buttons_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
+        <script src="${fancybox_media_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
+        <script src="${fancybox_thumbs_url}" type="text/javascript" ><!-- //required for FF3 and Opera --></script>
+       
+        <script language="JavaScript" type="text/javascript">//dojo.require("dojo.parser");</script>
+        <spring:message code="application.name" var="app_name"/>
+        <title>Aquedarse.com | Hoteles, posadas, alquileres vacacionales</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/alojamientosturisticos">Aquedarse</a> |
+            <input value="¿ A dónde quieres ir ?"></input>  <a href="/alojamientosturisticos">Buscar</a> |
+            <a href="/alojamientosturisticos">Iniciar Sesión</a> |
+            <a href="/alojamientosturisticos">Publicar</a>
+        </nav> 
+        
+        <div id="wrapper">  
+            <div id="main">
+                <tiles:insertAttribute name="body" />
+            </div>
+        </div>
+
+
+    </body>
+
+    <script type="text/javascript">
+    <![CDATA[
+        $(function() {
+            //$( "input:submit, input:button, input:reset").button();
+                
+            $( "textarea" ).resizable({
+                handles: "se"
+            });
+        });
+    ]]>
+    </script>
 </html>

@@ -10,10 +10,13 @@
             <form:errors cssClass="errors" delimiter="&lt;p/&gt;"/>
             <div id="roo_alojamiento_nombre">
                 <label for="_nombre_id">Nombre:</label>
-                <form:textarea cssStyle="width:250px" id="_nombre_id" path="nombre"/>
-                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_nombre_id', widgetType: 'dijit.form.SimpleTextarea', widgetAttrs: {}})); </script>
+                <form:input cssStyle="width:250px" id="_nombre_id" maxlength="30" path="nombre" size="0"/>
                 <br/>
                 <form:errors cssClass="errors" id="_nombre_error_id" path="nombre"/>
+                <spring:message arguments="Nombre" code="field.invalid" var="field_invalid"/>
+                <spring:message code="field.required" var="field_required"/>
+                <spring:message argumentSeparator="," arguments="Nombre," code="field.simple.validation" var="field_validation"/>
+                <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_nombre_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${field_validation}', invalidMessage: '${field_invalid}', required : false}})); </script>
             </div>
             <br/>
             <div id="roo_alojamiento_descripcionGeneral">

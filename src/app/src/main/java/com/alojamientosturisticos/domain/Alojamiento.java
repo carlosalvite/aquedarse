@@ -24,8 +24,6 @@ import javax.persistence.Transient;
 @RooEntity(finders = { "findAlojamientoesByNombre" })
 public class Alojamiento {
 
-    @NotNull
-    @Size(min = 3, max = 255)
     private String nombre;
 
     @Lob

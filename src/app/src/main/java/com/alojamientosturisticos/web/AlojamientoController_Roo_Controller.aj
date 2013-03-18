@@ -1,15 +1,9 @@
 package com.alojamientosturisticos.web;
 
 import com.alojamientosturisticos.domain.Alojamiento;
-import com.alojamientosturisticos.domain.ComodidadGeneral;
-import com.alojamientosturisticos.domain.ComodidadGeneralAdicional;
-import com.alojamientosturisticos.domain.TipoAlojamiento;
-import com.alojamientosturisticos.domain.Ubicacion;
 import java.lang.Long;
 import java.lang.String;
-import javax.validation.Valid;
 import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -35,32 +29,6 @@ privileged aspect AlojamientoController_Roo_Controller {
             modelMap.addAttribute("alojamientoes", Alojamiento.findAllAlojamientoes());
         }
         return "alojamiento/list";
-    }
-    
-    @RequestMapping(method = RequestMethod.PUT)
-    public String AlojamientoController.update(@Valid Alojamiento alojamiento, BindingResult result, ModelMap modelMap) {
-        if (alojamiento == null) throw new IllegalArgumentException("A alojamiento is required");
-        if (result.hasErrors()) {
-            modelMap.addAttribute("alojamiento", alojamiento);
-            modelMap.addAttribute("comodidadgenerals", ComodidadGeneral.findAllComodidadGenerals());
-            modelMap.addAttribute("comodidadgeneraladicionals", ComodidadGeneralAdicional.findAllComodidadGeneralAdicionals());
-            modelMap.addAttribute("tipoalojamientoes", TipoAlojamiento.findAllTipoAlojamientoes());
-            modelMap.addAttribute("ubicacions", Ubicacion.findAllUbicacions());
-            return "alojamiento/update";
-        }
-        alojamiento.merge();
-        return "redirect:/alojamiento/" + alojamiento.getId();
-    }
-    
-    @RequestMapping(value = "/alojamiento/{id}/form", method = RequestMethod.GET)
-    public String AlojamientoController.updateForm(@PathVariable("id") Long id, ModelMap modelMap) {
-        if (id == null) throw new IllegalArgumentException("An Identifier is required");
-        modelMap.addAttribute("alojamiento", Alojamiento.findAlojamiento(id));
-        modelMap.addAttribute("comodidadgenerals", ComodidadGeneral.findAllComodidadGenerals());
-        modelMap.addAttribute("comodidadgeneraladicionals", ComodidadGeneralAdicional.findAllComodidadGeneralAdicionals());
-        modelMap.addAttribute("tipoalojamientoes", TipoAlojamiento.findAllTipoAlojamientoes());
-        modelMap.addAttribute("ubicacions", Ubicacion.findAllUbicacions());
-        return "alojamiento/update";
     }
     
     @RequestMapping(value = "/alojamiento/{id}", method = RequestMethod.DELETE)
